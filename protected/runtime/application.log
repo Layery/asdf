@@ -12134,3 +12134,505 @@ Stack trace:
 REQUEST_URI=/asdf/index.php?r=site/index
 HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
 ---
+2016/06/20 20:16:45 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 20:17:39 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (112)
+in D:\www\asdf\index.php (19)
+2016/06/20 20:17:39 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (112)
+in D:\www\asdf\index.php (19)
+2016/06/20 20:17:45 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (112)
+in D:\www\asdf\index.php (19)
+2016/06/20 20:17:45 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (112)
+in D:\www\asdf\index.php (19)
+2016/06/20 20:17:54 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (112)
+in D:\www\asdf\index.php (19)
+2016/06/20 20:17:54 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (112)
+in D:\www\asdf\index.php (19)
+2016/06/20 20:18:14 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 20:18:23 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 20:18:23 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 20:18:23 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 20:18:24 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 20:18:24 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 20:18:24 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 20:18:55 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 20:18:58 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 20:19:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "List".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('List')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('List')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/List')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/List
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=3
+---
+2016/06/20 20:19:40 [error] [php] Trying to get property of non-object (D:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 D:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 D:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 D:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 D:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 D:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 D:\www\yii\web\CBaseController.php(126): require()
+#8 D:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 D:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 D:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 D:\www\asdf\protected\controllers\StudentController.php(19): StudentController->render()
+#12 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 D:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 D:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in D:\www\asdf\protected\views\student\_view.php (5)
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (19)

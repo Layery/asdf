@@ -2,9 +2,6 @@
 
 class StudentController extends Controller{
 
-    public $defaultAction = 'List';
-
-
     public function actionList()
     {
         $criteria = new CDbCriteria;

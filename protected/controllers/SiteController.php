@@ -2,12 +2,14 @@
 
 class SiteController extends Controller
 {
-	// 设置默认访问的action , 
+	/**
+	 * 设置默认访问的action
+	 * @var string
+	 */
 	public $defaultAction = 'List';
 
-	/**
-	 * Declares class-based actions.
-	 */
+	
+
 	public function actions()
 	{
 		return array(
@@ -23,7 +25,11 @@ class SiteController extends Controller
 			),
 		);
 	}
+    
 
+    /**
+     * 展示该班级下的学生
+     */
 	public function actionView()
 	{
 		// $criteria = new CDbCriteria();
@@ -36,57 +42,43 @@ class SiteController extends Controller
 		$students = new CActiveDataProvider('Room',array(
 			'criteria'=>$criteria,  //使用criteria条件
 		));
-
 	    $this->render('view',array('students'=>$students));
 	}
 
-
+ 
+	/**
+	 * 展示班级列表
+	 */
 	public function actionList()
 	{
-		/*
-			返回ar对象的形式
-		$where = new CDbCriteria();
-		$classList = Room::model()->findAll($where);
-		*/
-
-		//  返回数组形式
 		$sql = 'select * from {{room}}';
-		// $criteria = new CDbCriteria();
-
-
 		$conn = Yii::app()->db->createCommand($sql);
 		$classList = $conn->queryAll($sql);
-		// $classList = $conn->queryAll($criteria);
-		// p($classList);
-
 	    $this->render('index',array('classList'=>$classList));
 	}
 
 
 	
+	
 	public function actionDelete()
 	{
 		$id = (int)$_GET['id'];
-		// $conn = Yii::app()->db;
-		// $sql = 'delete from {{room}} where id = '.$id;
-		// $command = $conn->createCommand($sql)->execute();
 		$ls = Room::model()->deleteByPk($id);
-		// $criteria = new CDbCriteria();
-		// $criteria->with = 'students';
-
 		$this->redirect(array('List'));		
 	}
     
-
-
-
+  
+    /**
+     * 新增条目
+     * @return [type] [description]
+     */
 	public function actionCreate()
 	{
-		$model = new Room;           // 只有新增数据的时候使用new Model的形式, 其余情况用Model()静态实例化一个类 . /why?????/  
-		if(isset($_POST['Room']))
+		$model = new Room;     // 只有新增数据的时候使用new Model的形式, 其余情况用Model()静态实例化一个类 . /why?????/  
+		if (isset($_POST['Room']))
 		{
 			$model->attributes=$_POST['Room'];
-			if($model->save())
+			if ( $model->save())
 				$this->redirect(array('List'));
 		}
 
@@ -104,15 +96,13 @@ class SiteController extends Controller
 	public function actionUpdate($id)
 	{
 		$rs = Room::model()->findByPk($id);	    
-		if(empty($rs)) exit('参数非法');
+		if ( empty($rs)) exit('参数非法');
 
-		if($_POST){
+		if ( $_POST){
 			$criteria = new CDbCriteria();
 			$criteria->addCondition("id=$id");
 			$rs->attributes=$_POST;
-
-
-			if(!$rs->validate()){
+			if ( !$rs->validate()){
 				$errors = $rs->getErrors();
 				foreach($errors as $v){
 					echo $this->renderText($v[0]);
@@ -133,18 +123,18 @@ class SiteController extends Controller
 		$model=new LoginForm;
 
 		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+		if ( isset($_POST['ajax']) && $_POST['ajax']==='login-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 
 		// collect user input data
-		if(isset($_POST['LoginForm']))
+		if ( isset($_POST['LoginForm']))
 		{	
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
-			if($model->validate() && $model->login())
+			if ( $model->validate() && $model->login())
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
 		// display the login form
@@ -157,9 +147,9 @@ class SiteController extends Controller
 	 */
 	public function actionError()
 	{
-		if($error=Yii::app()->errorHandler->error)
+		if ( $error=Yii::app()->errorHandler->error)
 		{
-			if(Yii::app()->request->isAjaxRequest)
+			if ( Yii::app()->request->isAjaxRequest)
 				echo $error['message'];
 			else
 				$this->render('error', $error);
@@ -173,10 +163,10 @@ class SiteController extends Controller
 	public function actionContact()
 	{
 		$model=new ContactForm;
-		if(isset($_POST['ContactForm']))
+		if ( isset($_POST['ContactForm']))
 		{
 			$model->attributes=$_POST['ContactForm'];
-			if($model->validate())
+			if ( $model->validate())
 			{
 				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
 				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';

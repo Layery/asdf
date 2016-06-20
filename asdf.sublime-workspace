@@ -180,13 +180,10 @@
 	"buffers":
 	[
 		{
-			"contents": "<?php\n\nclass SiteController extends Controller\n{\n	// 设置默认访问的action , \n	public $defaultAction = 'List';\n\n	/**\n	 * Declares class-based actions.\n	 */\n	public function actions()\n	{\n		return array(\n			// captcha action renders the CAPTCHA image displayed on the contact page\n			'captcha'=>array(\n				'class'=>'CCaptchaAction',\n				'backColor'=>0xFFFFFF,\n			),\n			// page action renders \"static\" pages stored under 'protected/views/site/pages'\n			// They can be accessed via: index.php?r=site/page&view=FileName\n			'page'=>array(\n				'class'=>'CViewAction',\n			),\n		);\n	}\n\n	public function actionView()\n	{\n		// $criteria = new CDbCriteria();\n		// $criteria->select = 'name';\n		// $model = Room::model()->with('students')->findByPk($id);\n		$id = $_GET['id']+0;\n		$criteria = new CDbCriteria();\n		$criteria->with='students';\n		$criteria->addCondition(\"t.id=$id\");    // 默认是表别名是 t ? \n		$students = new CActiveDataProvider('Room',array(\n			'criteria'=>$criteria,  //使用criteria条件\n		));\n\n	    $this->render('view',array('students'=>$students));\n	}\n\n\n	public function actionList()\n	{\n		/*\n			返回ar对象的形式\n		$where = new CDbCriteria();\n		$classList = Room::model()->findAll($where);\n		*/\n\n		//  返回数组形式\n		$sql = 'select * from {{room}}';\n		// $criteria = new CDbCriteria();\n\n\n		$conn = Yii::app()->db->createCommand($sql);\n		$classList = $conn->queryAll($sql);\n		// $classList = $conn->queryAll($criteria);\n		// p($classList);\n\n	    $this->render('index',array('classList'=>$classList));\n	}\n\n\n	\n	public function actionDelete()\n	{\n		$id = (int)$_GET['id'];\n		// $conn = Yii::app()->db;\n		// $sql = 'delete from {{room}} where id = '.$id;\n		// $command = $conn->createCommand($sql)->execute();\n		$ls = Room::model()->deleteByPk($id);\n		// $criteria = new CDbCriteria();\n		// $criteria->with = 'students';\n\n		$this->redirect(array('List'));		\n	}\n    \n\n\n\n	public function actionCreate()\n	{\n		$model = new Room;           // 只有新增数据的时候使用new Model的形式, 其余情况用Model()静态实例化一个类 . /why?????/  \n		if(isset($_POST['Room']))\n		{\n			$model->attributes=$_POST['Room'];\n			if($model->save())\n				$this->redirect(array('List'));\n		}\n\n		$this->render('create',array(\n			'model'=>$model,\n		));\n\n	}\n\n\n 	public function beforeDelete(){\n\n 	}\n\n	public function actionUpdate($id)\n	{\n		$rs = Room::model()->findByPk($id);	    \n		if(empty($rs)) exit('参数非法');\n\n		if($_POST){\n			$criteria = new CDbCriteria();\n			$criteria->addCondition(\"id=$id\");\n			$rs->attributes=$_POST;\n\n\n			if(!$rs->validate()){\n				$errors = $rs->getErrors();\n				foreach($errors as $v){\n					echo $this->renderText($v[0]);\n				}\n				echo \"<script>history.go(-1);</script>\";\n				exit;\n			}\n			$rs = $rs->save();\n			$this->redirect(array('List'));\n		}\n		$this->render('item',array('item'=>$rs));\n		\n\n	\n	/\n	public function actionLogin()\n	{\n		$model=new LoginForm;\n\n		// if it is ajax validation request\n		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')\n		{\n			echo CActiveForm::validate($model);\n			Yii::app()->end();\n		}\n\n		// collect user input data\n		if(isset($_POST['LoginForm']))\n		{	\n			$model->attributes=$_POST['LoginForm'];\n			// validate user input and redirect to the previous page if valid\n			if($model->validate() && $model->login())\n				$this->redirect(Yii::app()->user->returnUrl);\n		}\n		// display the login form\n		$this->render('login',array('model'=>$model));\n	}\n\n\n/**\n	 * This is the action to handle external exceptions.\n	 */\n	public function actionError()\n	{\n		if($error=Yii::app()->errorHandler->error)\n		{\n			if(Yii::app()->request->isAjaxRequest)\n				echo $error['message'];\n			else\n				$this->render('error', $error);\n		}\n	}\n\n\n	/**\n	 * Displays the contact page\n	 */\n	public function actionContact()\n	{\n		$model=new ContactForm;\n		if(isset($_POST['ContactForm']))\n		{\n			$model->attributes=$_POST['ContactForm'];\n			if($model->validate())\n			{\n				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';\n				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';\n				$headers=\"From: $name <{$model->email}>\\r\\n\".\n					\"Reply-To: {$model->email}\\r\\n\".\n					\"MIME-Version: 1.0\\r\\n\".\n					\"Content-Type: text/plain; charset=UTF-8\";\n\n				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);\n				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');\n				$this->refresh();\n			}\n		}\n		$this->render('contact',array('model'=>$model));\n	}\n\n	/**\n	 * Logs out the current user and redirect to homepage.\n	 */\n	public function actionLogout()\n	{\n		Yii::app()->user->logout();\n		$this->redirect(Yii::app()->homeUrl);\n	}\n\n\n\n\n\n\n}",
 			"file": "protected/controllers/SiteController.php",
-			"file_size": 4674,
-			"file_write_time": 131108914304386933,
 			"settings":
 			{
-				"buffer_size": 4551,
+				"buffer_size": 4190,
 				"line_ending": "Unix"
 			}
 		},
@@ -231,6 +228,14 @@
 			}
 		},
 		{
+			"file": "protected/views/student/_view.php",
+			"settings":
+			{
+				"buffer_size": 113,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "/D/www/yii/db/schema/CDbCriteria.php",
 			"settings":
 			{
@@ -245,6 +250,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
@@ -398,10 +407,6 @@
 				"Package Control: List Packages"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"inspack",
 				"Package Control: Install Package"
 			],
@@ -545,14 +550,20 @@
 	},
 	"file_history":
 	[
+		"/D/www/asdf/protected/controllers/StudentController.php",
+		"/D/www/asdf/protected/views/student/_view.php",
+		"/D/www/yii/i18n/data/sbp_tz.php",
+		"/D/www/pc/sem.html",
+		"/D/www/pc/bower_components/jquery-validation/src/additional/statesUS.js",
+		"/D/www/pc/bower_components/select2/src/js/select2/utils.js",
+		"/D/www/asdf/protected/models/Student.php",
+		"/D/www/pc/bower_components/bootstrap-datepicker/docs/_screenshots/markup_daterange.html",
 		"/D/www/yii/web/CController.php",
 		"/D/www/yii/collections/CConfiguration.php",
 		"/D/www/yii/db/CDbCommand.php",
 		"/D/www/yii/caching/CDbCache.php",
 		"/D/www/yii/validators/CValidator.php",
-		"/D/www/asdf/protected/controllers/StudentController.php",
 		"/D/www/asdf/protected/views/site/item.php",
-		"/D/www/asdf/protected/views/student/_view.php",
 		"/D/www/asdf/protected/views/site/_sitem.php",
 		"/D/www/asdf/protected/config/main.php",
 		"/D/www/asdf/protected/views/site/index.php",
@@ -560,7 +571,6 @@
 		"/D/www/yii/yiilite.php",
 		"/D/www/yii/YiiBase.php",
 		"/D/www/asdf/index-test.php",
-		"/D/www/asdf/protected/models/Student.php",
 		"/D/www/pc/micro/autoregion.css",
 		"/D/www/pc/register.html",
 		"/D/www/asdf/protected/models/Room.php",
@@ -577,15 +587,12 @@
 		"/D/www/yii/web/actions/CInlineAction.php",
 		"/D/www/asdf/README.md",
 		"/D/www/class_bak/protected/views/student/view.php",
-		"/D/www/pc/sem.html",
 		"/D/www/class_bak/protected/views/student/update.php",
 		"/D/www/asdf/assets/4815785c/gridview/styles.css",
 		"/D/www/yii/cli/views/webapp/protected/tests/WebTestCase.php",
 		"/D/www/pc/viewtreaty.html",
 		"/D/www/yii/cli/views/webapp/index-test.php",
 		"/D/www/pc/js/views/view.contact.js",
-		"/D/www/pc/bower_components/jquery-validation/src/additional/statesUS.js",
-		"/D/www/pc/bower_components/select2/src/js/select2/utils.js",
 		"/D/www/class_bak/protected/controllers/StudentController.php",
 		"/D/www/yii/i18n/data/en_mp.php",
 		"/D/www/pc/index.html",
@@ -595,7 +602,6 @@
 		"/D/www/bool/goods.php",
 		"/D/www/yii/i18n/data/root.php",
 		"/D/www/pc/robots.txt",
-		"/D/www/yii/i18n/data/sbp_tz.php",
 		"/D/www/asdf/protected/views/student/index.php",
 		"/D/www/yii/web/CDataProvider.php",
 		"/D/www/yii/web/CActiveDataProvider.php",
@@ -671,8 +677,7 @@
 		"/D/www/class/protected/views/site/index.php",
 		"/D/www/fykc/protected/extensions/yii-debug-toolbar/views/panels/views_rendering.php",
 		"/D/www/fykc/protected/extensions/yii-debug-toolbar/views/panels/views.php",
-		"/D/www/fykc/protected/modules/backend/views/customer/vipImport.php",
-		"/D/git/git.txt"
+		"/D/www/fykc/protected/modules/backend/views/customer/vipImport.php"
 	],
 	"find":
 	{
@@ -850,15 +855,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4551,
+						"buffer_size": 4190,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2729,
-								2729
+								1474,
+								1474
 							]
 						],
 						"settings":
@@ -914,7 +919,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2779.0,
+						"translation.y": 1296.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -933,8 +938,8 @@
 						"selection":
 						[
 							[
-								426,
-								426
+								186,
+								186
 							]
 						],
 						"settings":
@@ -994,7 +999,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1069,7 +1074,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1144,7 +1149,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1220,7 +1225,7 @@
 						"translation.y": 288.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1297,11 +1302,86 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
+					"file": "protected/views/student/_view.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "/D/www/yii/db/schema/CDbCriteria.php",
 					"semi_transient": false,
 					"settings":
@@ -1372,7 +1452,7 @@
 						"translation.y": 6157.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1453,6 +1533,10 @@
 		"selected_items":
 		[
 			[
+				"studentcontroller.php",
+				"asdf\\protected\\controllers\\StudentController.php"
+			],
+			[
 				"ccontroller.php",
 				"yii\\web\\CController.php"
 			],
@@ -1487,10 +1571,6 @@
 			[
 				"asdfviewmain",
 				"asdf\\protected\\views\\layouts\\main.php"
-			],
-			[
-				"studentcontroller.php",
-				"asdf\\protected\\controllers\\StudentController.php"
 			],
 			[
 				"item.php",
