@@ -2,120 +2,80 @@
 
 class SiteController extends Controller
 {
-	// 设置默认访问的action , 
-	public $defaultAction = 'List';
 
 	/**
-	 * Declares class-based actions.
+	 * 展示某班级下的学生列表
 	 */
-	public function actions()
-	{
-		return array(
-			// captcha action renders the CAPTCHA image displayed on the contact page
-			'captcha'=>array(
-				'class'=>'CCaptchaAction',
-				'backColor'=>0xFFFFFF,
-			),
-			// page action renders "static" pages stored under 'protected/views/site/pages'
-			// They can be accessed via: index.php?r=site/page&view=FileName
-			'page'=>array(
-				'class'=>'CViewAction',
-			),
-		);
-	}
-
 	public function actionView()
 	{
-		// $criteria = new CDbCriteria();
-		// $criteria->select = 'name';
-		// $model = Room::model()->with('students')->findByPk($id);
-		$id = $_GET['id']+0;
+	    $id = (int)$_GET['id'];  
 		$criteria = new CDbCriteria();
-		$criteria->with='students';
-		$criteria->addCondition("t.id=$id");    // 默认是表别名是 t ? 
+		$criteria->with = 'students';
+		$criteria->addCondition("t.id=$id");  
 		$students = new CActiveDataProvider('Room',array(
-			'criteria'=>$criteria,  //使用criteria条件
+			'criteria'=>$criteria, 
 		));
-
 	    $this->render('view',array('students'=>$students));
 	}
 
-
+    /**
+     * 展示班级列表
+     */
 	public function actionList()
 	{
-		/*
-			返回ar对象的形式
-		$where = new CDbCriteria();
-		$classList = Room::model()->findAll($where);
-		*/
-
-		//  返回数组形式
 		$sql = 'select * from {{room}}';
-		// $criteria = new CDbCriteria();
-
-
 		$conn = Yii::app()->db->createCommand($sql);
 		$classList = $conn->queryAll($sql);
-		// $classList = $conn->queryAll($criteria);
-		// p($classList);
-
 	    $this->render('index',array('classList'=>$classList));
 	}
 
-
-	
+	/**
+	 * 删除指定的班级条目
+	 */
 	public function actionDelete()
 	{
 		$id = (int)$_GET['id'];
-		// $conn = Yii::app()->db;
-		// $sql = 'delete from {{room}} where id = '.$id;
-		// $command = $conn->createCommand($sql)->execute();
 		$ls = Room::model()->deleteByPk($id);
-		// $criteria = new CDbCriteria();
-		// $criteria->with = 'students';
-
 		$this->redirect(array('List'));		
 	}
     
-
-
-
+    /**
+     * 新增班级条目
+     */
 	public function actionCreate()
 	{
-		$model = new Room;           // 只有新增数据的时候使用new Model的形式, 其余情况用Model()静态实例化一个类 . /why?????/  
-		if(isset($_POST['Room']))
+		$model = new Room;
+		if (isset($_POST['Room'])) 
 		{
-			$model->attributes=$_POST['Room'];
-			if($model->save())
-				$this->redirect(array('List'));
+			$model->attributes = $_POST['Room'];
+			if ($model->save()) {
+			    $this->redirect(array('List'));
+			}
 		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
-
+		$this->render('create',array('model'=>$model));
 	}
 
-
- 	public function beforeDelete(){
-
- 	}
-
-	public function actionUpdate($id)
+    /**
+     * 更新指定班级信息
+     * @param  [type] $id 班级id
+     * @return [type]     [description]
+     */
+    public function actionUpdate($id)
 	{
-		$rs = Room::model()->findByPk($id);	    
-		if(empty($rs)) exit('参数非法');
-
-		if($_POST){
+		$rs = Room::model()->findByPk($id);
+		if (empty($rs)) 
+		{
+			exit('参数非法');
+		}
+		if ($_POST) 
+		{
 			$criteria = new CDbCriteria();
-			$criteria->addCondition("id=$id");
-			$rs->attributes=$_POST;
-
-
-			if(!$rs->validate()){
+			$criteria->addCondition("id = $id");
+			$rs->attributes = $_POST;
+			if (!$rs->validate()) {
 				$errors = $rs->getErrors();
-				foreach($errors as $v){
-					echo $this->renderText($v[0]);
+				foreach ($errors as $v) {
+					echo "<script>alert('".$v[0]."');</script>";
 				}
 				echo "<script>history.go(-1);</script>";
 				exit;
@@ -124,16 +84,14 @@ class SiteController extends Controller
 			$this->redirect(array('List'));
 		}
 		$this->render('item',array('item'=>$rs));
-		
+	}
 
-	
-	
 	public function actionLogin()
 	{
 		$model=new LoginForm;
 
 		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+		if (isset($_POST['ajax']) && $_POST['ajax']==='login-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
@@ -152,7 +110,7 @@ class SiteController extends Controller
 	}
 
 
-/**
+    /**
 	 * This is the action to handle external exceptions.
 	 */
 	public function actionError()
@@ -192,6 +150,28 @@ class SiteController extends Controller
 		}
 		$this->render('contact',array('model'=>$model));
 	}
+	
+	// 设置默认访问的action , 
+    public $defaultAction = 'List';
+
+	/**
+	 * Declares class-based actions.
+	 */
+	public function actions()
+	{
+		return array(
+			// captcha action renders the CAPTCHA image displayed on the contact page
+			'captcha'=>array(
+				'class'=>'CCaptchaAction',
+				'backColor'=>0xFFFFFF,
+			),
+			// page action renders "static" pages stored under 'protected/views/site/pages'
+			// They can be accessed via: index.php?r=site/page&view=FileName
+			'page'=>array(
+				'class'=>'CViewAction',
+			),
+		);
+	}
 
 	/**
 	 * Logs out the current user and redirect to homepage.
@@ -201,10 +181,6 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
-
-
-
-
 
 
 }

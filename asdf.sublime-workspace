@@ -4,469 +4,571 @@
 		"selected_items":
 		[
 			[
-				"before",
-				"beforeDelete	(yiilite.php)"
+				"f",
+				"findaba	Yii Model findAllByAttributes"
 			],
 			[
-				"confi",
-				"confirm	(yiilite.php)"
+				"cla",
+				"class	class …"
 			],
 			[
-				"defa",
-				"default	(CWebUser.php)"
+				"for",
+				"foreach	foreach …"
 			],
 			[
-				"getError",
-				"getErrors	(yiilite.php)"
+				"yii",
+				"yiiframework	(yiilite.php)"
 			],
 			[
-				"updat",
-				"updateByPk〔function〕"
+				"Cacti",
+				"CActiveForm	(SiteController.php)"
 			],
 			[
-				"gete",
-				"getErrors〔function〕"
+				"link",
+				"linkButton〔function〕"
 			],
 			[
-				"attri",
-				"attributes"
+				"firs",
+				"firstPageLabel	(CLinkPager.php)"
 			],
 			[
-				"attr",
-				"attributes"
+				"st",
+				"students	(Student.php)"
 			],
 			[
-				"a",
-				"addSearchCondition〔function〕"
+				"ajax",
+				"ajaxUpdate	(CListView.php)"
 			],
 			[
-				"findB",
-				"findByPk〔function〕"
+				"pr",
+				"protected	(index.php)"
 			],
 			[
-				"Room",
-				"Room::model"
+				"_",
+				"_SERVER"
 			],
 			[
-				"set",
-				"setAttributes〔function〕"
+				"APP",
+				"APP_CACHE_PATH"
 			],
 			[
-				"_P",
-				"$_POST〔variable〕"
+				"app",
+				"application"
 			],
 			[
-				"setA",
-				"setTableAlias	(CActiveRecord.php)"
+				"Sys",
+				"System::CreateApp"
 			],
 			[
-				"af",
-				"afterSave	(CActiveRecord.php)"
+				"debug_backtrac",
+				"debug_print_backtrace"
 			],
 			[
-				"getE",
-				"getErrors〔function〕"
+				"mt_",
+				"mt_rand"
 			],
 			[
-				"prin",
-				"print_r"
+				"decorate",
+				"decorate_info"
 			],
 			[
-				"CAct",
-				"CActiveDataProvider	(index.php)"
+				"cnt",
+				"cnt_total_array"
 			],
 			[
-				"sub",
-				"submitButton	(_form.php)"
+				"log",
+				"loglist"
 			],
 			[
-				"班级",
-				"班级ID	(index.php)"
+				"x_d",
+				"x_designer_case"
 			],
 			[
-				"find",
-				"findByPk	(JDriver.php)"
+				"anli",
+				"anlist"
 			],
 			[
-				"activeT",
-				"activeTextArea〔function〕"
+				"html",
+				"html_str  (variable)"
 			],
 			[
-				"CActive",
-				"CActiveRecord〔class〕"
+				"sta",
+				"state"
 			],
 			[
-				"get",
-				"getAttributes〔function〕"
+				"s",
+				"switch	switch …"
 			],
 			[
-				"findBy",
-				"findBySql('select	(application.log)"
+				"sor",
+				"sort_price"
 			],
 			[
-				"Cdbc",
-				"CDbCommand〔class〕"
+				"x_mer",
+				"x_merchant"
 			],
 			[
-				"_se",
-				"$_SERVER〔variable〕"
+				"mer",
+				"merchant_class"
 			],
 			[
-				"fin",
-				"findAll〔function〕"
-			],
-			[
-				"cr",
-				"criteria	(Room.php)"
-			],
-			[
-				"geta",
-				"getAttributeLabel	(CDetailView.php)"
-			],
-			[
-				"getAttr",
-				"ldap_get_attributes"
-			],
-			[
-				"Acti",
-				"ActiveRecord〔class〕"
-			],
-			[
-				"fetch",
-				"fetchData	(CDataProvider.php)"
-			],
-			[
-				"Che",
-				"ChecknameValidator	(JjrAgent.php)"
+				"get_pro",
+				"get_product_info"
 			],
 			[
 				"请输入",
-				"请输入2~8个汉字"
+				"请输入您的称呼"
 			],
 			[
-				"agent",
-				"agent"
+				"c",
+				"contact"
 			],
 			[
-				"agn",
-				"agent_id"
+				"cont",
+				"contact"
 			],
 			[
-				"value",
-				"validate  (function)"
+				"area",
+				"areaid"
 			],
 			[
-				"dre",
-				"driver_id"
+				"_c",
+				"_COOKIE  (variable)"
 			],
 			[
-				"agentid",
-				"agent_id"
+				"hou",
+				"house_type"
 			],
 			[
-				"dri",
-				"driver_id"
+				"sub",
+				"submit"
 			],
 			[
-				"iscrypt",
-				"iscrypt"
+				"is_",
+				"is_praise"
 			],
 			[
-				"apply",
-				"applyStatus	(order-completed.js)"
+				"mysql",
+				"mysql_query"
+			],
+			[
+				"mu",
+				"multi_array_sort"
+			],
+			[
+				"get_rp",
+				"get_product_comment"
+			],
+			[
+				"fu_",
+				"fu_order_sn  (variable)"
+			],
+			[
+				"tota",
+				"total_price"
+			],
+			[
+				"order",
+				"order_arr"
+			],
+			[
+				"productin",
+				"product_num_info"
+			],
+			[
+				"ordel",
+				"orderlist[]['pay_price"
+			],
+			[
+				"x_pr",
+				"x_product"
+			],
+			[
+				"tmp",
+				"tmp_name"
+			],
+			[
+				"_post",
+				"_POST  (variable)"
+			],
+			[
+				"intro",
+				"introduce"
+			],
+			[
+				"x_pro",
+				"x_product_dp"
+			],
+			[
+				"allow",
+				"allow_size"
+			],
+			[
+				"file",
+				"fileupload"
+			],
+			[
+				"tmp_",
+				"tmp_product"
+			],
+			[
+				"bal",
+				"balance_price"
+			],
+			[
+				"ban",
+				"balance_price"
+			],
+			[
+				"su",
+				"submit_indent_e"
+			],
+			[
+				"s_",
+				"s_area  (variable)"
+			],
+			[
+				"pay",
+				"pay_price"
+			],
+			[
+				"inser",
+				"insert_id"
+			],
+			[
+				"pro",
+				"product_num"
+			],
+			[
+				"tot",
+				"total_price"
+			],
+			[
+				"ba",
+				"balance_price"
+			],
+			[
+				"in",
+				"inventory_num"
+			],
+			[
+				"get",
+				"get_product_info"
+			],
+			[
+				"get_img",
+				"get_img_one"
+			],
+			[
+				"phone",
+				"phone_num"
+			],
+			[
+				"str",
+				"strategy"
+			],
+			[
+				"de",
+				"designer"
+			],
+			[
+				"zxgl",
+				"zxgl_info"
+			],
+			[
+				"sql",
+				"sql"
+			],
+			[
+				"riji",
+				"riji_info"
+			],
+			[
+				"par",
+				"praise_num"
+			],
+			[
+				"total",
+				"total_praise"
+			],
+			[
+				"rep",
+				"reply_num"
+			],
+			[
+				"x",
+				"x_supervisor"
+			],
+			[
+				"active",
+				"active"
+			],
+			[
+				"x_",
+				"x_strategy"
+			],
+			[
+				"get_tag",
+				"get_tag_x_num"
+			],
+			[
+				"dp",
+				"dp_list"
+			],
+			[
+				"my",
+				"myfriends"
+			],
+			[
+				"x_cl",
+				"x_colour"
+			],
+			[
+				"colo",
+				"colourlist"
+			],
+			[
+				"colou",
+				"colourid"
+			],
+			[
+				"glo",
+				"global"
+			],
+			[
+				"dat",
+				"datalist"
+			],
+			[
+				"com",
+				"company"
+			],
+			[
+				"ad",
+				"advan2"
+			],
+			[
+				"adv",
+				"advan1"
+			],
+			[
+				"mysql_fec",
+				"mysql_fetch_assoc"
+			],
+			[
+				"get_count_c",
+				"get_count_collect"
+			],
+			[
+				"x_des",
+				"x_designer"
+			],
+			[
+				"dp_total_",
+				"dp_total_medium"
+			],
+			[
+				"get_cou",
+				"get_count_praise"
+			],
+			[
+				"style",
+				"style='width:50"
+			],
+			[
+				"all",
+				"all_comment_list"
+			],
+			[
+				"disp",
+				"display:none"
+			],
+			[
+				"mysql_fe",
+				"mysql_fetch_array($rs"
+			],
+			[
+				"avg",
+				"avg_score"
+			],
+			[
+				"a",
+				"a	Tag"
+			],
+			[
+				"total_c",
+				"total_collect"
+			],
+			[
+				"sev",
+				"serve_area"
+			],
+			[
+				"serve",
+				"serve_area"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"x_log",
+				"x_log_i"
+			],
+			[
+				"cs_",
+				"cs_praise"
+			],
+			[
+				"total_",
+				"total_praise"
+			],
+			[
+				"x_use",
+				"x_user_praise表"
+			],
+			[
+				"search",
+				"search_area"
+			],
+			[
+				"ci",
+				"cityidlist"
+			],
+			[
+				"arr_mer",
+				"arr_mer_server"
+			],
+			[
+				"remo",
+				"removeClass('active"
+			],
+			[
+				"mysql_fet",
+				"mysql_fetch_assoc"
+			],
+			[
+				"slee",
+				"selected"
+			],
+			[
+				"sele",
+				"selected	Attr"
+			],
+			[
+				"selec",
+				"selected	Attr"
+			],
+			[
+				"arr",
+				"arr_troop"
+			],
+			[
+				"arr_de",
+				"arr_designer"
+			],
+			[
+				"re_p",
+				"re_product"
+			],
+			[
+				"re_de",
+				"re_designer  (variable)"
+			],
+			[
+				"re_tr",
+				"re_troop"
+			],
+			[
+				"ky",
+				"keyword"
+			],
+			[
+				"mysql_num",
+				"mysql_num_rows"
+			],
+			[
+				"mysql_nu",
+				"mysql_num_rows"
+			],
+			[
+				"key",
+				"keyword  (variable)"
+			],
+			[
+				"switch",
+				"switch  (function)"
+			],
+			[
+				"mysql_n",
+				"mysql_num_rows"
+			],
+			[
+				"dis",
+				"displaypg  (variable)"
+			],
+			[
+				"select",
+				"selected"
+			],
+			[
+				"se",
+				"section	Tag"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "<?php\n\nclass SiteController extends Controller\n{\n	// 设置默认访问的action , \n	public $defaultAction = 'List';\n\n	/**\n	 * Declares class-based actions.\n	 */\n	public function actions()\n	{\n		return array(\n			// captcha action renders the CAPTCHA image displayed on the contact page\n			'captcha'=>array(\n				'class'=>'CCaptchaAction',\n				'backColor'=>0xFFFFFF,\n			),\n			// page action renders \"static\" pages stored under 'protected/views/site/pages'\n			// They can be accessed via: index.php?r=site/page&view=FileName\n			'page'=>array(\n				'class'=>'CViewAction',\n			),\n		);\n	}\n\n	public function actionView()\n	{\n		// $criteria = new CDbCriteria();\n		// $criteria->select = 'name';\n		// $model = Room::model()->with('students')->findByPk($id);\n		$id = $_GET['id']+0;\n		$criteria = new CDbCriteria();\n		$criteria->with='students';\n		$criteria->addCondition(\"t.id=$id\");    // 默认是表别名是 t ? \n		$students = new CActiveDataProvider('Room',array(\n			'criteria'=>$criteria,  //使用criteria条件\n		));\n\n	    $this->render('view',array('students'=>$students));\n	}\n\n\n	public function actionList()\n	{\n		/*\n			返回ar对象的形式\n		$where = new CDbCriteria();\n		$classList = Room::model()->findAll($where);\n		*/\n\n		//  返回数组形式\n		$sql = 'select * from {{room}}';\n		// $criteria = new CDbCriteria();\n\n\n		$conn = Yii::app()->db->createCommand($sql);\n		$classList = $conn->queryAll($sql);\n		// $classList = $conn->queryAll($criteria);\n		// p($classList);\n\n	    $this->render('index',array('classList'=>$classList));\n	}\n\n\n	\n	public function actionDelete()\n	{\n		$id = (int)$_GET['id'];\n		// $conn = Yii::app()->db;\n		// $sql = 'delete from {{room}} where id = '.$id;\n		// $command = $conn->createCommand($sql)->execute();\n		$ls = Room::model()->deleteByPk($id);\n		// $criteria = new CDbCriteria();\n		// $criteria->with = 'students';\n\n		$this->redirect(array('List'));		\n	}\n    \n\n\n\n	public function actionCreate()\n	{\n		$model = new Room;           // 只有新增数据的时候使用new Model的形式, 其余情况用Model()静态实例化一个类 . /why?????/  \n		if(isset($_POST['Room']))\n		{\n			$model->attributes=$_POST['Room'];\n			if($model->save())\n				$this->redirect(array('List'));\n		}\n\n		$this->render('create',array(\n			'model'=>$model,\n		));\n\n	}\n\n\n 	public function beforeDelete(){\n\n 	}\n\n	public function actionUpdate($id)\n	{\n		$rs = Room::model()->findByPk($id);	    \n		if(empty($rs)) exit('参数非法');\n\n		if($_POST){\n			$criteria = new CDbCriteria();\n			$criteria->addCondition(\"id=$id\");\n			$rs->attributes=$_POST;\n\n\n			if(!$rs->validate()){\n				$errors = $rs->getErrors();\n				foreach($errors as $v){\n					echo $this->renderText($v[0]);\n				}\n				echo \"<script>history.go(-1);</script>\";\n				exit;\n			}\n			$rs = $rs->save();\n			$this->redirect(array('List'));\n		}\n		$this->render('item',array('item'=>$rs));\n		\n\n	\n	/\n	public function actionLogin()\n	{\n		$model=new LoginForm;\n\n		// if it is ajax validation request\n		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')\n		{\n			echo CActiveForm::validate($model);\n			Yii::app()->end();\n		}\n\n		// collect user input data\n		if(isset($_POST['LoginForm']))\n		{	\n			$model->attributes=$_POST['LoginForm'];\n			// validate user input and redirect to the previous page if valid\n			if($model->validate() && $model->login())\n				$this->redirect(Yii::app()->user->returnUrl);\n		}\n		// display the login form\n		$this->render('login',array('model'=>$model));\n	}\n\n\n/**\n	 * This is the action to handle external exceptions.\n	 */\n	public function actionError()\n	{\n		if($error=Yii::app()->errorHandler->error)\n		{\n			if(Yii::app()->request->isAjaxRequest)\n				echo $error['message'];\n			else\n				$this->render('error', $error);\n		}\n	}\n\n\n	/**\n	 * Displays the contact page\n	 */\n	public function actionContact()\n	{\n		$model=new ContactForm;\n		if(isset($_POST['ContactForm']))\n		{\n			$model->attributes=$_POST['ContactForm'];\n			if($model->validate())\n			{\n				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';\n				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';\n				$headers=\"From: $name <{$model->email}>\\r\\n\".\n					\"Reply-To: {$model->email}\\r\\n\".\n					\"MIME-Version: 1.0\\r\\n\".\n					\"Content-Type: text/plain; charset=UTF-8\";\n\n				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);\n				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');\n				$this->refresh();\n			}\n		}\n		$this->render('contact',array('model'=>$model));\n	}\n\n	/**\n	 * Logs out the current user and redirect to homepage.\n	 */\n	public function actionLogout()\n	{\n		Yii::app()->user->logout();\n		$this->redirect(Yii::app()->homeUrl);\n	}\n\n\n\n\n\n\n}",
 			"file": "protected/controllers/SiteController.php",
-			"file_size": 4674,
-			"file_write_time": 131108914304386933,
 			"settings":
 			{
-				"buffer_size": 4551,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "protected/models/Room.php",
-			"settings":
-			{
-				"buffer_size": 643,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "protected/views/site/login.php",
-			"settings":
-			{
-				"buffer_size": 1363,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "protected/views/site/view.php",
-			"settings":
-			{
-				"buffer_size": 122,
+				"buffer_size": 4500,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "protected/views/layouts/main.php",
+			"file": "protected/controllers/StudentController.php",
 			"settings":
 			{
-				"buffer_size": 2209,
-				"line_ending": "Unix"
+				"buffer_size": 707,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "protected/views/student/index.php",
+			"contents": "// Place your settings in the file \"User/Preferences.sublime-settings\", which\n// overrides the settings in here.\n//\n// Settings may also be placed in file type specific options files, for\n// example, in Packages/Python/Python.sublime-settings for python files.\n{\n    // Sets the colors used within the text area\n    \"color_scheme\": \"Packages/Color Scheme - Default/Monokai.tmTheme\",\n\n    // Note that the font_face and font_size are overriden in the platform\n    // specific settings file, for example, \"Preferences (Linux).sublime-settings\".\n    // Because of this, setting them here will have no effect: you must set them\n    // in your User File Preferences.\n    \"font_face\": \"\",\n    \"font_size\": 10,\n\n    // Valid options are \"no_bold\", \"no_italic\", \"no_antialias\", \"gray_antialias\",\n    // \"subpixel_antialias\", \"no_round\" (OS X only), \"gdi\" (Windows only) and\n    // \"directwrite\" (Windows only)\n    \"font_options\": [],\n\n    // Characters that are considered to separate words\n    \"word_separators\": \"./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?\",\n\n    // Set to false to prevent line numbers being drawn in the gutter\n    \"line_numbers\": true,\n\n    // Set to false to hide the gutter altogether\n    \"gutter\": true,\n\n    // Spacing between the gutter and the text\n    \"margin\": 4,\n\n    // Fold buttons are the triangles shown in the gutter to fold regions of text\n    \"fold_buttons\": true,\n\n    // Hides the fold buttons unless the mouse is over the gutter\n    \"fade_fold_buttons\": true,\n\n    // Columns in which to display vertical rulers\n    \"rulers\": [],\n\n    // Set to true to turn spell checking on by default\n    \"spell_check\": false,\n\n    // The number of spaces a tab is considered equal to\n    \"tab_size\": 4,\n\n    // Set to true to insert spaces when tab is pressed\n    \"translate_tabs_to_spaces\": false,\n\n    // If translate_tabs_to_spaces is true, use_tab_stops will make tab and\n    // backspace insert/delete up to the next tabstop\n    \"use_tab_stops\": true,\n\n    // Set to false to disable detection of tabs vs. spaces on load\n    \"detect_indentation\": true,\n\n    // Calculates indentation automatically when pressing enter\n    \"auto_indent\": true,\n\n    // Makes auto indent a little smarter, e.g., by indenting the next line\n    // after an if statement in C. Requires auto_indent to be enabled.\n    \"smart_indent\": true,\n\n    // Adds whitespace up to the first open bracket when indenting. Requires\n    // auto_indent to be enabled.\n    \"indent_to_bracket\": false,\n\n    // Trims white space added by auto_indent when moving the caret off the\n    // line.\n    \"trim_automatic_white_space\": true,\n\n    // Disables horizontal scrolling if enabled.\n    // May be set to true, false, or \"auto\", where it will be disabled for\n    // source code, and otherwise enabled.\n    \"word_wrap\": \"auto\",\n\n    // Set to a value other than 0 to force wrapping at that column rather than the\n    // window width\n    \"wrap_width\": 0,\n\n    // Set to false to prevent word wrapped lines from being indented to the same\n    // level\n    \"indent_subsequent_lines\": true,\n\n    // Draws text centered in the window rather than left aligned\n    \"draw_centered\": false,\n\n    // Controls auto pairing of quotes, brackets etc\n    \"auto_match_enabled\": true,\n\n    // Word list to use for spell checking\n    \"dictionary\": \"Packages/Language - English/en_US.dic\",\n\n    // Set to true to draw a border around the visible rectangle on the minimap.\n    // The color of the border will be determined by the \"minimapBorder\" key in\n    // the color scheme\n    \"draw_minimap_border\": false,\n\n    // Always visualise the viewport on the minimap, as oppossed to only\n    // showing it on mouse over\n    \"always_show_minimap_viewport\": false,\n\n    // If enabled, will highlight any line with a caret\n    \"highlight_line\": false,\n\n    // Valid values are \"smooth\", \"phase\", \"blink\" and \"solid\".\n    \"caret_style\": \"smooth\",\n\n    // These settings control the size of the caret\n    \"caret_extra_top\": 0,\n    \"caret_extra_bottom\": 0,\n    \"caret_extra_width\": 0,\n\n    // Set to false to disable underlining the brackets surrounding the caret\n    \"match_brackets\": true,\n\n    // Set to false if you'd rather only highlight the brackets when the caret is\n    // next to one\n    \"match_brackets_content\": true,\n\n    // Set to false to not highlight square brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_square\": true,\n\n    // Set to false to not highlight curly brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_braces\": true,\n\n    // Set to false to not highlight angle brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_angle\": false,\n\n    // Enable visualization of the matching tag in HTML and XML\n    \"match_tags\": true,\n\n    // Highlights other occurrences of the currently selected text\n    \"match_selection\": true,\n\n    // Additional spacing at the top of each line, in pixels\n    \"line_padding_top\": 0,\n\n    // Additional spacing at the bottom of each line, in pixels\n    \"line_padding_bottom\": 0,\n\n    // Set to false to disable scrolling past the end of the buffer.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"scroll_past_end\": true,\n\n    // This controls what happens when pressing up or down when on the first\n    // or last line.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"move_to_limit_on_up_down\": false,\n\n    // Set to \"none\" to turn off drawing white space, \"selection\" to draw only the\n    // white space within the selection, and \"all\" to draw all white space\n    \"draw_white_space\": \"selection\",\n\n    // Set to false to turn off the indentation guides.\n    // The color and width of the indent guides may be customized by editing\n    // the corresponding .tmTheme file, and specifying the colors \"guide\",\n    // \"activeGuide\" and \"stackGuide\"\n    \"draw_indent_guides\": true,\n\n    // Controls how the indent guides are drawn, valid options are\n    // \"draw_normal\" and \"draw_active\". draw_active will draw the indent\n    // guides containing the caret in a different color.\n    \"indent_guide_options\": [\"draw_normal\"],\n\n    // Set to true to removing trailing white space on save\n    \"trim_trailing_white_space_on_save\": false,\n\n    // Set to true to ensure the last line of the file ends in a newline\n    // character when saving\n    \"ensure_newline_at_eof_on_save\": false,\n\n    // Set to true to automatically save files when switching to a different file\n    // or application\n    \"save_on_focus_lost\": false,\n\n    // Save via writing to an alternate file, and then renaming it over the\n    // original file.\n    \"atomic_save\": true,\n\n    // The encoding to use when the encoding can't be determined automatically.\n    // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.\n    \"fallback_encoding\": \"Western (Windows 1252)\",\n\n    // Encoding used when saving new files, and files opened with an undefined\n    // encoding (e.g., plain ascii files). If a file is opened with a specific\n    // encoding (either detected or given explicitly), this setting will be\n    // ignored, and the file will be saved with the encoding it was opened\n    // with.\n    \"default_encoding\": \"UTF-8\",\n\n    // Files containing null bytes are opened as hexadecimal by default\n    \"enable_hexadecimal_encoding\": true,\n\n    // Determines what character(s) are used to terminate each line in new files.\n    // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and\n    // 'unix' (LF only).\n    \"default_line_ending\": \"system\",\n\n    // When enabled, pressing tab will insert the best matching completion.\n    // When disabled, tab will only trigger snippets or insert a tab.\n    // Shift+tab can be used to insert an explicit tab when tab_completion is\n    // enabled.\n    \"tab_completion\": true,\n\n    // Enable auto complete to be triggered automatically when typing.\n    \"auto_complete\": true,\n\n    // The maximum file size where auto complete will be automatically triggered.\n    \"auto_complete_size_limit\": 4194304,\n\n    // The delay, in ms, before the auto complete window is shown after typing\n    \"auto_complete_delay\": 50,\n\n    // Controls what scopes auto complete will be triggered in\n    \"auto_complete_selector\": \"source - comment, meta.tag - punctuation.definition.tag.begin\",\n\n    // Additional situations to trigger auto complete\n    \"auto_complete_triggers\": [ {\"selector\": \"text.html\", \"characters\": \"<\"} ],\n\n    // By default, auto complete will commit the current completion on enter.\n    // This setting can be used to make it complete on tab instead.\n    // Completing on tab is generally a superior option, as it removes\n    // ambiguity between committing the completion and inserting a newline.\n    \"auto_complete_commit_on_tab\": false,\n\n    // Controls if auto complete is shown when snippet fields are active.\n    // Only relevant if auto_complete_commit_on_tab is true.\n    \"auto_complete_with_fields\": false,\n\n    // Automatically close HTML and XML tags when </ is entered.\n    \"auto_close_tags\": true,\n\n    // By default, shift+tab will only unindent if the selection spans\n    // multiple lines. When pressing shift+tab at other times, it'll insert a\n    // tab character - this allows tabs to be inserted when tab_completion is\n    // enabled. Set this to true to make shift+tab always unindent, instead of\n    // inserting tabs.\n    \"shift_tab_unindent\": false,\n\n    // If true, the copy and cut commands will operate on the current line\n    // when the selection is empty, rather than doing nothing.\n    \"copy_with_empty_selection\": true,\n\n    // If true, the selected text will be copied into the find panel when it's\n    // shown.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"find_selected_text\": true,\n\n    // When auto_find_in_selection is enabled, the \"Find in Selection\" flag\n    // will be enabled automatically when multiple lines of text are selected\n    \"auto_find_in_selection\": false,\n\n    // When drag_text is enabled, clicking on selected text will begin a\n    // drag-drop operation. This is not currently implemented under Linux.\n    \"drag_text\": true,\n\n    //\n    // User Interface Settings\n    //\n\n    // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)\n    \"theme\": \"Default.sublime-theme\",\n\n    // Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to\n    // scroll slower, or set to larger than 1 to scroll faster\n    \"scroll_speed\": 1.0,\n\n    // Controls side bar animation when expanding or collapsing folders\n    \"tree_animation_enabled\": true,\n\n    // Controls animation throughout the application\n    \"animation_enabled\": true,\n\n    // Makes tabs with modified files more visible\n    \"highlight_modified_tabs\": false,\n\n    \"show_tab_close_buttons\": true,\n\n    // Show folders in the side bar in bold\n    \"bold_folder_labels\": false,\n\n    // OS X only: Set to true to disable Lion style full screen support.\n    // Sublime Text must be restarted for this to take effect.\n    \"use_simple_full_screen\": false,\n\n    // OS X only. Valid values are true, false, and \"auto\". Auto will enable\n    // the setting when running on a screen 2560 pixels or wider (i.e., a\n    // Retina display). When this setting is enabled, OpenGL is used to\n    // accelerate drawing. Sublime Text must be restarted for changes to take\n    // effect.\n    \"gpu_window_buffer\": \"auto\",\n\n    // Valid values are \"system\", \"enabled\" and \"disabled\"\n    \"overlay_scroll_bars\": \"system\",\n\n    // Allows tabs to scroll left and right, instead of simply shrinking\n    \"enable_tab_scrolling\": true,\n\n    // Display file encoding in the status bar\n    \"show_encoding\": false,\n\n    // Display line endings in the status bar\n    \"show_line_endings\": false,\n\n    //\n    // Application Behavior Settings\n    //\n\n    // Exiting the application with hot_exit enabled will cause it to close\n    // immediately without prompting. Unsaved modifications and open files will\n    // be preserved and restored when next starting.\n    //\n    // Closing a window with an associated project will also close the window\n    // without prompting, preserving unsaved changes in the workspace file\n    // alongside the project.\n    \"hot_exit\": true,\n\n    // remember_open_files makes the application start up with the last set of\n    // open files. Changing this to false will have no effect if hot_exit is\n    // true\n    \"remember_open_files\": true,\n\n    // Always prompt before reloading a file, even if the file hasn't been\n    // modified. The default behavior is to automatically reload a file if it\n    // hasn't been edited. If a file has unsaved changes, a prompt will always\n    // be shown.\n    \"always_prompt_for_file_reload\": false,\n\n    // OS X only: When files are opened from finder, or by dragging onto the\n    // dock icon, this controls if a new window is created or not.\n    \"open_files_in_new_window\": true,\n\n    // OS X only: This controls if an empty window is created at startup or not.\n    \"create_window_at_startup\": true,\n\n    // Set to true to close windows as soon as the last file is closed, unless\n    // there's a folder open within the window. This is always enabled on OS X,\n    // changing it here won't modify the behavior.\n    \"close_windows_when_empty\": false,\n\n    // Show the full path to files in the title bar.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"show_full_path\": true,\n\n    // Shows the Build Results panel when building. If set to false, the Build\n    // Results can be shown via the Tools/Build Results menu.\n    \"show_panel_on_build\": true,\n\n    // Preview file contents when clicking on a file in the side bar. Double\n    // clicking or editing the preview will open the file and assign it a tab.\n    \"preview_on_click\": true,\n\n    // folder_exclude_patterns and file_exclude_patterns control which files\n    // are listed in folders on the side bar. These can also be set on a per-\n    // project basis.\n    \"folder_exclude_patterns\": [\".svn\", \".git\", \".hg\", \"CVS\"],\n    \"file_exclude_patterns\": [\"*.pyc\", \"*.pyo\", \"*.exe\", \"*.dll\", \"*.obj\",\"*.o\", \"*.a\", \"*.lib\", \"*.so\", \"*.dylib\", \"*.ncb\", \"*.sdf\", \"*.suo\", \"*.pdb\", \"*.idb\", \".DS_Store\", \"*.class\", \"*.psd\", \"*.db\", \"*.sublime-workspace\"],\n    // These files will still show up in the side bar, but won't be included in\n    // Goto Anything or Find in Files\n    \"binary_file_patterns\": [\"*.jpg\", \"*.jpeg\", \"*.png\", \"*.gif\", \"*.ttf\", \"*.tga\", \"*.dds\", \"*.ico\", \"*.eot\", \"*.pdf\", \"*.swf\", \"*.jar\", \"*.zip\"],\n\n    // File indexing parses all files in the side bar, and builds an index of\n    // their symbols. This is required for Goto Definition to work.\n    \"index_files\": true,\n\n    // index_exclude_patterns indicate which files won't be indexed.\n    \"index_exclude_patterns\": [\"*.log\"],\n\n    // When enabled, anonymised usage data is sent back, assisting Sublime HQ\n    // in making informed decisions about improving Sublime Text. File names\n    // and file contents are never included, but data such as computer\n    // specifications, startup time, installed packages, and edited file types\n    // are. When disabled, telemetry is neither recorded or sent.\n    // A setting of auto will enable telemetry in dev builds, and disable\n    // telemetry in regular builds.\n    \"enable_telemetry\": \"auto\",\n\n    // List any packages to ignore here. When removing entries from this list,\n    // a restart may be required if the package contains plugins.\n    \"ignored_packages\": [\"Vintage\"]\n}\n",
+			"file": "/D/sublime text/Data/Packages/Default/Preferences.sublime-settings",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
-				"buffer_size": 411,
-				"line_ending": "Unix"
+				"buffer_size": 15913,
+				"line_ending": "Windows",
+				"read_only": true,
+				"scratch": true
 			}
 		},
 		{
-			"file": "/D/www/yii/db/schema/CDbCriteria.php",
+			"file": "protected/views/student/_view.php",
 			"settings":
 			{
-				"buffer_size": 23124,
-				"line_ending": "Unix"
+				"buffer_size": 113,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 288.0,
 		"selected_items":
 		[
 			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"git quickcom",
-				"Git: Quick Commit"
-			],
-			[
-				"git addc",
-				"Git: Add Current File"
-			],
-			[
-				"git pushc",
-				"Git: Push Current Branch"
-			],
-			[
-				"git commitc",
-				"Git: Quick Commit Current File"
-			],
-			[
-				"git diff",
-				"Git: Diff"
-			],
-			[
-				"git log",
-				"Git: Quick Log"
-			],
-			[
-				"git pu",
-				"Git: Push Current Branch"
-			],
-			[
-				"gitdiff",
-				"Git: Diff Current File"
-			],
-			[
-				"git commit",
-				"Git: Quick Commit"
-			],
-			[
-				"git status",
-				"Git: Quick Status"
-			],
-			[
-				"git add",
-				"Git: Quick Add"
-			],
-			[
-				"qui",
-				"Git: Quick Status"
-			],
-			[
-				"git stat",
-				"Git: Status"
-			],
-			[
-				"git branch",
-				"Legit: Branches"
-			],
-			[
-				"git hl",
-				"Git: Help"
-			],
-			[
-				"git commit cur",
-				"Git: Quick Commit Current File"
-			],
-			[
-				"git addcu",
-				"Git: Add Current File"
-			],
-			[
-				"git add ",
-				"Git: Quick Add"
-			],
-			[
-				"git satt",
-				"Git: Status"
-			],
-			[
-				"git ch",
-				"Git: Checkout Current File"
-			],
-			[
-				"git checkoutcurrent",
-				"Git: Checkout Current File"
-			],
-			[
-				"git cheocu",
-				"Git: Checkout Current File"
-			],
-			[
-				"git diff ",
-				"Git: Diff Current File"
-			],
-			[
-				"git che",
-				"Git: Checkout Current File"
-			],
-			[
-				"git chec",
-				"Git: Checkout Current File"
-			],
-			[
-				"gitche",
-				"Git: Checkout Current File"
-			],
-			[
-				"gitstat",
-				"Git: Status"
-			],
-			[
-				"gitcheccuur",
-				"Git: Checkout Current File"
-			],
-			[
-				"git chcurre",
-				"Git: Checkout Current File"
-			],
-			[
-				"git sta",
-				"Git: Status"
-			],
-			[
-				"removepack",
-				"Package Control: Remove Package"
-			],
-			[
-				"git diffcafile",
-				"Git: Diff Cached Current File"
-			],
-			[
-				"gitsta",
-				"Git: Status"
-			],
-			[
-				"gitstatus",
-				"Git: Status"
-			],
-			[
-				"gitqst",
-				"Git: Quick Status"
-			],
-			[
-				"gitquist",
-				"Git: Quick Status"
-			],
-			[
-				"listpack",
+				"listpa",
 				"Package Control: List Packages"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"inspack",
-				"Package Control: Install Package"
-			],
-			[
-				"quicksta",
-				"Git: Quick Status"
-			],
-			[
-				"quickst",
-				"Git: Quick Status"
-			],
-			[
-				"git quicks",
-				"Git: Quick Status"
-			],
-			[
-				"installpackage",
-				"Package Control: Install Package"
-			],
-			[
-				"git checkout",
-				"Git: Checkout"
-			],
-			[
-				"gitpush",
-				"Git: Push"
-			],
-			[
-				"gitadd",
-				"Git: Quick Add"
-			],
-			[
-				"gitbranches",
-				"Legit: Branches"
-			],
-			[
-				"instapac",
-				"Package Control: Install Package"
-			],
-			[
-				"git branches",
-				"Legit: Branches"
-			],
-			[
-				"git branc",
-				"Legit: Branches"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"gitaddcurrent",
-				"Git: Add Current File"
-			],
-			[
-				"githelp",
-				"Git: Help"
-			],
-			[
-				"gitbranch",
-				"Legit: Branches"
-			],
-			[
-				"instapack",
+				"instap",
 				"Package Control: Install Package"
 			],
 			[
@@ -474,64 +576,74 @@
 				"Git: Log"
 			],
 			[
-				"installpack",
+				"gitstatus",
+				"Git: Status"
+			],
+			[
+				"installpage",
 				"Package Control: Install Package"
 			],
 			[
-				"install pace",
+				"instpa",
 				"Package Control: Install Package"
 			],
 			[
-				"inpac",
-				"Package Control: Install Package"
-			],
-			[
-				"instap",
-				"Package Control: Install Package"
-			],
-			[
-				"instpac",
-				"Package Control: Install Package"
-			],
-			[
-				"inspac",
-				"Indentation: Convert to Spaces"
-			],
-			[
-				"removep",
+				"remopa",
 				"Package Control: Remove Package"
 			],
 			[
-				"instp",
+				"inst",
 				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"removepa",
+				"Package Control: Remove Package"
+			],
+			[
+				"xdebug",
+				"Xdebug: Set Conditional Breakpoint"
 			],
 			[
 				"installp",
 				"Package Control: Install Package"
 			],
 			[
-				"installpa",
+				"install package",
 				"Package Control: Install Package"
 			],
 			[
-				"git",
+				"install pack",
 				"Package Control: Install Package"
+			],
+			[
+				"listpac",
+				"Package Control: List Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove package",
+				"Package Control: Remove Package"
 			]
 		],
 		"width": 528.0
 	},
 	"console":
 	{
-		"height": 463.0,
+		"height": 287.0,
 		"history":
 		[
-			"import  urllib.request,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),'wb').write(urllib.request.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())",
-			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
-			"dir",
-			"cd d:",
-			"dir",
-			"cd ",
-			"git"
+			"import  urllib.request,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),'wb').write(urllib.request.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())"
 		]
 	},
 	"distraction_free":
@@ -545,134 +657,134 @@
 	},
 	"file_history":
 	[
-		"/D/www/yii/web/CController.php",
-		"/D/www/yii/collections/CConfiguration.php",
-		"/D/www/yii/db/CDbCommand.php",
-		"/D/www/yii/caching/CDbCache.php",
-		"/D/www/yii/validators/CValidator.php",
-		"/D/www/asdf/protected/controllers/StudentController.php",
-		"/D/www/asdf/protected/views/site/item.php",
-		"/D/www/asdf/protected/views/student/_view.php",
-		"/D/www/asdf/protected/views/site/_sitem.php",
-		"/D/www/asdf/protected/config/main.php",
-		"/D/www/asdf/protected/views/site/index.php",
-		"/D/www/yii/web/auth/CWebUser.php",
-		"/D/www/yii/yiilite.php",
-		"/D/www/yii/YiiBase.php",
-		"/D/www/asdf/index-test.php",
-		"/D/www/asdf/protected/models/Student.php",
-		"/D/www/pc/micro/autoregion.css",
-		"/D/www/pc/register.html",
-		"/D/www/asdf/protected/models/Room.php",
-		"/D/www/pc/login.html",
-		"/D/www/yii/base/CApplication.php",
-		"/D/www/yii/base/CHttpException.php",
-		"/D/www/yii/.htaccess",
-		"/D/www/yii/web/CWebApplication.php",
-		"/D/www/pc/bottom.html",
-		"/D/www/pc/bower_components/bootstrap-table/dist/bootstrap-table-all.js",
-		"/D/www/pc/bower_components/bootstrap-table/dist/locale/bootstrap-table-ar-SA.js",
-		"/D/www/class_bak/protected/views/room/_search.php",
-		"/D/www/pc/bower_components/bootstrap-timepicker/spec/js/libs/bootstrap/docs/templates/pages/base-css.mustache",
-		"/D/www/yii/web/actions/CInlineAction.php",
-		"/D/www/asdf/README.md",
-		"/D/www/class_bak/protected/views/student/view.php",
-		"/D/www/pc/sem.html",
-		"/D/www/class_bak/protected/views/student/update.php",
-		"/D/www/asdf/assets/4815785c/gridview/styles.css",
-		"/D/www/yii/cli/views/webapp/protected/tests/WebTestCase.php",
-		"/D/www/pc/viewtreaty.html",
-		"/D/www/yii/cli/views/webapp/index-test.php",
-		"/D/www/pc/js/views/view.contact.js",
-		"/D/www/pc/bower_components/jquery-validation/src/additional/statesUS.js",
-		"/D/www/pc/bower_components/select2/src/js/select2/utils.js",
-		"/D/www/class_bak/protected/controllers/StudentController.php",
-		"/D/www/yii/i18n/data/en_mp.php",
-		"/D/www/pc/index.html",
-		"/D/www/yii/web/widgets/CClipWidget.php",
-		"/D/www/yii/i18n/data/tzm_ma.php",
-		"/D/www/yii/i18n/data/ig_ng.php",
-		"/D/www/bool/goods.php",
-		"/D/www/yii/i18n/data/root.php",
-		"/D/www/pc/robots.txt",
-		"/D/www/yii/i18n/data/sbp_tz.php",
-		"/D/www/asdf/protected/views/student/index.php",
-		"/D/www/yii/web/CDataProvider.php",
-		"/D/www/yii/web/CActiveDataProvider.php",
-		"/D/www/yii/web/helpers/CHtml.php",
-		"/D/www/yii/cli/views/webapp/protected/controllers/SiteController.php",
-		"/D/www/yii/web/CDbHttpSession.php",
-		"/D/www/yii/cli/commands/WebAppCommand.php",
-		"/D/www/yii/i18n/data/wal_et.php",
-		"/D/www/yii/zii/widgets/jui/CJuiInputWidget.php",
-		"/D/www/asdf/protected/views/site/_view.php",
-		"/D/www/class_bak/protected/views/site/index.php",
-		"/D/www/yii/cli/views/webapp/protected/views/site/index.php",
-		"/D/www/yii/cli/views/shell/module/views/default/index.php",
-		"/D/www/asdf/asdf.sublime-project",
-		"/D/www/asdf/.gitignore",
-		"/D/www/yii/caching/CApcCache.php",
-		"/D/www/yii/yiic.bat",
-		"/D/www/yii/yiic",
-		"/D/www/bool/Model/GoodsModel.class.php",
-		"/D/www/bool/Model/Model.class.php",
-		"/D/www/bool/include/mysql.class.php",
-		"/D/www/asdf/protected/views/site/_form.php",
-		"/D/www/yii/views/it/error.php",
-		"/D/www/yii/gii/generators/controller/views/index.php",
-		"/D/www/yii/collections/CMapIterator.php",
-		"/D/www/yii/web/form/CFormInputElement.php",
-		"/D/www/yii/web/actions/CViewAction.php",
-		"/D/www/fykc/protected/modules/jjr/models/JDriver.php",
-		"/D/www/yii/zii/widgets/CDetailView.php",
-		"/D/www/yii/zii/widgets/CBaseListView.php",
-		"/D/www/asdf/protected/tests/functional/SiteTest.php",
-		"/D/www/yii/db/ar/CActiveRecord.php",
-		"/D/www/asdf/protected/controllers/SiteController.php",
-		"/D/www/class/protected/views/room/index.php",
-		"/D/www/asdf/protected/views/site/create.php",
-		"/D/www/pc/manifest.json",
-		"/D/www/class/protected/models/Room.php",
-		"/D/www/asdf/css/screen.css",
-		"/D/www/yii/i18n/data/ar_sd.php",
-		"/D/www/yii/i18n/data/ar_sa.php",
-		"/D/www/asdf/css/main.css",
-		"/D/www/asdf/protected/data/schema.mysql.sql",
-		"/D/www/asdf/assets/ae504417/autocomplete/jquery.autocomplete.css",
-		"/D/www/fykc/static/datatable/plugin/sorting/monthYear.js",
-		"/D/www/yii/caching/CDummyCache.php",
-		"/D/www/fykc/protected/modules/backend/controllers/CompanyController.php",
-		"/D/www/pc/bower_components/jquery-validation/CONTRIBUTING.md",
-		"/D/www/class/protected/views/layouts/main.php",
-		"/D/www/class/.idea/class.iml",
-		"/D/www/yii/logging/CDbLogRoute.php",
-		"/D/www/class/index.php",
-		"/D/www/fykc/protected/vendor/swiftMailer/classes/Swift/Mime/Headers/IdentificationHeader.php",
-		"/D/www/class/.gitignore",
-		"/D/www/fykc/protected/config/main.php",
-		"/D/www/class/protected/controllers/RoomController.php",
-		"/D/www/class/protected/views/room/_form.php",
-		"/D/www/pc/bower_components/jquery-validation/dist/jquery.validate.js",
-		"/D/www/fykc/protected/vendor/dompdf/www/test/css_vertical_align.html",
-		"/D/www/yii/validators/CUrlValidator.php",
-		"/D/www/pc/css/custom.css",
-		"/D/www/fykc/protected/components/G.php",
-		"/D/www/fykc/protected/extensions/imagemodifier/lang/class.upload.el_GR.php",
-		"/D/www/fykc/.idea/fykc.iml",
-		"/D/www/yii/i18n/data/fr_yt.php",
-		"/D/www/pc/footer.html",
-		"/D/www/class/index-test.php",
-		"/D/www/asdf/protected/models/LoginForm.php",
-		"/D/www/asdf/protected/models/RoomForm.php",
-		"/D/www/class/protected/views/room/_view.php",
-		"/D/www/asdf/protected/views/site/login.php",
-		"/D/www/fykc/protected/modules/jjr/controllers/201/UserController.php",
-		"/D/www/fykc/protected/modules/jjr/controllers/201/OrderController.php",
-		"/D/www/class/protected/views/site/index.php",
-		"/D/www/fykc/protected/extensions/yii-debug-toolbar/views/panels/views_rendering.php",
-		"/D/www/fykc/protected/extensions/yii-debug-toolbar/views/panels/views.php",
-		"/D/www/fykc/protected/modules/backend/views/customer/vipImport.php",
-		"/D/git/git.txt"
+		"/E/www/asdf/protected/models/Student.php",
+		"/E/www/asdf/asdf.sublime-project",
+		"/D/sublime text/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/sublime text/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/sublime text/Data/Packages/User/Preferences.sublime-settings",
+		"/E/www/asdf/assets/4815785c/gridview/styles.css",
+		"/E/www/asdf/protected/views/student/_view.php",
+		"/E/www/asdf/protected/views/site/index.php",
+		"/E/www/asdf/protected/views/student/index.php",
+		"/E/www/asdf/protected/controllers/SiteController.php",
+		"/E/www/asdf/protected/controllers/StudentController.php",
+		"/E/www/asdf/protected/views/site/item.php",
+		"/E/www/yii/yiilite.php",
+		"/E/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/Attr.DefaultInvalidImage.txt",
+		"/E/www/yii/i18n/data/sg.php",
+		"/E/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/Core.Language.txt",
+		"/E/www/yii/web/helpers/CHtml.php",
+		"/E/www/yii/base/CApplication.php",
+		"/E/www/yii/web/CUrlManager.php",
+		"/E/www/yii/web/CThemeManager.php",
+		"/E/www/yii/web/CHttpCookie.php",
+		"/E/www/yii/web/CController.php",
+		"/E/www/yii/web/CActiveDataProvider.php",
+		"/E/www/yii/web/COutputEvent.php",
+		"/E/www/yii/web/CHttpSessionIterator.php",
+		"/E/www/asdf/protected/views/site/_view.php",
+		"/E/www/asdf/protected/views/site/create.php",
+		"/E/www/yii/gii/generators/controller/views/index.php",
+		"/E/www/yii/cli/views/webapp/protected/tests/WebTestCase.php",
+		"/E/www/asdf/protected/views/site/_form.php",
+		"/E/www/yii/cli/views/webapp/themes/classic/views/site/git-gitkeep",
+		"/E/www/yii/web/widgets/pagers/CListPager.php",
+		"/E/www/yii/web/widgets/pagers/CLinkPager.php",
+		"/E/www/yii/web/widgets/pagers/CBasePager.php",
+		"/E/www/yii/web/widgets/CWidget.php",
+		"/E/www/yii/web/CBaseController.php",
+		"/E/www/yii/base/CComponent.php",
+		"/E/www/asdf/protected/models/Room.php",
+		"/E/www/asdf/index-test.php",
+		"/E/www/asdf/index.php",
+		"/E/www/yii/collections/CList.php",
+		"/E/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/Core.LexerImpl.txt",
+		"/E/www/yii/logging/CDbLogRoute.php",
+		"/E/www/layer/protected/views/user/_view.php",
+		"/E/www/yii/i18n/data/ar_sa.php",
+		"/E/www/layer/protected/views/user/_form.php",
+		"/E/www/layer/func.php",
+		"/E/www/layer/layer.sublime-project",
+		"/E/www/layer/protected/yiic",
+		"/E/www/yii/i18n/data/az_latn_az.php",
+		"/E/www/yii/views/log.php",
+		"/E/www/yii/gii/generators/module/templates/default/controllers/DefaultController.php",
+		"/E/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/Core.DirectLexLineNumberSyncInterval.txt",
+		"/E/www/yii/views/profile-summary.php",
+		"/E/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/Filter/YouTube.php",
+		"/E/www/layer/protected/controllers/UserController.php",
+		"/E/www/layer/protected/models/User.php",
+		"/E/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/URI.SafeIframeRegexp.txt",
+		"/E/www/yii/i18n/data/ug.php",
+		"/E/www/yii/console/CConsoleApplication.php",
+		"/E/www/yii/validators/CRegularExpressionValidator.php",
+		"/E/www/layer/assets/79bb530f/jquery.js",
+		"/E/www/yii/i18n/data/ar_lb.php",
+		"/E/www/yii/i18n/data/ku_latn_sy.php",
+		"/E/www/yii/db/schema/mssql/CMssqlSqlsrvPdoAdapter.php",
+		"/E/www/layer/assets/4815785c/detailview/styles.css",
+		"/E/www/asdf/protected/runtime/gii-1.1.15/ModelCode.php",
+		"/E/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/Output.CommentScriptContents.txt",
+		"/E/www/asdf/protected/models/ContactForm.php",
+		"/E/www/asdf/protected/components/Controller.php",
+		"/E/www/yii/views/uk/exception.php",
+		"/E/www/yii/views/uk/error.php",
+		"/E/www/yii/zii/widgets/assets/gridview/styles.css",
+		"/E/www/yii/cli/views/shell/controller/view.php",
+		"/E/www/yii/i18n/data/vi.php",
+		"/E/www/yii/i18n/data/vai.php",
+		"/E/www/asdf/protected/config/main.php",
+		"/E/www/yii/web/CDataProvider.php",
+		"/E/www/yii/zii/widgets/CListView.php",
+		"/E/www/layer/protected/views/user/index.php",
+		"/E/www/yii/db/schema/CDbSchema.php",
+		"/E/www/yii/i18n/data/ar_sd.php",
+		"/E/www/yii/web/CDbHttpSession.php",
+		"/E/www/yii/caching/CDbCache.php",
+		"/E/www/yii/views/error.php",
+		"/E/www/asdf/css/main.css",
+		"/E/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/URI.MakeAbsolute.txt",
+		"/E/www/class/protected/controllers/StudentController.php",
+		"/E/www/yii/i18n/CDateFormatter.php",
+		"/E/www/yii/db/CDbDataReader.php",
+		"/E/www/yii/utils/CVarDumper.php",
+		"/E/www/yii/gii/controllers/DefaultController.php",
+		"/E/www/yii/i18n/data/de.php",
+		"/E/www/yii/i18n/data/da.php",
+		"/E/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/Attr.ForbiddenClasses.txt",
+		"/E/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/Core.DisableExcludes.txt",
+		"/E/www/yii/i18n/data/so_dj.php",
+		"/E/www/yii/i18n/data/sbp_tz.php",
+		"/E/www/yii/i18n/data/ro_md.php",
+		"/E/www/yii/i18n/data/root.php",
+		"/E/www/yii/i18n/data/ro.php",
+		"/E/www/asdf/README.md",
+		"/E/www/asdf/protected/views/site/contact.php",
+		"/E/www/yii/views/it/error.php",
+		"/E/www/asdf/protected/tests/functional/SiteTest.php",
+		"/E/www/yii/i18n/data/sa_in.php",
+		"/E/www/asdf/css/screen.css",
+		"/E/www/yii/cli/views/shell/crud/update.php",
+		"/E/www/asdf/.gitignore",
+		"/C/Users/未定义/.ssh/github_rsa.pub",
+		"/C/Users/未定义/.ssh/id_rsa.pub",
+		"/E/www/layer/index.php",
+		"/E/www/layer/protected/views/layouts/main.php",
+		"/E/www/layer/protected/config/main.php",
+		"/E/www/layer/css/main.css",
+		"/E/www/layer/protected/views/layouts/column2.php",
+		"/E/www/layer/protected/controllers/SiteController.php",
+		"/E/www/layer/protected/controllers/CateController.php",
+		"/E/LLF/zxcomment/sql_data/zx_comment(4).sql",
+		"/E/www/fykc/index.php",
+		"/D/sublime text/Data/Packages/GoSublime/CHANGELOG.md",
+		"/E/www/llf/index.php",
+		"/E/www/llf/protected/views/site/index.php",
+		"/E/www/llf/protected/controllers/SiteController.php",
+		"/E/www/fykc/protected/modules/jjrpc/controllers/OrderController.php",
+		"/E/www/fykc/protected/init.php",
+		"/E/www/fykc/protected/modules/jjrpc/models/JjrOrder.php",
+		"/E/www/fykc/protected/modules/jjrpc/views/order/_downPriceQuote.php"
 	],
 	"find":
 	{
@@ -680,11 +792,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 102.0,
+		"height": 105.0,
 		"where_history":
 		[
-			"D:\\www\\fykc",
-			"<project>"
+			"E:\\www\\zx\\home\\view\\src",
+			"E:\\www\\layer"
 		]
 	},
 	"find_state":
@@ -692,134 +804,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"beforeaction",
-			"befor",
-			"();\n",
-			"setflash",
-			"\n				",
-			"actionedit",
-			"function ",
-			"function tag",
-			"table",
-			"students",
-			"$this->widget('zii.widgets.CListView',array(\n   'dataProvider' => $students,\n   'itemView' => '_sitem',\n));\n",
-			"$this->render",
-			"pagination",
-			"\n	    ",
-			"pagination",
-			"loadmodel",
-			"'];?>\">",
-			"-->\n",
-			";\n",
-			"function attributes",
-			"function setAttribute",
-			"setAttribute",
-			"\n			",
-			"ID",
-			"class ",
-			"class",
-			"__con",
-			"密码",
-			"用户名",
-			"actioncreate",
-			"getConnectionStatus",
-			"username",
-			"$model",
-			"CActiveForm",
-			"{$condition}",
-			"{$con",
-			"function ",
-			"think_",
-			"学列表",
-			"site",
-			"请输入",
-			"您的申请",
-			"您的申请已经",
-			"您的申请",
-			"并将当前分支切换到test分支上",
-			"创建test分支",
-			"actionupdate",
-			"checkname",
-			"getattribute",
-			"function after",
+			"tab",
+			"\n</",
+			"normalizeUrl",
+			"beginform",
+			"button",
+			"beginForm",
+			"next",
+			"function action",
+			"<?",
+			"actioncrea",
+			"$this->widget('zii.widgets.CListView',array(\n//     // 'data'=>$model,\n//     'dataProvider'=>$model,\n//     'itemView'=>'_view',\n\n\n// ));\n",
+			"model",
+			"		\n",
+			"model",
+			"actionindex",
+			"index",
+			"actionajaxprice",
+			"actionajaxdo",
+			"\n            ",
+			"整车",
+			"if",
+			"actionajaxdownpricequote",
+			".dll",
+			"extensions",
+			"actionajaxnotpricequote",
+			"actionreque",
+			"actionajaxnot",
+			"actionhaveprice",
+			"E_ALL",
+			"list",
+			"hasEventHandler",
+			"CWebApplication",
+			"createapplication",
+			"abstract class",
+			"abstract",
+			"setRuntimePath",
+			"createwebapplication",
+			"var_dump",
 			"print_r",
-			"function init",
-			"class cactiverecord",
-			"cactiverecord",
-			"cactivere",
-			"setScenario",
-			"setIsNewRecord",
-			"_scenario",
-			"function set",
-			"function setScenario",
-			"setScenario",
-			"false",
-			"getlist",
+			"setRuntimePath",
+			"createApplication",
+			"createWebApplication",
+			"createApplication",
+			"createWebApplication",
+			"print_r",
+			"function run",
+			"application",
+			"!\n",
+			"logfile",
+			"log",
+			"logfile",
+			"redis-server",
+			"timeout",
+			"timeout ",
+			"timeout",
+			"appendfsync",
+			"appendsync",
+			"dir",
+			"dir:",
+			"database",
+			"save ",
+			"save *",
+			"daemonize",
+			"\"\"",
+			"de",
+			"deam",
+			"dema",
+			"logfile ",
+			"port ",
+			"port:",
+			"port",
+			"daemonize",
+			"curl.dll",
+			"curl",
+			"redirect",
+			"APP_LOG_PATH",
+			"class yii",
+			"function getComponent",
+			"setRuntimepath",
+			"print_r",
+			"yii",
+			"modeconfig",
+			"modeConfig",
+			"fykc",
+			"echo ",
+			"echo",
+			"submit_inde",
+			"submit_index",
+			"print_r",
+			"load_sys_class",
+			"];\n",
+			"return",
+			"load_sys_config",
+			"sys_func",
+			"_cfg",
+			"createapp",
+			"debug",
+			"();?>",
+			"function p",
+			"p",
+			"function ",
+			"function p",
 			"p(",
-			"Student",
-			"actionindex",
-			"actionview",
-			"actionindex",
-			"));\n",
-			"run",
-			"actionview",
-			"actioncreate",
-			"actioncrat",
-			"actionview",
-			"student",
-			"Room",
-			"room",
-			"actionindex",
-			"\n		'db'=>array(\n			'connectionString' => 'mysql:host=localhost;dbname=testdrive',\n			'emulatePrepare' => true,\n			'username' => 'root',\n			'password' => '',\n			'charset' => 'utf8',\n		),\n		",
-			"actionindex",
-			"dateline",
-			"before",
-			"beforesave",
-			"scenario",
-			"function scenario",
-			"model()->",
-			"function relations",
-			"model()",
-			"actioninde",
-			"__CLASS__",
-			"function model",
-			"function find",
-			"findAll",
-			"function getdata",
-			"getdata",
-			"filters",
-			"create",
-			"actiona",
-			"validator",
-			"validate",
-			"function ",
-			"function ini",
-			"\n		",
-			"print_r",
-			"actioninde",
-			"actionupdate",
-			"actionindex",
-			"actionView",
-			"actionupdate",
-			"G::pr",
-			"exit",
-			"$headerinfo = CommonUtil::header();\n        // $isold = $this->isoldversion($headerinfo);\n\n        // if($isold == 1)\n        // {\n        //     $this->setAjaxReturn('N',2016, array(), array('flag' => 1));\n        // }",
-			"verifyCode",
-			"actionupdate",
-			"exit",
-			"die",
-			"exit",
-			"G::pr",
-			"die",
-			"\n        ",
-			" =",
-			"     \n",
-			"this",
-			"$headerinfo = CommonUtil::header();\n        // $isold = $this->isoldversion($headerinfo);\n\n        // if($isold == 1)\n        // {\n        //     $this->setAjaxReturn('N',2016, array(), array('flag' => 1));\n        // }",
-			"验证码",
-			"));\n",
-			"setAjaxReturn",
-			"\n        // if(strlen($name) > 18) $this->setAjaxReturn('N', 2009, array(), array('flag' => 0));\n        // if(strlen($name) < 6) $this->setAjaxReturn('N', 2017, array(), array('flag' => 0));"
+			"./view/src/",
+			"$loglist",
+			"rjlist",
+			"loglist",
+			"推荐日记",
+			"<img",
+			"Banner_but",
+			"search",
+			"attr",
+			"search",
+			"id='sear",
+			"action",
+			"include",
+			"E_ALL",
+			"print",
+			"echo ",
+			"print",
+			"p(",
+			"print",
+			"echo 'select",
+			"echo ",
+			"temp",
+			"$first",
+			"sql_keyword",
+			"echo "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -827,10 +939,134 @@
 		"regex": false,
 		"replace_history":
 		[
-			"name",
-			"$item",
-			"c_",
-			""
+			"../",
+			"// print",
+			"// echo ",
+			"// print",
+			"// echo 'select",
+			"\".$sql_limit;",
+			"'",
+			"",
+			"$zxgl",
+			"list",
+			"index_3",
+			"_v4",
+			"http://115.28.86.228/zx_comment/Interface.php",
+			",",
+			":",
+			"v",
+			"http://115.28.86.228/love_row/",
+			"del_",
+			"./",
+			"_v3",
+			"http://115.28.86.228/love_row/",
+			"submit_indent_e",
+			"http://115.28.86.228/love_row/",
+			"$v",
+			"./Interface_v2.php",
+			"']=$",
+			"$data['",
+			"***",
+			"./",
+			"del_shop_car",
+			"add_shop_car",
+			"list_shop_car",
+			"list_",
+			"edit_",
+			".",
+			"'].",
+			".$v['",
+			"'].",
+			".$v['",
+			"'].",
+			".$v['",
+			"'].",
+			".$v['",
+			"'].",
+			".$v['",
+			"",
+			"$v[",
+			"$list[$i][",
+			"",
+			"../images/<?php echo $v['img'];?>",
+			"mid",
+			"<?php }",
+			"<?php foreach",
+			"<?php echo",
+			"",
+			"<img src=\"../images/\"<?php",
+			"];?>",
+			"action=\"115.28.86.228/zx_comment/Inter",
+			"list",
+			"arr_build",
+			"arr_merchant",
+			"arr_product",
+			"arr_troop",
+			"arr_super",
+			"arr_designer",
+			"$arr_build",
+			"$arr_merchant",
+			"$arr_troop",
+			"$arr_super",
+			"$arr_product",
+			"$arr_desginer",
+			"./view/src/images/3",
+			"<?php echo ;?>",
+			"x_building",
+			"x_supervisor",
+			"<?php echo ;?>",
+			"x_troops",
+			"<?php echo ;?>",
+			"$table_",
+			"<?php echo ;?>",
+			"x_designer",
+			"x_merchant_dp",
+			"",
+			"'",
+			"$cityidlist",
+			"city",
+			"$arealist",
+			"cs_",
+			"cs_cid",
+			"src=\"./view/src/images",
+			"src=\"../images",
+			"href=\"./view/src/css",
+			"Interface.php",
+			"http://115.28.86.228/zx_comment/Interface.php",
+			"<?php }",
+			"<?php include",
+			"<?php echo",
+			"<?php }",
+			"<?php fore",
+			"<?php in",
+			"<?php echo",
+			"<?php foreach",
+			"<?php }",
+			"<?php includ",
+			"<?php foreach",
+			"<?php echo",
+			"<?php }",
+			"<?php include",
+			"<?php foreach",
+			"<?php echo",
+			"<?php }",
+			"<?php foreach",
+			"<?php echo",
+			"<?php include",
+			"<?php echo ",
+			"<?php echo",
+			"<?php foreach",
+			"<?php }",
+			"<?php echo ",
+			"<?php foreach",
+			"<?php include",
+			"<?php foreach",
+			"<?php }",
+			"<?php echo",
+			"<?php }",
+			"<?php foreach",
+			"<?php echo",
+			"<?php include"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -841,7 +1077,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -850,15 +1086,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4551,
+						"buffer_size": 4500,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2729,
-								2729
+								698,
+								698
 							]
 						],
 						"settings":
@@ -867,46 +1103,46 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
-								"bh_tag_close"
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "UTF-8",
@@ -914,27 +1150,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2779.0,
+						"translation.y": 600.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "protected/models/Room.php",
+					"file": "protected/controllers/StudentController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 643,
+						"buffer_size": 707,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								426,
-								426
+								702,
+								702
 							]
 						],
 						"settings":
@@ -943,46 +1179,46 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
-								"bh_tag_close"
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "UTF-8",
@@ -991,102 +1227,100 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 660.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "protected/views/site/login.php",
+					"file": "/D/sublime text/Data/Packages/Default/Preferences.sublime-settings",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1363,
+						"buffer_size": 15913,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1713,
+								1713
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
+							"auto_complete": true,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
-								"bh_tag_close"
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
 							],
-							"is_xml": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 720.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "protected/views/site/view.php",
+					"file": "protected/views/student/_view.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 122,
+						"buffer_size": 113,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								116,
-								116
+								112,
+								112
 							]
 						],
 						"settings":
@@ -1095,10 +1329,22 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -1107,34 +1353,22 @@
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "ASCII",
@@ -1146,234 +1380,6 @@
 					},
 					"stack_index": 3,
 					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "protected/views/layouts/main.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2209,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1391,
-								1391
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"is_xml": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 288.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "protected/views/student/index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 411,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								328,
-								328
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"is_xml": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/D/www/yii/db/schema/CDbCriteria.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 23124,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9274,
-								9274
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"is_xml": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 6157.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
 				}
 			]
 		}
@@ -1384,7 +1390,7 @@
 	},
 	"input":
 	{
-		"height": 38.0
+		"height": 39.0
 	},
 	"layout":
 	{
@@ -1409,9 +1415,17 @@
 		]
 	},
 	"menu_visible": false,
-	"output.9o://D:\\www\\asdf\\protected\\views\\student":
+	"output.9o://D:\\sublime\\Data\\Packages\\GoSublime":
 	{
-		"height": 154.0
+		"height": 178.0
+	},
+	"output.9o://E:\\www\\0420\\home\\view":
+	{
+		"height": 178.0
+	},
+	"output.9o://E:\\www\\love":
+	{
+		"height": 178.0
 	},
 	"output.GoSublime-main-output":
 	{
@@ -1419,27 +1433,15 @@
 	},
 	"output.GoSublime-output":
 	{
-		"height": 628.0
+		"height": 178.0
+	},
+	"output.exec":
+	{
+		"height": 243.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
-	},
-	"output.git-checkout":
-	{
-		"height": 154.0
-	},
-	"output.git-commit":
-	{
-		"height": 235.0
-	},
-	"output.git-push":
-	{
-		"height": 154.0
-	},
-	"output.unsaved_changes":
-	{
-		"height": 154.0
 	},
 	"project": "asdf.sublime-project",
 	"replace":
@@ -1453,516 +1455,516 @@
 		"selected_items":
 		[
 			[
-				"ccontroller.php",
-				"yii\\web\\CController.php"
-			],
-			[
-				"yiilite.php",
-				"yii\\yiilite.php"
-			],
-			[
-				"asdfroom.php",
-				"asdf\\protected\\models\\Room.php"
-			],
-			[
-				"asdflogin.php",
-				"asdf\\protected\\views\\site\\login.php"
-			],
-			[
-				"asdfmain.php",
-				"asdf\\protected\\config\\main.php"
-			],
-			[
-				"studentview.php",
-				"asdf\\protected\\views\\student\\_view.php"
-			],
-			[
-				"asdfstudencontrl",
+				"sutdentcontroller.php",
 				"asdf\\protected\\controllers\\StudentController.php"
 			],
 			[
-				"viewstudent/_view.php",
+				"view/student/",
 				"asdf\\protected\\views\\student\\_view.php"
 			],
 			[
-				"asdfviewmain",
-				"asdf\\protected\\views\\layouts\\main.php"
+				"sitecon",
+				"asdf\\protected\\controllers\\SiteController.php"
 			],
 			[
-				"studentcontroller.php",
+				"studentcontoll",
 				"asdf\\protected\\controllers\\StudentController.php"
+			],
+			[
+				"yii/web/chtml.php",
+				"yii\\web\\helpers\\CHtml.php"
 			],
 			[
 				"item.php",
 				"asdf\\protected\\views\\site\\item.php"
 			],
 			[
-				"view/site/index.php",
-				"asdf\\protected\\views\\site\\index.php"
+				"clinkpager",
+				"yii\\web\\widgets\\pagers\\CLinkPager.php"
 			],
 			[
-				"asdfmainphp",
-				"asdf\\protected\\config\\main.php"
-			],
-			[
-				"cwebuser.php",
-				"yii\\web\\auth\\CWebUser.php"
-			],
-			[
-				"asdfitem",
-				"asdf\\protected\\views\\site\\item.php"
-			],
-			[
-				"itemp.php",
-				"yii\\i18n\\data\\en_mp.php"
+				"clistpager.",
+				"yii\\web\\widgets\\pagers\\CListPager.php"
 			],
 			[
 				"room.php",
 				"asdf\\protected\\models\\Room.php"
 			],
 			[
-				"studentcontrller.",
-				"asdf\\protected\\controllers\\StudentController.php"
+				"student.php",
+				"asdf\\protected\\models\\Student.php"
 			],
 			[
-				"view/siteni",
+				"asdfviewindex.php",
 				"asdf\\protected\\views\\site\\index.php"
 			],
 			[
-				"yiiwebchtml.php",
-				"yii\\web\\helpers\\CHtml.php"
+				"asdfsiteview.php",
+				"asdf\\protected\\views\\site\\_view.php"
 			],
 			[
-				"asdfstudentcont",
+				"layer/_view",
+				"layer\\protected\\views\\user\\_view.php"
+			],
+			[
+				"studentcontroller",
 				"asdf\\protected\\controllers\\StudentController.php"
 			],
 			[
-				"asdf/sutdent.php",
-				"asdf\\protected\\models\\Student.php"
+				"studeccontrl",
+				"yii\\gii\\generators\\module\\templates\\default\\controllers\\DefaultController.php"
 			],
 			[
-				"yiicactivedara",
-				"yii\\web\\CActiveDataProvider.php"
+				"usercontro",
+				"layer\\protected\\controllers\\UserController.php"
 			],
 			[
-				"asdfstudentcl",
-				"asdf\\protected\\controllers\\StudentController.php"
+				"layer/usercont",
+				"layer\\protected\\controllers\\UserController.php"
 			],
 			[
-				"view/site/item.php",
-				"asdf\\protected\\views\\site\\item.php"
+				"view/sutdent/",
+				"asdf\\protected\\views\\student\\_view.php"
 			],
 			[
-				"asdf/studnet",
-				"asdf\\protected\\models\\Student.php"
+				"asdfindex.php",
+				"asdf\\index.php"
 			],
 			[
-				"classviewroomindx",
-				"class\\protected\\views\\room\\index.php"
+				"cdbschema.php",
+				"yii\\db\\schema\\CDbSchema.php"
 			],
 			[
-				"class/index.php",
-				"class\\index.php"
-			],
-			[
-				"asdfitem.php",
-				"asdf\\protected\\views\\site\\item.php"
-			],
-			[
-				"roomcontroller.hp",
-				"class\\protected\\controllers\\RoomController.php"
-			],
-			[
-				"cvalidator.ph",
-				"yii\\validators\\CValidator.php"
-			],
-			[
-				"fykcg.php",
-				"fykc\\protected\\components\\G.php"
-			],
-			[
-				"asdfindex-test",
-				"asdf\\index-test.php"
-			],
-			[
-				"asdfindex",
-				"asdf\\index-test.php"
-			],
-			[
-				"index-test.php",
-				"class\\index-test.php"
-			],
-			[
-				"viewsiteindex.php",
-				"class\\protected\\views\\site\\index.php"
-			],
-			[
-				"yiibase.php",
-				"yii\\YiiBase.php"
-			],
-			[
-				"asdfindex-",
-				"asdf\\index-test.php"
-			],
-			[
-				"classindex-",
-				"class\\index-test.php"
-			],
-			[
-				"view/layout/main.php",
-				"yii\\gii\\views\\layouts\\main.php"
-			],
-			[
-				"classpaget",
-				"class\\protected\\components\\PageTool.php"
-			],
-			[
-				"viewstudentadmin.ph",
-				"class\\protected\\views\\student\\admin.php"
-			],
-			[
-				"class/studentcontroller.php",
-				"class\\protected\\controllers\\StudentController.php"
-			],
-			[
-				"git.",
-				"class\\git.txt"
-			],
-			[
-				"classindex",
-				"class\\index.php"
-			],
-			[
-				"classmain.php",
-				"class\\protected\\config\\main.php"
+				"e",
+				"yii\\views\\error.php"
 			],
 			[
 				"main.php",
-				"fykc\\protected\\config\\main.php"
+				"asdf\\protected\\config\\main.php"
 			],
 			[
-				"pagetoo",
-				"class\\protected\\components\\PageTool.php"
+				"studentcontro",
+				"asdf\\protected\\controllers\\StudentController.php"
 			],
 			[
-				"cbaselistview.php",
-				"yii\\zii\\widgets\\CBaseListView.php"
+				"cdatapro",
+				"yii\\web\\CDataProvider.php"
 			],
 			[
-				"roomview.php",
-				"class\\protected\\views\\room\\view.php"
+				"defaultcon",
+				"yii\\gii\\controllers\\DefaultController.php"
 			],
 			[
-				"classindex.php",
-				"class\\index.php"
+				"student",
+				"asdf\\protected\\models\\Student.php"
 			],
 			[
-				"cdbcommand.php",
-				"yii\\db\\CDbCommand.php"
+				"",
+				"asdf\\protected\\models\\Room.php"
 			],
 			[
-				"studentcontroll",
-				"class\\protected\\controllers\\StudentController.php"
+				"sdent",
+				"asdf\\protected\\models\\Student.php"
 			],
 			[
-				"student.php",
-				"class\\protected\\models\\Student.php"
+				"room",
+				"asdf\\protected\\models\\Room.php"
 			],
 			[
-				"jdriv",
-				"fykc\\protected\\modules\\jjr\\models\\JDriver.php"
+				"stud",
+				"asdf\\protected\\models\\Student.php"
 			],
 			[
-				"class/_viwe",
-				"class\\protected\\views\\room\\_view.php"
+				"roomphp",
+				"asdf\\protected\\models\\Room.php"
 			],
 			[
-				"class/view/room/index",
-				"class\\protected\\views\\room\\index.php"
+				"site/_fo",
+				"asdf\\protected\\views\\site\\_form.php"
 			],
 			[
-				"roomcont",
-				"class\\protected\\controllers\\RoomController.php"
+				"view/site/crea",
+				"asdf\\protected\\views\\site\\create.php"
 			],
 			[
-				"viewroomadmin.php",
-				"class\\protected\\views\\room\\admin.php"
+				"sitecont",
+				"asdf\\protected\\controllers\\SiteController.php"
 			],
 			[
-				"class/create.php",
-				"class\\protected\\views\\room\\create.php"
+				"views_downpricequote",
+				"fykc\\protected\\modules\\jjrpc\\views\\order\\_downPriceQuote.php"
 			],
 			[
-				"classinde.php",
-				"class\\index.php"
+				"views/_downpre",
+				"fykc\\protected\\modules\\jjrpc\\views\\order\\_downPriceQuote.php"
 			],
 			[
-				"index-tes",
-				"class\\index-test.php"
-			],
-			[
-				"classviewmain.php",
-				"class\\protected\\views\\layouts\\main.php"
-			],
-			[
-				"class/view/roomindex.php",
-				"class\\protected\\views\\room\\index.php"
-			],
-			[
-				"fykc/jjr/jjrcontroller.php",
-				"fykc\\protected\\modules\\jjr\\controllers\\JjrController.php"
+				"orercon",
+				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
 			],
 			[
 				"local.php",
 				"fykc\\protected\\config\\mode\\local.php"
 			],
 			[
-				"huocustomer.php",
-				"fykc\\protected\\modules\\huo\\models\\HuoCustomer.php"
+				"fykcconfig.php",
+				"fykc\\protected\\models\\Config.php"
 			],
 			[
-				"custro",
-				"fykc\\protected\\models\\Customer.php"
+				"capplication.php",
+				"yii\\base\\CApplication.php"
 			],
 			[
-				"errordat",
-				"fykc\\protected\\modules\\huo\\data\\errorData.php"
+				"llf/index.php",
+				"llf\\index.php"
 			],
 			[
-				"data/error.",
-				"fykc\\protected\\modules\\huo\\data\\errorData.php"
+				"cwebapplication",
+				"yii\\web\\CWebApplication.php"
 			],
 			[
-				"register.html",
-				"pc\\register.html"
+				"yii/yiilite.php",
+				"yii\\yiilite.php"
 			],
 			[
-				"data/errordata.php",
-				"fykc\\protected\\modules\\huo\\data\\errorData.php"
+				"fykcindex",
+				"fykc\\index.php"
 			],
 			[
-				"jjr/jdiv",
-				"fykc\\protected\\modules\\jjr\\models\\JDriver.php"
+				"protected/init.php",
+				"fykc\\protected\\init.php"
 			],
 			[
-				"jjr/views/shop.php",
-				"fykc\\protected\\modules\\jjrpc\\views\\fd\\shop.php"
+				"protected/ini.hp",
+				"fykc\\protected\\init.php"
 			],
 			[
-				"smscode.php",
-				"fykc\\protected\\models\\SmsCode.php"
+				"blog/sitecontroller.php",
+				"yii_1.1\\demos\\blog\\protected\\controllers\\SiteController.php"
 			],
 			[
-				"jjrdrivercontroller",
-				"fykc\\protected\\modules\\jjr\\controllers\\201\\DriverController.php"
+				"blog/config/web.php",
+				"blog\\config\\web.php"
 			],
 			[
-				"jjrpc/ordercontroller.php",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"blog/mainphp",
+				"www\\blog\\views\\layouts\\main.php"
 			],
 			[
-				"d",
-				"fykc\\df"
+				"protected/main.php",
+				"demos\\blog\\protected\\config\\main.php"
 			],
 			[
-				"jjrcontroller.php",
-				"fykc\\protected\\modules\\jjr\\controllers\\JjrController.php"
+				"orderpushlist",
+				"protected\\modules\\backend\\views\\orderPush\\list.php"
 			],
 			[
-				"components/gmcrypa",
-				"fykc\\protected\\components\\class\\GMCryptAes.php"
+				"modelsbadmin.php",
+				"protected\\modules\\backend\\models\\BAdmin.php"
 			],
 			[
-				"_downpricequote.php",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_downPriceQuote.php"
+				"/commonsafe.php",
+				"protected\\config\\commonSafe.php"
 			],
 			[
-				"jjrpcdrivercont",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\DriverController.php"
+				"index.php",
+				"index.php"
 			],
 			[
-				"jjrpcviewstransport.php",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\transport.php"
+				"commonsafe.php",
+				"protected\\config\\commonSafe.php"
 			],
 			[
-				"transportend",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\transportEnd.php"
+				"init.",
+				"protected\\init.php"
 			],
 			[
-				"js/ordercomp",
-				"fykc\\static\\jjrpc\\js\\controller\\order-completed.js"
+				"index.",
+				"index.php"
 			],
 			[
-				"jjrpc/views/_comm",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_comment.php"
+				"live.php",
+				"fykc-master\\protected\\config\\mode\\live.php"
 			],
 			[
-				"jjrpc/viewsordertrans",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\transportEnd.php"
+				"test.php",
+				"fykc-master\\protected\\config\\mode\\test.php"
 			],
 			[
-				"jjrpcviewsorderhavp",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\havePrice.php"
+				"init.php",
+				"protected\\init.php"
 			],
 			[
-				"jjrpc/views/order/deta",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\detail.php"
+				"config/param.inc.php",
+				"system\\config\\param.inc.php"
 			],
 			[
-				"jjrpcdriverdetai",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_driverDetail.php"
+				"libs/pr",
+				"system\\libs\\param.class.php"
 			],
 			[
-				"jjrpc/_notdriverdetail",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_notDriverDetail.php"
+				"libsapplicat",
+				"system\\libs\\application.class.php"
 			],
 			[
-				"protected/modules/jjrpc/views/order/_reopenprice.php",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_reopenPrice.php"
+				"system.inc.php",
+				"system\\config\\system.inc.php"
 			],
 			[
-				"static/jjrpc/js/controller/user-comment.js",
-				"fykc\\static\\jjrpc\\js\\controller\\user-comment.js"
+				"libs/sys",
+				"system\\libs\\system.class.php"
 			],
 			[
-				"modules/jjrpc/views/transporten",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\transportEnd.php"
+				"index",
+				"index.php"
 			],
 			[
-				"jjrpcviewstransportend",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\transportEnd.php"
+				"config/global.php",
+				"system\\config\\global.php"
 			],
 			[
-				"jjrpc/ordercon",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"help",
+				"statics\\templates\\mowo\\html\\help.help.html"
 			],
 			[
-				"ordercon",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"index.html",
+				"index.html"
 			],
 			[
-				"jjrpc/views/_notpricequote",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_notPriceQuote.php"
+				"zxcomment/confi",
+				"zxcomment\\configs\\config.php"
 			],
 			[
-				"jjrpc/views/_reopenprice",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_reopenPrice.php"
+				"zxcommentinterface.php",
+				"zxcomment\\Interface.php"
 			],
 			[
-				"jjrpcordercontro",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"oa/config.php",
+				"www\\oa\\Application\\Home\\Conf\\config.php"
 			],
 			[
-				"ordercont",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"fgw/config.php",
+				"fgw\\Application\\Common\\Conf\\config.php"
 			],
 			[
-				"jjrpc/ordercontroller",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"admin/confi",
+				"wxf\\Application\\admin\\Conf\\config.php"
 			],
 			[
-				"order-tr",
-				"fykc\\static\\jjrpc\\js\\controller\\order-transport.js"
+				"config.inc",
+				"include\\config.inc.php"
 			],
 			[
-				"jjrpcordercontroller.php",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"right.php",
+				"home\\view\\public\\right.php"
 			],
 			[
-				"jjrpcorderco",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"search.html",
+				"home\\view\\search.html"
 			],
 			[
-				"jjrpcorder_cance",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_cancelDetail.php"
+				"config",
+				"configs\\config.php"
 			],
 			[
-				"jjrpcviewscancel",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\cancel.php"
+				"ajaxser",
+				"home\\common\\ajax_search.php"
 			],
 			[
-				"jjrpcordercontroller",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"right",
+				"home\\view\\public\\right.php"
 			],
 			[
-				"_canceldetail",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_cancelDetail.php"
+				"logright",
+				"home\\view\\public\\log_right.php"
 			],
 			[
-				"static/jjrpc/js/order-trans",
-				"fykc\\static\\jjrpc\\js\\controller\\order-transport.js"
+				"riji.html",
+				"home\\view\\riji.html"
 			],
 			[
-				"jjrpcviewslayoutmain.",
-				"fykc\\protected\\modules\\jjrpc\\views\\layouts\\main.php"
+				"zxrj.php",
+				"home\\zxrj.php"
 			],
 			[
-				"configmain.php",
-				"fykc\\protected\\config\\main.php"
+				"logrig",
+				"home\\view\\public\\log_right.php"
 			],
 			[
-				"modulesjjrpcviewstransportend",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\transportEnd.php"
+				"home/logri",
+				"home\\view\\public\\log_right.php"
 			],
 			[
-				"views/_canceldetail",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_cancelDetail.php"
+				"rijiinfo.php",
+				"home\\riji_info.php"
 			],
 			[
-				"jjrpc/views/laouts/min",
-				"fykc\\protected\\modules\\jjrpc\\views\\layouts\\main.php"
+				"riji.thml",
+				"home\\view\\riji.html"
 			],
 			[
-				"views/cancel.php",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\cancel.php"
+				"search.php",
+				"home\\search.php"
 			],
 			[
-				"modules/jjrpc/views/cancel",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\cancel.php"
+				"home/indexhtml",
+				"home\\view\\index.html"
 			],
 			[
-				"modules/jjrpc/view/cancel.",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\cancel.php"
+				"config.php",
+				"configs\\config.php"
 			],
 			[
-				"modules/views/ordertransportend",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\transportEnd.php"
+				"searhtml",
+				"home\\view\\search.html"
 			],
 			[
-				"viewstransportend",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\transportEnd.php"
+				"search",
+				"home\\search.php"
 			],
 			[
-				"views/order/downpre",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_downPriceQuote.php"
+				"ajax_sea",
+				"home\\common\\ajax_search.php"
 			],
 			[
-				"modulesbackendmodelsbadmni",
-				"fykc\\protected\\modules\\backend\\models\\BAdmin.php"
+				"zxal.php",
+				"home\\zxal.php"
 			],
 			[
-				"modulesjjrpcordercontroller.php",
-				"protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"jcjj",
+				"home\\jcjj.php"
 			],
 			[
-				"modelsbehaviorfd",
-				"protected\\models\\behavior\\FdBehavior.php"
+				"jianli",
+				"home\\jianli.php"
 			],
 			[
-				"_downpricequote",
-				"protected\\modules\\jjrpc\\views\\order\\_downPriceQuote.php"
+				"gongduilist",
+				"home\\view\\gongdui_list.html"
 			],
 			[
-				"modules/jjrpc/contorller/ordercnt",
-				"protected\\modules\\jjrpc\\controllers\\OrderController.php"
+				"gongdui.php",
+				"home\\gongdui.php"
 			],
 			[
-				"orderconter",
-				"protected\\modules\\company\\controllers\\OrderController.php"
+				"designer.hp",
+				"home\\designer.php"
 			],
 			[
-				"views_notprequte",
-				"protected\\modules\\jjrpc\\views\\order\\_notPriceQuote.php"
+				"decorate",
+				"home\\decorate.php"
+			],
+			[
+				"zxcs.php",
+				"home\\zxcs.php"
+			],
+			[
+				"changshilist",
+				"home\\view\\changshi_list.html"
+			],
+			[
+				"zxgl",
+				"home\\zxgl.php"
+			],
+			[
+				"decorate.php",
+				"home\\decorate.php"
+			],
+			[
+				"ajaxsea",
+				"home\\common\\ajax_search.php"
+			],
+			[
+				"zxgl.php",
+				"home\\zxgl.php"
+			],
+			[
+				"rijilist",
+				"home\\view\\riji_list.html"
+			],
+			[
+				"ajaxsearch",
+				"home\\common\\ajax_search.php"
+			],
+			[
+				"pagetoll",
+				"common\\PageTool.class.php"
+			],
+			[
+				"rijilist.html",
+				"home\\view\\riji_list.html"
+			],
+			[
+				"confi",
+				"configs\\config.php"
+			],
+			[
+				"homeindehtml",
+				"home\\view\\index.html"
+			],
+			[
+				"home/index.php",
+				"home\\index.php"
+			],
+			[
+				"interface.php",
+				"Interface.php"
+			],
+			[
+				"interlo",
+				"interface_local.html"
+			],
+			[
+				"homeinde",
+				"home\\index.php"
+			],
+			[
+				"ajax_searc",
+				"home\\common\\ajax_search.php"
+			],
+			[
+				"rijiinfo",
+				"home\\riji_info.php"
+			],
+			[
+				"header.php",
+				"home\\view\\public\\header.php"
+			],
+			[
+				"view/index.html",
+				"home\\view\\index.html"
+			],
+			[
+				"zxrj.",
+				"home\\zxrj.php"
+			],
+			[
+				"interface",
+				"Interface.php"
+			],
+			[
+				"pagetool",
+				"common\\PageTool.class.php"
+			],
+			[
+				"rijilist.",
+				"home\\view\\riji_list.html"
+			],
+			[
+				"gongluelist",
+				"home\\view\\gonglue_list.html"
+			],
+			[
+				"tool",
+				"common\\tool_page.php"
+			],
+			[
+				"changshili",
+				"home\\view\\changshi_list.html"
+			],
+			[
+				"changshilist.html",
+				"home\\view\\changshi_list.html"
 			]
 		],
 		"width": 0.0
@@ -1974,7 +1976,7 @@
 		[
 			[
 				"",
-				"D:\\www\\sublime_obj\\fykc.sublime-project"
+				"E:\\www\\asdf\\asdf.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -1998,7 +2000,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 230.0,
+	"side_bar_width": 50.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

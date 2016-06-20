@@ -12134,3 +12134,177 @@ Stack trace:
 REQUEST_URI=/asdf/index.php?r=site/index
 HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
 ---
+2016/06/20 22:34:49 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (112)
+in E:\www\asdf\index.php (19)
+2016/06/20 22:34:49 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (112)
+in E:\www\asdf\index.php (19)
+2016/06/20 22:34:54 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (112)
+in E:\www\asdf\index.php (19)
+2016/06/20 22:34:54 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (112)
+in E:\www\asdf\index.php (19)
+2016/06/20 22:34:56 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (112)
+in E:\www\asdf\index.php (19)
+2016/06/20 22:34:56 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (112)
+in E:\www\asdf\index.php (19)
+2016/06/20 22:34:58 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (112)
+in E:\www\asdf\index.php (19)
+2016/06/20 22:34:58 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (112)
+in E:\www\asdf\index.php (19)
+2016/06/20 22:35:13 [error] [php] Trying to get property of non-object (E:\www\asdf\protected\views\student\_view.php:5)
+Stack trace:
+#0 E:\www\yii\zii\widgets\CListView.php(291): StudentController->renderFile()
+#1 E:\www\yii\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 E:\www\yii\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 E:\www\yii\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 E:\www\yii\web\CBaseController.php(173): CListView->run()
+#6 E:\www\asdf\protected\views\student\index.php(20): StudentController->widget()
+#7 E:\www\yii\web\CBaseController.php(126): require()
+#8 E:\www\yii\web\CBaseController.php(95): StudentController->renderInternal()
+#9 E:\www\yii\web\CController.php(869): StudentController->renderFile()
+#10 E:\www\yii\web\CController.php(782): StudentController->renderPartial()
+#11 E:\www\asdf\protected\controllers\StudentController.php(22): StudentController->render()
+#12 E:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionList()
+#13 E:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#14 E:\www\yii\web\CController.php(286): StudentController->runAction()
+#15 E:\www\yii\web\CController.php(265): StudentController->runActionWithFilters()
+#16 E:\www\yii\web\CWebApplication.php(282): StudentController->run()
+#17 E:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#18 E:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#19 E:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=student/List
+in E:\www\asdf\protected\views\student\_view.php (5)
+in E:\www\asdf\protected\views\student\index.php (20)
+in E:\www\asdf\protected\controllers\StudentController.php (22)
+2016/06/20 22:36:09 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (112)
+in E:\www\asdf\index.php (19)
+2016/06/20 22:36:09 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (112)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in E:\www\yii\web\CController.php:483
+Stack trace:
+#0 E:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 E:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 E:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 E:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index&Student_page=4
+---
+2016/06/20 23:45:55 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (91)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:45:55 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (91)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:46:00 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (91)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:46:00 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (91)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:46:07 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (91)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:46:07 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (91)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:46:11 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (91)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:46:11 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (91)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:46:17 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (91)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:46:17 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (91)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:58:35 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:58:35 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:04 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:04 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:11 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:11 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:14 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:14 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:33 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:33 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:34 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:34 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:35 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/20 23:59:35 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:00:56 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:00:56 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:01:04 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:01:04 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:01:31 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:01:31 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:01:40 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:01:40 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:01:48 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:01:48 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (95)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:12:03 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (74)
+in E:\www\asdf\index.php (19)
+2016/06/21 00:12:03 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in E:\www\asdf\protected\controllers\SiteController.php (74)
+in E:\www\asdf\index.php (19)

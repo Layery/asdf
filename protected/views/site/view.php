@@ -5,7 +5,4 @@ $this->widget('zii.widgets.CListView',array(
    'itemView' => '_sitem',
 ));
 
-
-
-
 ?>

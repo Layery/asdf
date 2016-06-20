@@ -1,12 +1,9 @@
 <?php
 /* @var $this SiteController */
-
 $this->pageTitle=Yii::app()->name;
 ?>
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
-
-
 <a href="index.php?r=site/create"><input type="button" value="添加"></a><br/><br/>
 <table>
     <tr><td>班级ID</td><td>班级名称</td><td>操作</td></tr>
