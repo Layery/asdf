@@ -20,9 +20,17 @@ class Room extends CActiveRecord{
             'students'=>array(self::HAS_MANY,'Student','c_id'),
         );
     }
+
+ 
+
+
+
+
+
     public function rules(){
         return array(
             array('name','required'),
+            array('name','length','min'=>2,'max'=>4,'tooShort'=>'名称太短','tooLong'=>'又太长了'),
 
         );
     }

@@ -10043,3 +10043,2094 @@ REQUEST_URI=/asdf/index.php?r=site/view&id=1
 in D:\www\asdf\protected\views\site\_sitem.php (5)
 in D:\www\asdf\protected\views\site\view.php (6)
 in D:\www\asdf\protected\controllers\SiteController.php (36)
+2016/06/20 13:47:35 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "with".' in D:\www\yii\base\CComponent.php:266
+Stack trace:
+#0 D:\www\asdf\protected\controllers\StudentController.php(10): CComponent->__call('with', Array)
+#1 D:\www\asdf\protected\controllers\StudentController.php(10): CDbCriteria->with('room')
+#2 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#3 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#7 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#8 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\www\asdf\index.php(19): CApplication->run()
+#10 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 13:48:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `t`.`sex` AS `t0_c2`, `t`.`age` AS `t0_c3`, `t`.`c_id` AS `t0_c4`, `room`.`id` AS `t1_c0`, `room`.`name` AS `t1_c1` FROM `c_student` `t`  LEFT OUTER JOIN `c_room` `room` ON (`t`.`c_id`=`room`.`id`)  ORDER BY id desc LIMIT 2.
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (19)
+in D:\www\asdf\index.php (19)
+2016/06/20 13:48:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `t`.`sex` AS `t0_c2`, `t`.`age` AS `t0_c3`, `t`.`c_id` AS `t0_c4`, `room`.`id` AS `t1_c0`, `room`.`name` AS `t1_c1` FROM `c_student` `t`  LEFT OUTER JOIN `c_room` `room` ON (`t`.`c_id`=`room`.`id`)  ORDER BY id desc LIMIT 2' in D:\www\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\www\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\www\yii\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 D:\www\yii\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 D:\www\yii\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 D:\www\yii\db\ar\CActiveRecord.php(1354): CActiveFinder->query(Object(CDbCriteria), true)
+#5 D:\www\yii\db\ar\CActiveRecord.php(1468): CActiveRecord->query(Object(CDbCriteria), true)
+#6 D:\www\yii\web\CActiveDataProvider.php(201): CActiveRecord->findAll(Object(CDbCriteria))
+#7 D:\www\yii\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 D:\www\yii\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#9 D:\www\yii\zii\widgets\CListView.php(211): CBaseListView->init()
+#10 D:\www\yii\web\CBaseController.php(147): CListView->init()
+#11 D:\www\yii\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#12 D:\www\asdf\protected\views\student\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#13 D:\www\yii\web\CBaseController.php(126): require('D:\\www\\asdf\\pro...')
+#14 D:\www\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\www\\asdf\\pro...', Array, true)
+#15 D:\www\yii\web\CController.php(869): CBaseController->renderFile('D:\\www\\asdf\\pro...', Array, true)
+#16 D:\www\yii\web\CController.php(782): CController->renderPartial('index', Array, true)
+#17 D:\www\asdf\protected\controllers\StudentController.php(19): CController->render('index', Array)
+#18 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#19 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#23 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#24 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\www\asdf\index.php(19): CApplication->run()
+#26 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+---
+2016/06/20 13:51:28 [error] [exception.CException] exception 'CException' with message 'Property "CRequiredValidator.0" is not defined.' in D:\www\yii\base\CComponent.php:173
+Stack trace:
+#0 D:\www\yii\validators\CValidator.php(189): CComponent->__set('0', '\xE5\x93\x88\xE5\x93\x88\xE5\x93\x88\xE5\x93\x88')
+#1 D:\www\yii\base\CModel.php(287): CValidator::createValidator('required', Object(Room), 'name', Array)
+#2 D:\www\yii\base\CModel.php(260): CModel->createValidators()
+#3 D:\www\yii\base\CModel.php(547): CModel->getValidators()
+#4 D:\www\yii\base\CModel.php(468): CModel->getSafeAttributeNames()
+#5 D:\www\yii\base\CComponent.php(152): CModel->setAttributes(Array)
+#6 D:\www\yii\db\ar\CActiveRecord.php(158): CComponent->__set('attributes', Array)
+#7 D:\www\asdf\protected\controllers\SiteController.php(77): CActiveRecord->__set('attributes', Array)
+#8 D:\www\yii\web\actions\CInlineAction.php(49): SiteController->actionCreate()
+#9 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\yii\web\CWebApplication.php(282): CController->run('create')
+#13 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/create')
+#14 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\asdf\index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/asdf/index.php?r=site/create
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/create
+---
+2016/06/20 13:51:50 [error] [php] include(哈哈哈.php): failed to open stream: Invalid argument (D:\www\yii\YiiBase.php:428)
+Stack trace:
+#0 D:\www\yii\validators\CValidator.php(186): import()
+#1 D:\www\yii\base\CModel.php(287): createValidator()
+#2 D:\www\yii\base\CModel.php(260): Room->createValidators()
+#3 D:\www\yii\base\CModel.php(547): Room->getValidators()
+#4 D:\www\yii\base\CModel.php(468): Room->getSafeAttributeNames()
+#5 D:\www\yii\base\CComponent.php(152): Room->setAttributes()
+#6 D:\www\yii\db\ar\CActiveRecord.php(158): Room->__set()
+#7 D:\www\asdf\protected\controllers\SiteController.php(77): Room->__set()
+#8 D:\www\yii\web\actions\CInlineAction.php(49): SiteController->actionCreate()
+#9 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#10 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#11 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#12 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#13 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/create
+in D:\www\asdf\protected\controllers\SiteController.php (77)
+in D:\www\asdf\index.php (19)
+2016/06/20 13:54:19 [error] [exception.CException] exception 'CException' with message 'Property "CStringValidator.tooShot" is not defined.' in D:\www\yii\base\CComponent.php:173
+Stack trace:
+#0 D:\www\yii\validators\CValidator.php(189): CComponent->__set('tooShot', '\xE5\xA4\xAA\xE7\x9F\xAD')
+#1 D:\www\yii\base\CModel.php(287): CValidator::createValidator('length', Object(Room), 'name', Array)
+#2 D:\www\yii\base\CModel.php(260): CModel->createValidators()
+#3 D:\www\yii\base\CModel.php(547): CModel->getValidators()
+#4 D:\www\yii\base\CModel.php(468): CModel->getSafeAttributeNames()
+#5 D:\www\yii\base\CComponent.php(152): CModel->setAttributes(Array)
+#6 D:\www\yii\db\ar\CActiveRecord.php(158): CComponent->__set('attributes', Array)
+#7 D:\www\asdf\protected\controllers\SiteController.php(77): CActiveRecord->__set('attributes', Array)
+#8 D:\www\yii\web\actions\CInlineAction.php(49): SiteController->actionCreate()
+#9 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\yii\web\CWebApplication.php(282): CController->run('create')
+#13 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/create')
+#14 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\asdf\index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/asdf/index.php?r=site/create
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/create
+---
+2016/06/20 14:53:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `t`.`sex` AS `t0_c2`, `t`.`age` AS `t0_c3`, `t`.`c_id` AS `t0_c4`, `room`.`id` AS `t1_c0`, `room`.`name` AS `t1_c1`, `room`.`sex` AS `t1_c2` FROM `c_student` `t`  LEFT OUTER JOIN `c_room` `room` ON (`t`.`c_id`=`room`.`id`)  ORDER BY id desc LIMIT 2.
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (19)
+in D:\www\asdf\index.php (19)
+2016/06/20 14:53:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `t`.`sex` AS `t0_c2`, `t`.`age` AS `t0_c3`, `t`.`c_id` AS `t0_c4`, `room`.`id` AS `t1_c0`, `room`.`name` AS `t1_c1`, `room`.`sex` AS `t1_c2` FROM `c_student` `t`  LEFT OUTER JOIN `c_room` `room` ON (`t`.`c_id`=`room`.`id`)  ORDER BY id desc LIMIT 2' in D:\www\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\www\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\www\yii\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 D:\www\yii\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 D:\www\yii\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 D:\www\yii\db\ar\CActiveRecord.php(1354): CActiveFinder->query(Object(CDbCriteria), true)
+#5 D:\www\yii\db\ar\CActiveRecord.php(1468): CActiveRecord->query(Object(CDbCriteria), true)
+#6 D:\www\yii\web\CActiveDataProvider.php(201): CActiveRecord->findAll(Object(CDbCriteria))
+#7 D:\www\yii\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 D:\www\yii\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#9 D:\www\yii\zii\widgets\CListView.php(211): CBaseListView->init()
+#10 D:\www\yii\web\CBaseController.php(147): CListView->init()
+#11 D:\www\yii\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#12 D:\www\asdf\protected\views\student\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#13 D:\www\yii\web\CBaseController.php(126): require('D:\\www\\asdf\\pro...')
+#14 D:\www\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\www\\asdf\\pro...', Array, true)
+#15 D:\www\yii\web\CController.php(869): CBaseController->renderFile('D:\\www\\asdf\\pro...', Array, true)
+#16 D:\www\yii\web\CController.php(782): CController->renderPartial('index', Array, true)
+#17 D:\www\asdf\protected\controllers\StudentController.php(19): CController->render('index', Array)
+#18 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#19 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#23 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#24 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\www\asdf\index.php(19): CApplication->run()
+#26 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/view&id=13
+---
+2016/06/20 14:55:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `t`.`sex` AS `t0_c2`, `t`.`age` AS `t0_c3`, `t`.`c_id` AS `t0_c4`, `room`.`id` AS `t1_c0`, `room`.`name` AS `t1_c1`, `room`.`sex` AS `t1_c2` FROM `c_student` `t`  LEFT OUTER JOIN `c_room` `room` ON (`t`.`c_id`=`room`.`id`)  ORDER BY id desc LIMIT 2.
+in D:\www\asdf\protected\views\student\index.php (20)
+in D:\www\asdf\protected\controllers\StudentController.php (18)
+in D:\www\asdf\index.php (19)
+2016/06/20 14:55:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `t`.`sex` AS `t0_c2`, `t`.`age` AS `t0_c3`, `t`.`c_id` AS `t0_c4`, `room`.`id` AS `t1_c0`, `room`.`name` AS `t1_c1`, `room`.`sex` AS `t1_c2` FROM `c_student` `t`  LEFT OUTER JOIN `c_room` `room` ON (`t`.`c_id`=`room`.`id`)  ORDER BY id desc LIMIT 2' in D:\www\yii\db\CDbCommand.php:543
+Stack trace:
+#0 D:\www\yii\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\www\yii\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 D:\www\yii\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 D:\www\yii\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 D:\www\yii\db\ar\CActiveRecord.php(1354): CActiveFinder->query(Object(CDbCriteria), true)
+#5 D:\www\yii\db\ar\CActiveRecord.php(1468): CActiveRecord->query(Object(CDbCriteria), true)
+#6 D:\www\yii\web\CActiveDataProvider.php(201): CActiveRecord->findAll(Object(CDbCriteria))
+#7 D:\www\yii\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 D:\www\yii\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#9 D:\www\yii\zii\widgets\CListView.php(211): CBaseListView->init()
+#10 D:\www\yii\web\CBaseController.php(147): CListView->init()
+#11 D:\www\yii\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#12 D:\www\asdf\protected\views\student\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#13 D:\www\yii\web\CBaseController.php(126): require('D:\\www\\asdf\\pro...')
+#14 D:\www\yii\web\CBaseController.php(95): CBaseController->renderInternal('D:\\www\\asdf\\pro...', Array, true)
+#15 D:\www\yii\web\CController.php(869): CBaseController->renderFile('D:\\www\\asdf\\pro...', Array, true)
+#16 D:\www\yii\web\CController.php(782): CController->renderPartial('index', Array, true)
+#17 D:\www\asdf\protected\controllers\StudentController.php(18): CController->render('index', Array)
+#18 D:\www\yii\web\actions\CInlineAction.php(49): StudentController->actionIndex()
+#19 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#23 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#24 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#25 D:\www\asdf\index.php(19): CApplication->run()
+#26 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/view&id=13
+---
+2016/06/20 15:24:17 [error] [php] Undefined index: id (D:\www\asdf\protected\controllers\SiteController.php:95)
+Stack trace:
+#0 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#1 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit
+in D:\www\asdf\protected\controllers\SiteController.php (95)
+in D:\www\asdf\index.php (19)
+2016/06/20 15:25:18 [error] [php] Undefined index: id (D:\www\asdf\protected\controllers\SiteController.php:95)
+Stack trace:
+#0 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#1 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit
+in D:\www\asdf\protected\controllers\SiteController.php (95)
+in D:\www\asdf\index.php (19)
+2016/06/20 15:26:45 [error] [php] Undefined index: id (D:\www\asdf\protected\controllers\SiteController.php:99)
+Stack trace:
+#0 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#1 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit
+in D:\www\asdf\protected\controllers\SiteController.php (99)
+in D:\www\asdf\index.php (19)
+2016/06/20 15:27:02 [error] [php] Undefined index: id (D:\www\asdf\protected\controllers\SiteController.php:99)
+Stack trace:
+#0 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#1 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit
+in D:\www\asdf\protected\controllers\SiteController.php (99)
+in D:\www\asdf\index.php (19)
+2016/06/20 15:27:06 [error] [php] Undefined index: id (D:\www\asdf\protected\controllers\SiteController.php:99)
+Stack trace:
+#0 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#1 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit
+in D:\www\asdf\protected\controllers\SiteController.php (99)
+in D:\www\asdf\index.php (19)
+2016/06/20 15:27:43 [error] [php] Undefined index: id (D:\www\asdf\protected\controllers\SiteController.php:99)
+Stack trace:
+#0 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#1 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit
+in D:\www\asdf\protected\controllers\SiteController.php (99)
+in D:\www\asdf\index.php (19)
+2016/06/20 15:29:37 [error] [php] Undefined index: id (D:\www\asdf\protected\controllers\SiteController.php:95)
+Stack trace:
+#0 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#1 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit
+in D:\www\asdf\protected\controllers\SiteController.php (95)
+in D:\www\asdf\index.php (19)
+2016/06/20 15:29:42 [error] [php] Undefined index: sub (D:\www\asdf\protected\controllers\SiteController.php:96)
+Stack trace:
+#0 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#1 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit&id=11
+in D:\www\asdf\protected\controllers\SiteController.php (96)
+in D:\www\asdf\index.php (19)
+2016/06/20 15:29:50 [error] [php] Undefined index: sub (D:\www\asdf\protected\controllers\SiteController.php:96)
+Stack trace:
+#0 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#1 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit&id=10
+in D:\www\asdf\protected\controllers\SiteController.php (96)
+in D:\www\asdf\index.php (19)
+2016/06/20 15:30:19 [error] [php] Undefined index: id (D:\www\asdf\protected\controllers\SiteController.php:95)
+Stack trace:
+#0 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#1 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#3 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit
+in D:\www\asdf\protected\controllers\SiteController.php (95)
+in D:\www\asdf\index.php (19)
+2016/06/20 15:37:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\www\yii\web\CController.php:336
+Stack trace:
+#0 D:\www\yii\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#5 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\www\asdf\index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=10
+---
+2016/06/20 15:40:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\www\yii\web\CController.php:336
+Stack trace:
+#0 D:\www\yii\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#5 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\www\asdf\index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=2
+---
+2016/06/20 15:41:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\www\yii\web\CController.php:336
+Stack trace:
+#0 D:\www\yii\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#5 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\www\asdf\index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=2
+---
+2016/06/20 15:41:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\www\yii\web\CController.php:336
+Stack trace:
+#0 D:\www\yii\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#5 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\www\asdf\index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=2
+---
+2016/06/20 15:41:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\www\yii\web\CController.php:336
+Stack trace:
+#0 D:\www\yii\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#5 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\www\asdf\index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=2
+---
+2016/06/20 15:47:25 [error] [exception.CDbException] exception 'CDbException' with message 'No columns are being updated for table "c_room".' in D:\www\yii\db\schema\CDbCommandBuilder.php:392
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(1745): CDbCommandBuilder->createUpdateCommand(Object(CMysqlTableSchema), Array, Object(CDbCriteria))
+#1 D:\www\yii\db\ar\CActiveRecord.php(1122): CActiveRecord->updateByPk(NULL, Array)
+#2 D:\www\asdf\protected\controllers\SiteController.php(103): CActiveRecord->update(Object(CDbCriteria))
+#3 [internal function]: SiteController->actionEdit('2')
+#4 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#5 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#6 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#10 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#11 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\www\asdf\index.php(19): CApplication->run()
+#13 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=2
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=2
+---
+2016/06/20 15:48:47 [error] [exception.CDbException] exception 'CDbException' with message 'No columns are being updated for table "c_room".' in D:\www\yii\db\schema\CDbCommandBuilder.php:392
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(1745): CDbCommandBuilder->createUpdateCommand(Object(CMysqlTableSchema), Array, Object(CDbCriteria))
+#1 D:\www\yii\db\ar\CActiveRecord.php(1122): CActiveRecord->updateByPk(NULL, Array)
+#2 D:\www\asdf\protected\controllers\SiteController.php(102): CActiveRecord->update(Object(CDbCriteria))
+#3 [internal function]: SiteController->actionEdit('2')
+#4 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#5 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#6 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#10 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#11 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\www\asdf\index.php(19): CApplication->run()
+#13 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=2
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=2
+---
+2016/06/20 15:51:04 [error] [exception.CDbException] exception 'CDbException' with message 'No columns are being updated for table "c_room".' in D:\www\yii\db\schema\CDbCommandBuilder.php:392
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(1745): CDbCommandBuilder->createUpdateCommand(Object(CMysqlTableSchema), Object(CDbCriteria), Object(CDbCriteria))
+#1 D:\www\asdf\protected\controllers\SiteController.php(102): CActiveRecord->updateByPk('2', Object(CDbCriteria))
+#2 [internal function]: SiteController->actionEdit('2')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=2
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=2
+---
+2016/06/20 15:51:08 [error] [exception.CDbException] exception 'CDbException' with message 'No columns are being updated for table "c_room".' in D:\www\yii\db\schema\CDbCommandBuilder.php:392
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(1745): CDbCommandBuilder->createUpdateCommand(Object(CMysqlTableSchema), Object(CDbCriteria), Object(CDbCriteria))
+#1 D:\www\asdf\protected\controllers\SiteController.php(102): CActiveRecord->updateByPk('2', Object(CDbCriteria))
+#2 [internal function]: SiteController->actionEdit('2')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=2
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=2
+---
+2016/06/20 15:51:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\www\yii\web\CController.php:336
+Stack trace:
+#0 D:\www\yii\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#5 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\www\asdf\index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit
+---
+2016/06/20 15:51:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\www\yii\web\CController.php:336
+Stack trace:
+#0 D:\www\yii\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#5 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\www\asdf\index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit
+---
+2016/06/20 15:51:29 [error] [exception.CDbException] exception 'CDbException' with message 'No columns are being updated for table "c_room".' in D:\www\yii\db\schema\CDbCommandBuilder.php:392
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(1745): CDbCommandBuilder->createUpdateCommand(Object(CMysqlTableSchema), Object(CDbCriteria), Object(CDbCriteria))
+#1 D:\www\asdf\protected\controllers\SiteController.php(102): CActiveRecord->updateByPk('10', Object(CDbCriteria))
+#2 [internal function]: SiteController->actionEdit('10')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=10
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=10
+---
+2016/06/20 15:56:35 [error] [exception.CException] exception 'CException' with message 'Room and its behaviors do not have a method or closure named "attributes".' in D:\www\yii\base\CComponent.php:266
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(224): CComponent->__call('attributes', Array)
+#1 D:\www\asdf\protected\controllers\SiteController.php(101): CActiveRecord->__call('attributes', Array)
+#2 D:\www\asdf\protected\controllers\SiteController.php(101): Room->attributes('\xE9\x98\xBF\xE6\x96\xAF\xE8\x92\x82\xE8\x8A\xAC')
+#3 [internal function]: SiteController->actionEdit('10')
+#4 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#5 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#6 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#10 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#11 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\www\asdf\index.php(19): CApplication->run()
+#13 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=10
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=10
+---
+2016/06/20 15:58:25 [error] [exception.CException] exception 'CException' with message 'Property "Room.setAttributes" is not defined.' in D:\www\yii\base\CComponent.php:173
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(158): CComponent->__set('setAttributes', '\xE9\x98\xBF\xE6\x96\xAF\xE8\x92\x82\xE8\x8A\xAC')
+#1 D:\www\asdf\protected\controllers\SiteController.php(102): CActiveRecord->__set('setAttributes', '\xE9\x98\xBF\xE6\x96\xAF\xE8\x92\x82\xE8\x8A\xAC')
+#2 [internal function]: SiteController->actionEdit('10')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=10
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=10
+---
+2016/06/20 16:03:03 [error] [exception.CException] exception 'CException' with message 'Property "Room.setAttributes" is not defined.' in D:\www\yii\base\CComponent.php:173
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(158): CComponent->__set('setAttributes', '\xE9\x98\xBF\xE6\x96\xAF')
+#1 D:\www\asdf\protected\controllers\SiteController.php(102): CActiveRecord->__set('setAttributes', '\xE9\x98\xBF\xE6\x96\xAF')
+#2 [internal function]: SiteController->actionEdit('10')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=10
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=10
+---
+2016/06/20 16:04:17 [error] [exception.CException] exception 'CException' with message 'Property "Room.setAttributes" is not defined.' in D:\www\yii\base\CComponent.php:173
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(158): CComponent->__set('setAttributes', '\xE9\x98\xBF\xE6\x96\xAF\xE8\x92\x82\xE8\x8A\xAC')
+#1 D:\www\asdf\protected\controllers\SiteController.php(102): CActiveRecord->__set('setAttributes', '\xE9\x98\xBF\xE6\x96\xAF\xE8\x92\x82\xE8\x8A\xAC')
+#2 [internal function]: SiteController->actionEdit('10')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=10
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=10
+---
+2016/06/20 16:06:37 [error] [php] Undefined index: Student (D:\www\asdf\protected\controllers\SiteController.php:102)
+Stack trace:
+#0 D:\www\yii\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#3 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#4 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#5 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit&id=10
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:06:59 [error] [php] Undefined index: Room (D:\www\asdf\protected\controllers\SiteController.php:102)
+Stack trace:
+#0 D:\www\yii\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#3 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#4 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#5 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit&id=10
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:07:08 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:07:08 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:08:30 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:08:30 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:08:41 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:08:41 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:09:17 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:09:17 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:09:42 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:09:42 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:10:05 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:10:05 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:10:14 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:10:14 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:10:26 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:10:26 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:13:54 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:13:54 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:13:54 [error] [exception.CDbException] exception 'CDbException' with message 'No columns are being updated for table "c_room".' in D:\www\yii\db\schema\CDbCommandBuilder.php:392
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(1745): CDbCommandBuilder->createUpdateCommand(Object(CMysqlTableSchema), Array, Object(CDbCriteria))
+#1 D:\www\asdf\protected\controllers\SiteController.php(104): CActiveRecord->updateByPk('11', Array)
+#2 [internal function]: SiteController->actionEdit('11')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=11
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=11
+---
+2016/06/20 16:13:59 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:13:59 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:13:59 [error] [exception.CDbException] exception 'CDbException' with message 'No columns are being updated for table "c_room".' in D:\www\yii\db\schema\CDbCommandBuilder.php:392
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(1745): CDbCommandBuilder->createUpdateCommand(Object(CMysqlTableSchema), Array, Object(CDbCriteria))
+#1 D:\www\asdf\protected\controllers\SiteController.php(104): CActiveRecord->updateByPk('11', Array)
+#2 [internal function]: SiteController->actionEdit('11')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=11
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=11
+---
+2016/06/20 16:18:26 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:18:26 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:19:27 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:19:27 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:19:57 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:19:57 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:20:04 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:20:04 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (102)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:21:25 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:21:25 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:21:25 [error] [php] include(9.php): failed to open stream: No such file or directory (D:\www\yii\YiiBase.php:428)
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(393): spl_autoload_call()
+#1 D:\www\asdf\protected\models\Room.php(6): model()
+#2 D:\www\asdf\protected\controllers\SiteController.php(103): model()
+#3 unknown(0): SiteController->actionEdit()
+#4 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\www\yii\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#8 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#9 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#10 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit&id=9
+in D:\www\asdf\protected\models\Room.php (6)
+in D:\www\asdf\protected\controllers\SiteController.php (103)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:21:34 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:21:34 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:21:34 [error] [php] include(9.php): failed to open stream: No such file or directory (D:\www\yii\YiiBase.php:428)
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(393): spl_autoload_call()
+#1 D:\www\asdf\protected\models\Room.php(6): model()
+#2 D:\www\asdf\protected\controllers\SiteController.php(103): model()
+#3 unknown(0): SiteController->actionEdit()
+#4 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\www\yii\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#8 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#9 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#10 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit&id=9
+in D:\www\asdf\protected\models\Room.php (6)
+in D:\www\asdf\protected\controllers\SiteController.php (103)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:21:53 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:21:53 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:23:46 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:23:46 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:24:01 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:24:01 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:24:19 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:24:19 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:26:26 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:26:26 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:27:10 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:27:10 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:27:30 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:27:30 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:27:30 [error] [php] Array to string conversion (D:\www\asdf\protected\controllers\SiteController.php:103)
+Stack trace:
+#0 D:\www\yii\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#3 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#4 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#5 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit&id=19
+in D:\www\asdf\protected\controllers\SiteController.php (103)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:27:47 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:27:47 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:28:01 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:28:01 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:28:01 [error] [php] Missing argument 1 for CModel::getError(), called in D:\www\asdf\protected\controllers\SiteController.php on line 103 and defined (D:\www\yii\base\CModel.php:371)
+Stack trace:
+#0 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 D:\www\yii\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#4 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#5 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#6 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#8 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit&id=19
+in D:\www\asdf\protected\controllers\SiteController.php (103)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:28:38 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:28:38 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:28:38 [error] [exception.CException] exception 'CException' with message 'Property "Room.getErrors" is not defined.' in D:\www\yii\base\CComponent.php:130
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(142): CComponent->__get('getErrors')
+#1 D:\www\asdf\protected\controllers\SiteController.php(103): CActiveRecord->__get('getErrors')
+#2 [internal function]: SiteController->actionEdit('19')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=19
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---
+2016/06/20 16:28:50 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:28:50 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:28:50 [error] [exception.CException] exception 'CException' with message 'Property "Room.getErrors" is not defined.' in D:\www\yii\base\CComponent.php:130
+Stack trace:
+#0 D:\www\yii\db\ar\CActiveRecord.php(142): CComponent->__get('getErrors')
+#1 D:\www\asdf\protected\controllers\SiteController.php(103): CActiveRecord->__get('getErrors')
+#2 [internal function]: SiteController->actionEdit('19')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=19
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---
+2016/06/20 16:29:22 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:29:22 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:29:49 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:29:49 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:29:49 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "getErrors".' in D:\www\yii\base\CComponent.php:266
+Stack trace:
+#0 D:\www\asdf\protected\controllers\SiteController.php(103): CComponent->__call('getErrors', Array)
+#1 D:\www\asdf\protected\controllers\SiteController.php(103): SiteController->getErrors()
+#2 [internal function]: SiteController->actionEdit('19')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=19
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---
+2016/06/20 16:30:32 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:30:32 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:30:32 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "getErrors".' in D:\www\yii\base\CComponent.php:266
+Stack trace:
+#0 D:\www\asdf\protected\controllers\SiteController.php(103): CComponent->__call('getErrors', Array)
+#1 D:\www\asdf\protected\controllers\SiteController.php(103): SiteController->getErrors()
+#2 [internal function]: SiteController->actionEdit('19')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=19
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---
+2016/06/20 16:32:43 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:32:43 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:33:09 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:33:09 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:33:09 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "getErrors".' in D:\www\yii\base\CComponent.php:266
+Stack trace:
+#0 D:\www\asdf\protected\controllers\SiteController.php(103): CComponent->__call('getErrors', Array)
+#1 D:\www\asdf\protected\controllers\SiteController.php(103): SiteController->getErrors()
+#2 [internal function]: SiteController->actionEdit('19')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=19
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---
+2016/06/20 16:33:57 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:33:57 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:34:15 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:34:15 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:35:25 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:35:25 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:35:25 [error] [php] Undefined index: name (D:\www\asdf\protected\controllers\SiteController.php:108)
+Stack trace:
+#0 D:\www\yii\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\www\yii\web\CController.php(286): SiteController->runAction()
+#3 D:\www\yii\web\CController.php(265): SiteController->runActionWithFilters()
+#4 D:\www\yii\web\CWebApplication.php(282): SiteController->run()
+#5 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\www\asdf\index.php(19): CWebApplication->run()
+REQUEST_URI=/asdf/index.php?r=site/edit&id=19
+in D:\www\asdf\protected\controllers\SiteController.php (108)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:35:38 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:35:38 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:35:49 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:35:49 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:35:53 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:35:53 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:36:38 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:36:38 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:36:54 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:36:54 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:37:34 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:37:34 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:39:57 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:39:57 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:39:57 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "putErrorMsg".' in D:\www\yii\base\CComponent.php:266
+Stack trace:
+#0 D:\www\asdf\protected\controllers\SiteController.php(109): CComponent->__call('putErrorMsg', Array)
+#1 D:\www\asdf\protected\controllers\SiteController.php(109): CWebUser->putErrorMsg('false')
+#2 [internal function]: SiteController->actionEdit('19')
+#3 D:\www\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 D:\www\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 D:\www\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#9 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#10 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\asdf\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=19
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---
+2016/06/20 16:42:39 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:42:39 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:43:03 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:43:03 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:44:23 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:44:23 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:45:12 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:45:12 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:46:04 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:46:04 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:46:31 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:46:31 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:47:13 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:47:13 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:47:21 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:47:21 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:48:45 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:48:45 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:49:36 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:49:36 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:50:11 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:50:11 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:50:58 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:50:58 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:51:26 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:51:26 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:51:31 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:51:31 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:51:46 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:51:46 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:58:19 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:58:19 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:58:34 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:58:34 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:58:38 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:58:38 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:58:46 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:58:46 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:59:26 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:59:26 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:59:42 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 16:59:42 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:24 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:24 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:30 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:30 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:30 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:30 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:41 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:41 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:47 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:47 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:54 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:54 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:59 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:00:59 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (101)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:07:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:07:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:07:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:07:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:12:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/create
+---
+2016/06/20 17:13:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/create
+---
+2016/06/20 17:13:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:13:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:14:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('edit')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=23
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/List
+---
+2016/06/20 17:15:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('edit')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=23
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/List
+---
+2016/06/20 17:15:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('edit')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=23
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/List
+---
+2016/06/20 17:15:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('edit')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=23
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/List
+---
+2016/06/20 17:15:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('edit')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=23
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/List
+---
+2016/06/20 17:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('edit')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=23
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/List
+---
+2016/06/20 17:15:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('edit')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=9
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=9
+---
+2016/06/20 17:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('edit')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=9
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=9
+---
+2016/06/20 17:16:04 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (104)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:16:04 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (104)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:16:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=9
+---
+2016/06/20 17:16:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=9
+---
+2016/06/20 17:16:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=9
+---
+2016/06/20 17:16:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=9
+---
+2016/06/20 17:16:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=9
+---
+2016/06/20 17:16:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=9
+---
+2016/06/20 17:16:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=9
+---
+2016/06/20 17:16:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=9
+---
+2016/06/20 17:16:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:16:53 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (104)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:16:53 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (104)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:17:00 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (104)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:17:00 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (104)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:18:23 [warning] [application] Failed to set unsafe attribute "id" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (104)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:18:23 [warning] [application] Failed to set unsafe attribute "sub" of "Room".
+in D:\www\asdf\protected\controllers\SiteController.php (104)
+in D:\www\asdf\index.php (19)
+2016/06/20 17:21:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/Update&id=22
+---
+2016/06/20 17:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:52:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=student/index
+---
+2016/06/20 17:52:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('student/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=student/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---
+2016/06/20 17:52:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('edit')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('edit')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/edit')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/edit&id=19
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/index
+---
+2016/06/20 17:52:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---
+2016/06/20 17:52:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---
+2016/06/20 17:52:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---
+2016/06/20 17:52:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\www\yii\web\CController.php:483
+Stack trace:
+#0 D:\www\yii\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\yii\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 D:\www\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\asdf\index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/asdf/index.php?r=site/index
+HTTP_REFERER=http://localhost/asdf/index.php?r=site/edit&id=19
+---

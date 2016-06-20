@@ -31,7 +31,7 @@ class Student extends CActiveRecord{
     }
   public function relations(){
      return array(
-        'student'=>array(self::BELONGS_TO,'Room','c_id'),
+        'room'=>array(self::BELONGS_TO,'Room','c_id'),
 
     );
   }

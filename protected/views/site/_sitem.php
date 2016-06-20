@@ -5,7 +5,7 @@
     
 
 <table>
-    <tr><input type="text"><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
     <tr><td>学生ID</td><td>学生名称</td><td>年龄</td></tr>
     <?php foreach($data->students as $v){ ?>
        <tr>

@@ -2,6 +2,9 @@
 
 class SiteController extends Controller
 {
+	// 设置默认访问的action , 
+	public $defaultAction = 'List';
+
 	/**
 	 * Declares class-based actions.
 	 */
@@ -21,24 +24,24 @@ class SiteController extends Controller
 		);
 	}
 
-	public function actionView(){
+	public function actionView()
+	{
 		// $criteria = new CDbCriteria();
 		// $criteria->select = 'name';
 		// $model = Room::model()->with('students')->findByPk($id);
 		$id = $_GET['id']+0;
 		$criteria = new CDbCriteria();
 		$criteria->with='students';
-		$criteria->addCondition("t.id=$id");
+		$criteria->addCondition("t.id=$id");    // 默认是表别名是 t ? 
 		$students = new CActiveDataProvider('Room',array(
 			'criteria'=>$criteria,  //使用criteria条件
 		));
 
 	    $this->render('view',array('students'=>$students));
-      
 	}
 
 
-	public function actionIndex()
+	public function actionList()
 	{
 		/*
 			返回ar对象的形式
@@ -58,25 +61,33 @@ class SiteController extends Controller
 
 	    $this->render('index',array('classList'=>$classList));
 	}
-	public function actionDelet(){
+
+
+	
+	public function actionDelete()
+	{
 		$id = (int)$_GET['id'];
 		// $conn = Yii::app()->db;
 		// $sql = 'delete from {{room}} where id = '.$id;
 		// $command = $conn->createCommand($sql)->execute();
 		$ls = Room::model()->deleteByPk($id);
-		$this->redirect(array('index'));		
+		// $criteria = new CDbCriteria();
+		// $criteria->with = 'students';
 
-
+		$this->redirect(array('List'));		
 	}
     
 
-	public function actionCreate(){
+
+
+	public function actionCreate()
+	{
 		$model = new Room;           // 只有新增数据的时候使用new Model的形式, 其余情况用Model()静态实例化一个类 . /why?????/  
 		if(isset($_POST['Room']))
 		{
 			$model->attributes=$_POST['Room'];
 			if($model->save())
-				$this->redirect(array('index'));
+				$this->redirect(array('List'));
 		}
 
 		$this->render('create',array(
@@ -85,31 +96,38 @@ class SiteController extends Controller
 
 	}
 
-	public function actionEdit(){
-		$model = Room::model();
-		if(!empty($_POST))
-		{
-			$model->id = $_POST['id'];
-			$model->name= $_POST['name'];
-			// p($model->getErrors());
-			if($model->save())
-				$this->redirect(array('site/index'));
-		}else{
-		$id = $_GET['id'];
-		$model =Room::model()->findByPk($id);
-		$this->render('item',array(
-			'item'=>$model,
-		));
+
+ 	public function beforeDelete(){
+
+ 	}
+
+	public function actionUpdate($id)
+	{
+		$rs = Room::model()->findByPk($id);	    
+		if(empty($rs)) exit('参数非法');
+
+		if($_POST){
+			$criteria = new CDbCriteria();
+			$criteria->addCondition("id=$id");
+			$rs->attributes=$_POST;
+
+
+			if(!$rs->validate()){
+				$errors = $rs->getErrors();
+				foreach($errors as $v){
+					echo $this->renderText($v[0]);
+				}
+				echo "<script>history.go(-1);</script>";
+				exit;
+			}
+			$rs = $rs->save();
+			$this->redirect(array('List'));
 		}
-	}
-
-
-
+		$this->render('item',array('item'=>$rs));
+		
 
 	
-	/**
-	 * Displays the login page
-	 */
+	
 	public function actionLogin()
 	{
 		$model=new LoginForm;
@@ -183,4 +201,10 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+
+
+
+
+
 }
