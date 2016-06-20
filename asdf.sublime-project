@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "D:\\www\\pc"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "D:\\www\\yii"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "D:\\www\\class_bak"
+		}
+	]
+}
