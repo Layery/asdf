@@ -125,7 +125,7 @@ class SiteController extends Controller
 		}
 		$this->render('item',array('item'=>$rs));
 		
-
+	}
 	
 	
 	public function actionLogin()
