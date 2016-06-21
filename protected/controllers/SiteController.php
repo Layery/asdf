@@ -63,12 +63,10 @@ class SiteController extends Controller
     public function actionUpdate($id)
 	{
 		$rs = Room::model()->findByPk($id);
-		if (empty($rs)) 
-		{
+		if (empty($rs)) {
 			exit('参数非法');
 		}
-		if ($_POST) 
-		{
+		if ($_POST) {
 			$criteria = new CDbCriteria();
 			$criteria->addCondition("id = $id");
 			$rs->attributes = $_POST;

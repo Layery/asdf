@@ -33,6 +33,11 @@ class Room extends CActiveRecord{
         );
     }
 
+    public function afterDelete()
+    {
+        $student = Student::model();
+        p($student);
+    }
 
 }
 
