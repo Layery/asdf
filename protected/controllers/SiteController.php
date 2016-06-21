@@ -98,11 +98,11 @@ class SiteController extends Controller
 		}
 
 		// collect user input data
-		if(isset($_POST['LoginForm']))
+		if (isset($_POST['LoginForm']))
 		{	
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
-			if($model->validate() && $model->login())
+			if ($model->validate() && $model->login())
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
 		// display the login form
@@ -115,9 +115,9 @@ class SiteController extends Controller
 	 */
 	public function actionError()
 	{
-		if($error=Yii::app()->errorHandler->error)
+		if ($error=Yii::app()->errorHandler->error)
 		{
-			if(Yii::app()->request->isAjaxRequest)
+			if (Yii::app()->request->isAjaxRequest)
 				echo $error['message'];
 			else
 				$this->render('error', $error);
@@ -131,10 +131,10 @@ class SiteController extends Controller
 	public function actionContact()
 	{
 		$model=new ContactForm;
-		if(isset($_POST['ContactForm']))
+		if (isset($_POST['ContactForm']))
 		{
 			$model->attributes=$_POST['ContactForm'];
-			if($model->validate())
+			if ($model->validate())
 			{
 				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
 				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
