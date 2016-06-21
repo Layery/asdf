@@ -2,15 +2,18 @@
 
 class Room extends CActiveRecord{
 
-    static public function model($className = __ClASS__ ){
+    static public function model($className = __ClASS__ )
+    {
         return parent::model($className);
     }
     
-    public function tableName(){
+    public function tableName()
+    {
         return '{{room}}';
     }
 
-    public function primaryKey(){
+    public function primaryKey()
+    {
         return 'id';
     }
 
@@ -21,16 +24,11 @@ class Room extends CActiveRecord{
         );
     }
 
- 
-
-
-
-
-
-    public function rules(){
+    public function rules()
+    {
         return array(
             array('name','required'),
-            array('name','length','min'=>2,'max'=>4,'tooShort'=>'名称太短','tooLong'=>'又太长了'),
+            array('name','length','min'=>2,'max'=>4,'tooShort'=>'名称太短','tooLong'=>'名称过长'),
 
         );
     }

@@ -1,13 +1,3 @@
-<?
-
-// print_r($item->attributes['id']);
-
-// print_r($item->attributes['name']);
-
-
-
-?>
-
 
 <form action="index.php?r=site/Update&id=<?echo $item['id'];?>" method="POST">
 id　　　: <?echo $item['id'];?><br/><br/>
