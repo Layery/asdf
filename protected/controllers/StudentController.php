@@ -38,20 +38,6 @@ class StudentController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Student('create');
-        if ($_POST) {   
-            if (!$_POST['Student']['c_id']) {  // 判断班级是否存在
-                echo "<script>alert('请先建立班级');</script>";
-                echo "<script>history.go(-1);</script>";
-                exit;
-            }
-            $model->attributes = $_POST['Student'];
-            if($model->validate()) {
-               $model->save();
-            }
-            $this->redirect(array('list'));
-        }
-
         $sql = 'select id,name from {{room}}';
         $room = Room::model()->findAllBySql($sql);
         if (!empty($room)) {
@@ -62,6 +48,23 @@ class StudentController extends Controller
             $class = array();
         }
 
+
+        $model = new Student('create');
+        if ($_POST) {   
+            $criteria = new CDbCriteria;
+            $criteria->addCondition("id = '".$_POST['Student']['c_id']."'");
+            $room = Room::model()->exists($criteria);  // 该函数判断当前条件下, 是否有值
+            if (!$room) {  // 判断班级是否存在
+                echo "<script>alert('请选择班级');</script>";
+                echo "<script>history.go(-1);</script>";
+                exit;
+            }
+            $model->attributes = $_POST['Student'];
+            if($model->validate()) {
+               $model->save();
+               $this->redirect(array('list'));
+            } 
+        }
         $this->render('create',array('model'=>$model,'room'=>$class));
     }
 
