@@ -13,6 +13,23 @@
 
 // require_once($yii);
 // Yii::createWebApplication($config)->run();
+// 
+// 
+// 
+        // $criteria = new CDbCriteria;
+        // $criteria->select = '*';
+        // $criteria->order = 't.id desc';
+        // $criteria->with = 'room';
+        // $model = new CActiveDataProvider('Student',array(
+        //     'criteria'=>$criteria,
+        //     'pagination'=>array('pageSize'=>10), 
+        // ));
+        // $this->render('index',array('dataProvider'=>$model));
+// 
+// 
+// 
+// 
+// 
 
 function p($data,$status=NULL){
     echo '<pre/>';

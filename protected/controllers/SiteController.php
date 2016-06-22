@@ -2,6 +2,9 @@
 
 class SiteController extends Controller
 {
+	// 设置默认访问的action , 
+    public $defaultAction = 'List';
+
 
 	/**
 	 * 展示某班级下的学生列表
@@ -35,8 +38,9 @@ class SiteController extends Controller
 	public function actionDelete()
 	{
 		$id = (int)$_GET['id'];
-		$ls = Room::model()->deleteByPk($id);
-		$this->redirect(array('List'));		
+		$room = Room::model()->findByPk($id);
+		$room->delete();
+		$this->redirect(array('list'));		
 	}
     
     /**
@@ -84,6 +88,10 @@ class SiteController extends Controller
 		$this->render('item',array('item'=>$rs));
 	}
 
+
+	/**
+	 * 登录
+	 */
 	public function actionLogin()
 	{
 		$model=new LoginForm;
@@ -149,8 +157,6 @@ class SiteController extends Controller
 		$this->render('contact',array('model'=>$model));
 	}
 	
-	// 设置默认访问的action , 
-    public $defaultAction = 'List';
 
 	/**
 	 * Declares class-based actions.

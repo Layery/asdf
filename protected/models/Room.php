@@ -28,16 +28,17 @@ class Room extends CActiveRecord{
     {
         return array(
             array('name','required'),
-            array('name','length','min'=>2,'max'=>4,'tooShort'=>'名称太短','tooLong'=>'名称过长'),
+            array('name','length','min'=>2,'max'=>4,'tooShort'=>'名称最短2个字符','tooLong'=>'名称最长4个字符'),
 
         );
     }
 
     public function afterDelete()
     {
-        $student = Student::model();
-        p($student);
-    }
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("c_id = $this->id");
+        $student = Student::model()->deleteAll($criteria);
+     }
 
 }
 

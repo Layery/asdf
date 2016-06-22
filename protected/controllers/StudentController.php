@@ -10,26 +10,27 @@ class StudentController extends Controller
      */
     public function actionList()
     {   
-        $criteria = new CDbCriteria();
-        $criteria->select = '*';
+        $criteria = new CDbCriteria;
+        $params = [];        
+        if (!empty($_POST['studentName'])) { //拼接查询条件
+            $criteria->addCondition("t.name = :studentName");
+            $params[':studentName'] = $_POST['studentName'];
+        } 
+        if (!empty($_POST['roomName'])) {
+            $criteria->addCondition("room.name = :roomName");
+            $params[':roomName'] = $_POST['roomName'];
+        }
+
+        $criteria->params = $params;
         $criteria->order = 't.id desc';
         $criteria->with = 'room';
+
         $model = Student::model()->findAll($criteria);
         foreach ($model as $v) {
             $students[] = $v->getAttributes();
         }
+
         $this->render('index',array('students'=>$model));
-
-
-        // $criteria = new CDbCriteria;
-        // $criteria->select = '*';
-        // $criteria->order = 't.id desc';
-        // $criteria->with = 'room';
-        // $model = new CActiveDataProvider('Student',array(
-        //     'criteria'=>$criteria,
-        //     'pagination'=>array('pageSize'=>10), 
-        // ));
-        // $this->render('index',array('dataProvider'=>$model));
     }
 
     /**
@@ -38,23 +39,19 @@ class StudentController extends Controller
     public function actionCreate()
     {
         $model = new Student('create');
-        if ($_POST) {
-            if (!$_POST['Student']['c_id']) {
-                exit('请选择班级');
+        if ($_POST) {   
+            if (!$_POST['Student']['c_id']) {  // 判断班级是否存在
+                echo "<script>alert('请先建立班级');</script>";
+                echo "<script>history.go(-1);</script>";
+                exit;
             }
             $model->attributes = $_POST['Student'];
-            if(!$model->validate()) {
-                $errors = $model->getErrors();
-                print_r($errors);
-                foreach ($errors as $k => $v) {
-                    echo $k.$v[0];
-                }
-                die;
+            if($model->validate()) {
+               $model->save();
             }
-            if ($model->save()) {
-                $this->redirect(array('List'));
-            }
+            $this->redirect(array('list'));
         }
+
         $sql = 'select id,name from {{room}}';
         $room = Room::model()->findAllBySql($sql);
         if (!empty($room)) {
@@ -68,6 +65,8 @@ class StudentController extends Controller
         $this->render('create',array('model'=>$model,'room'=>$class));
     }
 
+
+
     /**
      * 更新学生信息
      * @param  [type] $id 学生id
@@ -76,36 +75,51 @@ class StudentController extends Controller
     public function actionUpdate($id)
     {
         $id = (int)$_GET['id'];
-        $rs = Student::model()->findByPk($id);
-        if (empty($rs)) {
+        $student = Student::model()->findByPk($id);
+        if (empty($student)) {
             echo "<script>alert('参数有误');</script>";
             echo "<script>history.go(-1);</script>";
             exit;
         }
-        
         if ($_POST) {
-            $rs->scenario = 'update';  // 设置场景为update
-            $rs->attributes = $_POST['Student'];
-            if (!$rs->validate()) {
-                $errors = $rs->getErrors();
+            print_r($_POST);
+            $student->scenario = 'update';  // 设置场景为update
+            $student->attributes = $_POST['Student'];
+            if (!$student->validate()) {
+                $errors = $student->getErrors();
                 foreach ($errors as $v) {
                     echo "<script>alert('".$v[0]."');</script>";
                 }
                 echo "<script>history.go(-1);</script>";
                 exit;
             }
-            $rs = $rs->save();
-            $this->redirect(array('List'));
+            $student = $student->save();
+           $this->redirect(array('list'));
         }
-        $this->render('item',array('item'=>$rs));
+        $this->render('item',array('item'=>$student));
     }
 
+    /**
+     * 删除学生
+     * @param  [type] $id 学生id
+     */
     public function actionDelete($id)
     {
         $id = (int)$_GET['id'];
-        $ls = Student::model()->deleteByPk($id);
-        $this->redirect(array('List'));     
+        $student = Student::model()->findByPk($id);
+        $rs = $student->delete();
+        if (!$rs) {
+            $error = $student->getErrors();
+            echo '<script>alert("'.$error['room'][0].'");</script>';
+            echo '<script>history.go(-1);</script>';
+            exit;
+        }
+
+        $this->redirect(array('list'));     
     }
+
+
+
 }
 
     
