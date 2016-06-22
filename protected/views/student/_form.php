@@ -1,3 +1,6 @@
+<?php
+Yii::app()->clientScript->registerCoreScript('jquery');
+?>
 <div class="form">
     <p class="note">Fields with <span class="required">*</span> are required.</p>
 
@@ -12,36 +15,36 @@
             <?}}?>
 
         </select>
-        &nbsp;&nbsp;&nbsp;<span><? print_r($model->getError('c_id'));?></span>
+        &nbsp;&nbsp;&nbsp;<span style="color:red;"><? print_r($model->getError('c_id'));?></span>
     </div>
     <div class="row">
         *学生姓名: <input type="text" name='Student[name]' id="Student_name" />
-        &nbsp;&nbsp;&nbsp;<span><? print_r($model->getError('name'));?></span>
+        &nbsp;&nbsp;&nbsp;<span style="color:red;"><? print_r($model->getError('name'));?></span>
     </div>  
     
     <div class="row" id="sex">
         *性别:　　男:<input type="radio" name="Student[sex]" class="Student_sex" value="1">女:<input type="radio" name="Student[sex]" class="Student_sex" value="2">&nbsp;&nbsp;&nbsp;
-        <span><? print_r($model->getError('sex'));?></span>
+        <span style="color:red;"><? print_r($model->getError('sex'));?></span>
     </div>
     
     <div class="row">
         年龄:　　<input type="text" name='Student[age]' id="Student_age" />
-        &nbsp;&nbsp;&nbsp;<span><? print_r($model->getError('age'));?></span>
+        &nbsp;&nbsp;&nbsp;<span style="color:red;"><? print_r($model->getError('age'));?></span>
     </div>  
     
     <div class="row">
         *邮箱: 　　<input type="text" name="Student[email]" id="Student_email">
-        &nbsp;&nbsp;&nbsp;<span><? print_r($model->getError('email'));?></span>
+        &nbsp;&nbsp;&nbsp;<span style="color:red;"><? print_r($model->getError('email'));?></span>
     </div>
 
     <div class="row">
         *手机号: 　<input type="text" name="Student[mobile]" id="Student_mobile">
-        &nbsp;&nbsp;&nbsp;<span><? print_r($model->getError('mobile'));?></span>
+        &nbsp;&nbsp;&nbsp;<span style="color:red;"><? print_r($model->getError('mobile'));?></span>
     </div>
 
     <div class="row">
         *QQ: 　　<input type="text" name="Student[qq]" id="Student_qq" />
-        &nbsp;&nbsp;&nbsp;<span><? print_r($model->getError('qq'));?></span>
+        &nbsp;&nbsp;&nbsp;<span style="color:red;"><? print_r($model->getError('qq'));?></span>
     </div>
     <div class="row buttons">
         <?php echo CHtml::submitButton('Create'); ?>
@@ -49,3 +52,16 @@
     </form>
 
 </div> 
+
+
+<script type="text/javascript">
+$(function(){
+    $("input[type='text'],input[type='radio']").focus(function(){
+        var parent = $(this).parent();
+        parent.children('span').remove();
+    });
+
+});
+</script>
+
+
