@@ -26,9 +26,13 @@ class SiteController extends Controller
      */
 	public function actionList()
 	{
-		// $student = Student::model();
-		// $room = Room::model();
+		// $student = Student::model()->findByPk(7);
+		// $room = Room::model()->findByPk(1);
 		// $getRelated = $room->getRelated('students');
+		// $getRelated = $student->getRelated('room');
+
+
+
 		// $getDbCriteria = $room->getDbCriteria();
 		// $defaultScope = $room->defaultScope('Room');  
 		// $attributeNames = $room->getMetaData();  // 返回数据库表字段, 
@@ -46,6 +50,7 @@ class SiteController extends Controller
 
 	 // 	$getCommandBuilder = $room->getCommandBuilder();
         
+	 // 	$room->setIsNewRecord = 1;
 	 // 	// $insert = $room->insert(); // insert方法不会走验证器 , 
 
 	 // 	// $saveAttributes = $room->saveAttributes(array('name'=>9));
@@ -54,9 +59,29 @@ class SiteController extends Controller
 	 // 	// $rs = $room->setAttribute('name',array('order'=>3,'area'=>30,'detail'=>'asdf'));
 
 
-	 // 	$refresh = $room->refresh();
-	 	
-	 	
+	 // 	$refresh = $room->refresh();   // 防止重复提交, 更新/重定向
+
+
+
+	 // 	$with = $room->with(array('students'=>array('select'=>'id, name,age')))->findAll();
+	   
+	 // 	$_isnew = $room->_isnew;
+         
+
+	 // 	// $populateRecords = $room->populateRecords(array('1','哈哈'));
+
+	 // 	$offsetExists = $room->offsetExists();
+
+
+	 // 	p($populateRecords);
+
+
+
+	 // 	p($with);
+
+
+
+
 	 // 	p($refresh);
 
 
@@ -87,6 +112,14 @@ class SiteController extends Controller
 
 
 
+		$room = Yii::app()->db->createCommand();
+		$room->select('id,name')
+			 ->from('{{student}}')
+			 ->order('id desc')
+			 ->queryAll();
+
+
+		p($room);
 
 
 
@@ -111,11 +144,10 @@ class SiteController extends Controller
 
 
 
-
-		$sql = 'select * from {{room}}';
-		$conn = Yii::app()->db->createCommand($sql);
-		$classList = $conn->queryAll($sql);
-	    $this->render('index',array('classList'=>$classList));
+		// $sql = 'select * from {{room}}';
+		// $conn = Yii::app()->db->createCommand($sql);
+		// $classList = $conn->queryAll($sql);
+	 //    $this->render('index',array('classList'=>$classList));
 	}
 
 	/**

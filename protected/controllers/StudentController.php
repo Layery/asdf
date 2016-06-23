@@ -48,17 +48,8 @@ class StudentController extends Controller
             $class = array();
         }
 
-
         $model = new Student('create');
-        if ($_POST) {   
-            $criteria = new CDbCriteria;
-            $criteria->addCondition("id = '".$_POST['Student']['c_id']."'");
-            $room = Room::model()->exists($criteria);  // 该函数判断当前条件下, 是否有值
-            if (!$room) {  // 判断班级是否存在
-                echo "<script>alert('请选择班级');</script>";
-                echo "<script>history.go(-1);</script>";
-                exit;
-            }
+        if ($_POST) {  
             $model->attributes = $_POST['Student'];
             if($model->validate()) {
                $model->save();
@@ -68,8 +59,7 @@ class StudentController extends Controller
         $this->render('create',array('model'=>$model,'room'=>$class));
     }
 
-
-
+    
     /**
      * 更新学生信息
      * @param  [type] $id 学生id

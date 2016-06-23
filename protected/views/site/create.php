@@ -1,3 +1,3 @@
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->render('_form', array('model'=>$model)); ?>
 
 

@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"CD",
+				"CDbConnection〔class〕"
+			],
+			[
+				"Yii",
+				"Yii::app"
+			],
+			[
+				"populat",
+				"populateRecords"
+			],
+			[
+				"stu",
+				"students"
+			],
+			[
+				"func_",
+				"func_num_args"
+			],
+			[
+				"getT",
+				"getTableAlias"
+			],
+			[
+				"get",
+				"getAttributes〔function〕"
+			],
+			[
+				"getTS",
+				"getTableSchema"
+			],
+			[
 				"getA",
 				"getAttributes	(StudentController.php)"
 			],
@@ -28,10 +60,6 @@
 				"findByPk	(StudentController.php)"
 			],
 			[
-				"get",
-				"getError〔function〕"
-			],
-			[
 				"ex",
 				"exist	(CActiveRecord.php)"
 			],
@@ -42,10 +70,6 @@
 			[
 				"e",
 				"email"
-			],
-			[
-				"stu",
-				"student"
 			],
 			[
 				"che",
@@ -319,7 +343,7 @@
 			"file": "protected/controllers/StudentController.php",
 			"settings":
 			{
-				"buffer_size": 3512,
+				"buffer_size": 3095,
 				"line_ending": "Windows"
 			}
 		},
@@ -327,24 +351,88 @@
 			"file": "protected/controllers/SiteController.php",
 			"settings":
 			{
-				"buffer_size": 4834,
+				"buffer_size": 5994,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "protected/models/Room.php",
+			"file": "/D/www/yii/web/widgets/CActiveForm.php",
 			"settings":
 			{
-				"buffer_size": 862,
-				"line_ending": "Windows"
+				"buffer_size": 40211,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/www/yii/web/helpers/CHtml.php",
+			"settings":
+			{
+				"buffer_size": 104671,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "/D/www/yii/db/ar/CActiveRecord.php",
 			"settings":
 			{
-				"buffer_size": 86713,
+				"buffer_size": 86714,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "protected/views/site/create.php",
+			"settings":
+			{
+				"buffer_size": 59,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "protected/views/site/_form.php",
+			"settings":
+			{
+				"buffer_size": 675,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/www/yii/db/CDbConnection.php",
+			"settings":
+			{
+				"buffer_size": 27262,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/www/yii/db/ar/CActiveFinder.php",
+			"settings":
+			{
+				"buffer_size": 51588,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/www/yii/base/CModel.php",
+			"settings":
+			{
+				"buffer_size": 20491,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/www/yii/base/CComponent.php",
+			"settings":
+			{
+				"buffer_size": 22510,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "protected/views/student/_form.php",
+			"settings":
+			{
+				"buffer_size": 1995,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -375,7 +463,34 @@
 			"file": "index-test.php",
 			"settings":
 			{
-				"buffer_size": 1049,
+				"buffer_size": 1050,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "protected/models/Room.php",
+			"settings":
+			{
+				"buffer_size": 862,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/www/yii/db/CDbCommand.php",
+			"settings":
+			{
+				"buffer_size": 63263,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\n// uncomment the following to define a path alias\n// Yii::setPathOfAlias('local','path/to/local-folder');\n\n// This is the main Web application configuration. Any writable\n// CWebApplication properties can be configured here.\nreturn array(\n	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',\n	'name'=>'asdf_test_app',\n	'defaultController'=>'Site',\n	// preloading 'log' component\n	'preload'=>array('log'),\n\n	// autoloading model and component classes\n	'import'=>array(\n		'application.models.*',\n		'application.components.*',\n	),\n\n	'modules'=>array(\n		// uncomment the following to enable the Gii tool\n		\n		'gii'=>array(\n			'class'=>'system.gii.GiiModule',\n			'password'=>'asdf',\n			// If removed, Gii defaults to localhost only. Edit carefully to taste.\n			'ipFilters'=>array('127.0.0.1','::1'),\n		),\n		\n	),\n\n	// application components\n	'components'=>array(\n		'user'=>array(\n			// enable cookie-based authentication\n			'allowAutoLogin'=>true,\n		),\n		\n		// uncomment the following to enable URLs in path-format\n		/*\n		'urlManager'=>array(\n			'urlFormat'=>'path',\n			'rules'=>array(\n				'<controller:\\w+>/<id:\\d+>'=>'<controller>/view',\n				'<controller:\\w+>/<action:\\w+>/<id:\\d+>'=>'<controller>/<action>',\n				'<controller:\\w+>/<action:\\w+>'=>'<controller>/<action>',\n			),\n		),\n		*/\n		// 'db'=>array(\n		// 	'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',\n		// ),\n		// uncomment the following to use a MySQL database\n		\n		'db'=>array(\n			'connectionString' => 'mysql:host=localhost;dbname=school',\n			'emulatePrepare' => true,\n			'username' => 'root',\n			'password' => 'root',\n			'charset' => 'utf8',\n			'tablePrefix' => 'c_',\n		),\n		\n		'errorHandler'=>array(\n			// use 'site/error' action to display errors\n			'errorAction'=>'site/error',\n		),\n		'log'=>array(\n			'class'=>'CLogRouter',\n			'routes'=>array(\n				array(\n					'class'=>'CFileLogRoute',\n					'levels'=>'error',\n				),\n				// uncomment the following to show log messages on web pages\n				\n				// array(\n				// 	'class'=>'CWebLogRoute',\n				// ),\n				\n			),\n		),\n	),\n\n	// application-level parameters that can be accessed\n	// using Yii::app()->params['paramName']\n	'params'=>array(\n		// this is used in contact page\n		'adminEmail'=>'webmaster@example.com',\n	),\n);",
+			"file": "protected/config/main.php",
+			"file_size": 2351,
+			"file_write_time": 131110606250466281,
+			"settings":
+			{
+				"buffer_size": 2260,
 				"line_ending": "Windows"
 			}
 		},
@@ -383,7 +498,7 @@
 			"file": "protected/models/Student.php",
 			"settings":
 			{
-				"buffer_size": 2236,
+				"buffer_size": 2301,
 				"line_ending": "Windows"
 			}
 		},
@@ -394,14 +509,6 @@
 				"buffer_size": 23124,
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "protected/views/student/_form.php",
-			"settings":
-			{
-				"buffer_size": 1989,
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -411,16 +518,20 @@
 		"selected_items":
 		[
 			[
+				"gitcu",
+				"Git: Custom Command"
+			],
+			[
+				"git addc",
+				"Git: Add Current File"
+			],
+			[
 				"ins",
 				"Package Control: Install Package"
 			],
 			[
 				"git quickcom",
 				"Git: Quick Commit"
-			],
-			[
-				"git addc",
-				"Git: Add Current File"
 			],
 			[
 				"git pushc",
@@ -711,34 +822,75 @@
 	"file_history":
 	[
 		"/D/www/asdf/asdf.sublime-project",
-		"/D/www/pc/micro/autoregion.css",
-		"/D/www/yii/web/CActiveDataProvider.php",
-		"/D/www/yii/yiic",
-		"/D/www/yii/yiilite.php",
+		"/D/www/yii/views/ar/profile-summary-firebug.php",
+		"/D/www/asdf/protected/tests/functional/SiteTest.php",
+		"/D/www/asdf/protected/models/ContactForm.php",
+		"/D/www/asdf/protected/components/Controller.php",
+		"/D/www/asdf/css/ie.css",
+		"/D/www/asdf/protected/components/UserIdentity.php",
+		"/D/www/asdf/protected/models/LoginForm.php",
+		"/D/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/AutoFormat.PurifierLinkify.DocURL.txt",
+		"/D/www/asdf/protected/config/main.php",
+		"/D/www/yii/cli/commands/shell/CrudCommand.php",
+		"/D/www/yii/caching/CZendDataCache.php",
 		"/D/www/yii/utils/CVarDumper.php",
+		"/D/www/yii/yiic",
+		"/D/www/yii/web/CDbHttpSession.php",
+		"/D/www/yii/i18n/data/it_ch.php",
+		"/D/www/yii/web/CActiveDataProvider.php",
+		"/D/www/asdf/protected/views/site/item.php",
+		"/D/www/yii/web/CController.php",
+		"/D/www/yii/cli/commands/shell/ModelCommand.php",
+		"/D/www/yii/web/CUrlManager.php",
+		"/D/www/yii/db/schema/mssql/CMssqlPdoAdapter.php",
+		"/D/www/yii/web/actions/CAction.php",
+		"/D/www/yii/zii/widgets/jui/CJuiAutoComplete.php",
+		"/D/www/yii/web/CWebApplication.php",
+		"/D/www/yii/i18n/data/sa_in.php",
+		"/D/www/yii/validators/CRequiredValidator.php",
+		"/D/www/yii/base/CApplicationComponent.php",
+		"/D/www/yii/web/widgets/CAutoComplete.php",
+		"/D/www/yii/db/schema/oci/COciCommandBuilder.php",
+		"/D/www/yii/db/schema/oci/COciColumnSchema.php",
+		"/D/www/yii/gii/CCodeModel.php",
+		"/D/www/yii/web/CFormModel.php",
+		"/D/www/yii/vendors/htmlpurifier/standalone/HTMLPurifier/ConfigSchema/schema/Output.CommentScriptContents.txt",
+		"/D/www/class_bak/protected/runtime/gii-1.1.15/ModelCode.php",
+		"/D/www/yii/web/CWebModule.php",
+		"/D/www/yii/db/CDbMigration.php",
+		"/D/www/yii/validators/CValidator.php",
+		"/D/www/pc/register.html",
+		"/D/www/yii/.htaccess",
+		"/D/www/asdf/protected/models/Room.php",
+		"/D/www/pc/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.uk.js",
+		"/D/www/yii/base/CErrorEvent.php",
+		"/D/www/yii/logging/CLogRoute.php",
+		"/D/www/yii/i18n/data/az_ir.php",
+		"/D/www/yii/zii/widgets/jui/CJuiResizable.php",
+		"/D/www/asdf/protected/views/student/_view.php",
+		"/D/www/pc/sem.html",
+		"/D/www/pc/micro/autoregion.css",
+		"/D/software/sublimeText/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/software/sublimeText/Data/Packages/GoSublime/Default (Windows).sublime-keymap",
+		"/D/software/sublimeText/Data/Packages/User/Preferences.sublime-settings",
+		"/D/www/yii/base/CModel.php",
+		"/D/www/yii/db/ar/CActiveRecord.php",
+		"/D/www/yii/yiilite.php",
 		"/D/www/yii/web/auth/CDbAuthManager.php",
 		"/D/www/yii/caching/CDbCache.php",
 		"/D/www/yii/db/CDbTransaction.php",
 		"/D/www/yii/i18n/CDateFormatter.php",
-		"/D/www/yii/caching/CZendDataCache.php",
-		"/D/www/yii/validators/CValidator.php",
 		"/D/www/pc/viewtreaty_2.html",
 		"/D/www/yii/i18n/CDbMessageSource.php",
 		"/D/www/yii/db/ar/CActiveRecordBehavior.php",
-		"/D/www/yii/db/ar/CActiveRecord.php",
 		"/D/www/asdf/assets/79bb530f/jquery.yiiactiveform.js",
 		"/D/www/yii/i18n/data/ar_ae.php",
-		"/D/www/yii/web/CWebApplication.php",
-		"/D/www/yii/zii/widgets/jui/CJuiAutoComplete.php",
 		"/D/www/asdf/protected/views/student/item.php",
-		"/D/www/asdf/protected/views/student/_view.php",
 		"/D/www/asdf/protected/views/site/index.php",
-		"/D/www/asdf/protected/config/main.php",
 		"/D/www/yii/cli/views/shell/form/action.php",
 		"/D/www/yii/caching/CCache.php",
 		"/D/www/yii/console/CConsoleApplication.php",
 		"/D/www/yii/caching/CApcCache.php",
-		"/D/www/yii/.htaccess",
 		"/D/www/yii/validators/CNumberValidator.php",
 		"/D/www/asdf/protected/views/student/index.php",
 		"/D/www/asdf/css/main.css",
@@ -748,7 +900,6 @@
 		"/D/www/asdf/assets/79bb530f/jquery.min.js",
 		"/D/www/pc/bower_components/jquery-validation/src/additional/skip_or_fill_minimum.js",
 		"/D/www/asdf/protected/views/student/fenpage.php",
-		"/D/www/yii/base/CModel.php",
 		"/D/www/asdf/protected/components/MyValidator.php",
 		"/D/www/class_bak/protected/models/Room.php",
 		"/D/www/yii/gii/views/layouts/main.php",
@@ -765,34 +916,26 @@
 		"/D/www/asdf/protected/views/site/_form.php",
 		"/D/www/asdf/protected/views/site/create.php",
 		"/D/www/asdf/protected/views/student/create.php",
-		"/D/www/asdf/protected/models/Room.php",
 		"/D/www/asdf/protected/controllers/SiteController.php",
-		"/D/www/asdf/protected/views/site/item.php",
 		"/D/www/asdf/index.php",
 		"/D/www/asdf/protected/yiic",
-		"/D/www/yii/web/CWebModule.php",
 		"/D/www/yii/cli/views/webapp/index-test.php",
 		"/D/www/pc/js/views/view.contact.js",
 		"/D/www/pc/viewtreaty.html",
 		"/D/www/yii/cli/views/webapp/protected/controllers/SiteController.php",
 		"/D/www/pc/viewtreaty_1.html",
 		"/D/www/asdf/protected/views/site/_sitem.php",
-		"/D/www/pc/sem.html",
 		"/D/www/yii/i18n/data/sv.php",
-		"/D/www/yii/i18n/data/sa_in.php",
-		"/D/www/asdf/protected/tests/functional/SiteTest.php",
 		"/D/www/asdf/protected/views/site/view.php",
 		"/D/www/asdf/protected/controllers/StudentController.php",
 		"/D/www/asdf/protected/views/layouts/main.php",
 		"/D/www/yii/db/schema/CDbCriteria.php",
 		"/D/www/asdf/protected/views/site/login.php",
-		"/D/www/yii/web/CController.php",
 		"/D/www/yii/collections/CConfiguration.php",
 		"/D/www/yii/db/CDbCommand.php",
 		"/D/www/yii/web/auth/CWebUser.php",
 		"/D/www/yii/YiiBase.php",
 		"/D/www/asdf/protected/models/Student.php",
-		"/D/www/pc/register.html",
 		"/D/www/yii/base/CApplication.php",
 		"/D/www/yii/base/CHttpException.php",
 		"/D/www/pc/bottom.html",
@@ -805,49 +948,18 @@
 		"/D/www/class_bak/protected/views/student/view.php",
 		"/D/www/class_bak/protected/views/student/update.php",
 		"/D/www/asdf/assets/4815785c/gridview/styles.css",
-		"/D/www/yii/cli/views/webapp/protected/tests/WebTestCase.php",
-		"/D/www/pc/bower_components/jquery-validation/src/additional/statesUS.js",
-		"/D/www/pc/bower_components/select2/src/js/select2/utils.js",
-		"/D/www/class_bak/protected/controllers/StudentController.php",
-		"/D/www/yii/i18n/data/en_mp.php",
-		"/D/www/pc/index.html",
-		"/D/www/yii/web/widgets/CClipWidget.php",
-		"/D/www/yii/i18n/data/tzm_ma.php",
-		"/D/www/yii/i18n/data/ig_ng.php",
-		"/D/www/bool/goods.php",
-		"/D/www/yii/i18n/data/root.php",
-		"/D/www/pc/robots.txt",
-		"/D/www/yii/i18n/data/sbp_tz.php",
-		"/D/www/yii/web/CDataProvider.php",
-		"/D/www/yii/web/helpers/CHtml.php",
-		"/D/www/yii/web/CDbHttpSession.php",
-		"/D/www/yii/cli/commands/WebAppCommand.php",
-		"/D/www/yii/i18n/data/wal_et.php",
-		"/D/www/yii/zii/widgets/jui/CJuiInputWidget.php",
-		"/D/www/asdf/protected/views/site/_view.php",
-		"/D/www/class_bak/protected/views/site/index.php",
-		"/D/www/yii/cli/views/webapp/protected/views/site/index.php",
-		"/D/www/yii/cli/views/shell/module/views/default/index.php",
-		"/D/www/asdf/.gitignore",
-		"/D/www/yii/yiic.bat",
-		"/D/www/bool/Model/GoodsModel.class.php",
-		"/D/www/bool/Model/Model.class.php",
-		"/D/www/bool/include/mysql.class.php",
-		"/D/www/yii/views/it/error.php",
-		"/D/www/yii/gii/generators/controller/views/index.php",
-		"/D/www/yii/collections/CMapIterator.php",
-		"/D/www/yii/web/form/CFormInputElement.php",
-		"/D/www/yii/web/actions/CViewAction.php"
+		"/D/www/yii/cli/views/webapp/protected/tests/WebTestCase.php"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 62.0
 	},
 	"find_in_files":
 	{
 		"height": 102.0,
 		"where_history":
 		[
+			"<project>",
 			"D:\\www\\fykc",
 			"<project>"
 		]
@@ -857,6 +969,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";\n",
+			"CDbCommand",
+			"resolveValue",
+			"students",
+			"setIsNewRecord",
+			"$this->_new",
+			"2",
+			"function delete",
 			"scope",
 			"addcondition",
 			"nbsp",
@@ -976,15 +1096,7 @@
 			"student",
 			"Room",
 			"room",
-			"actionindex",
-			"\n		'db'=>array(\n			'connectionString' => 'mysql:host=localhost;dbname=testdrive',\n			'emulatePrepare' => true,\n			'username' => 'root',\n			'password' => '',\n			'charset' => 'utf8',\n		),\n		",
-			"actionindex",
-			"dateline",
-			"before",
-			"beforesave",
-			"scenario",
-			"function scenario",
-			"model()->"
+			"actionindex"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1006,7 +1118,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1015,15 +1127,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3512,
+						"buffer_size": 3095,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3488,
-								3488
+								1598,
+								1598
 							]
 						],
 						"settings":
@@ -1032,14 +1144,6 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1048,30 +1152,38 @@
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
-								"bh_tag_close"
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "ASCII",
@@ -1080,10 +1192,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1932.0,
+						"translation.y": 1339.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -1092,15 +1204,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4834,
+						"buffer_size": 5994,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1061,
-								1061
+								2292,
+								2292
 							]
 						],
 						"settings":
@@ -1156,27 +1268,190 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 690.0,
+						"translation.y": 2268.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "protected/models/Room.php",
+					"file": "/D/www/yii/web/widgets/CActiveForm.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 862,
+						"buffer_size": 40211,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								263,
-								263
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/www/yii/web/helpers/CHtml.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 104671,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 2356,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										12844,
+										12848
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								44906,
+								44906
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 25962.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/www/yii/db/ar/CActiveRecord.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 86714,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45048,
+								45048
 							]
 						],
 						"settings":
@@ -1229,6 +1504,534 @@
 							"is_xml": false,
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 27940.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "protected/views/site/create.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 59,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "protected/views/site/_form.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 207.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/www/yii/db/CDbConnection.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13677,
+								13677
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7930.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/D/www/yii/db/ar/CActiveFinder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 51588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								509,
+								509
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 345.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/D/www/yii/base/CModel.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20491,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1073,
+								1073
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 202.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/D/www/yii/base/CComponent.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17872,
+								17872
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 12223.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "protected/views/student/_form.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1236,86 +2039,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/D/www/yii/db/ar/CActiveRecord.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 86713,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14324,
-								14324
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close"
-							],
-							"is_xml": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 9729.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 12,
 					"file": "/D/www/yii/yiilite.php",
 					"semi_transient": false,
 					"settings":
@@ -1340,8 +2068,8 @@
 						"selection":
 						[
 							[
-								205756,
-								205756
+								8231,
+								8231
 							]
 						],
 						"settings":
@@ -1349,14 +2077,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1365,30 +2085,38 @@
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
-								"bh_tag_close"
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "ASCII",
@@ -1396,14 +2124,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 160112.0,
+						"translation.y": 5625.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 13,
 					"file": "protected/views/student/create.php",
 					"semi_transient": false,
 					"settings":
@@ -1474,11 +2202,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 14,
 					"file": "protected/views/student/index.php",
 					"semi_transient": false,
 					"settings":
@@ -1551,100 +2279,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 15,
 					"file": "index-test.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1049,
+						"buffer_size": 1050,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								873,
-								873
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"is_xml": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "protected/models/Student.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2236,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1915,
-								1915
+								953,
+								953
 							]
 						],
 						"settings":
@@ -1653,14 +2305,6 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1669,30 +2313,38 @@
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
-								"bh_tag_close"
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "ASCII",
@@ -1701,14 +2353,319 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1035.0,
+						"translation.y": 414.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "protected/models/Room.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								651,
+								651
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 690.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 17,
+					"file": "/D/www/yii/db/CDbCommand.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 63263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48094,
+								48094
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 28634.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "protected/config/main.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 828.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "protected/models/Student.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								919,
+								919
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 414.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
 					"file": "/D/www/yii/db/schema/CDbCriteria.php",
 					"semi_transient": false,
 					"settings":
@@ -1729,14 +2686,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1745,30 +2694,38 @@
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
-								"bh_tag_close"
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "ASCII",
@@ -1779,84 +2736,7 @@
 						"translation.y": 4688.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "protected/views/student/_form.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1989,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1331,
-								1331
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"is_xml": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 207.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1936,6 +2816,86 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"asdfconfigmin",
+				"asdf\\protected\\config\\main.php"
+			],
+			[
+				"asdfmainphp",
+				"asdf\\protected\\config\\main.php"
+			],
+			[
+				"cdcommand",
+				"yii\\db\\CDbCommand.php"
+			],
+			[
+				"yiicdbcommand.php",
+				"yii\\db\\CDbCommand.php"
+			],
+			[
+				"room.php",
+				"asdf\\protected\\models\\Room.php"
+			],
+			[
+				"yiichtml.",
+				"yii\\web\\helpers\\CHtml.php"
+			],
+			[
+				"yiicactivefor",
+				"yii\\web\\widgets\\CActiveForm.php"
+			],
+			[
+				"asdfindex",
+				"asdf\\index-test.php"
+			],
+			[
+				"ccom",
+				"yii\\base\\CComponent.php"
+			],
+			[
+				"cmodel.php",
+				"yii\\base\\CModel.php"
+			],
+			[
+				"cactivere",
+				"yii\\db\\ar\\CActiveRecord.php"
+			],
+			[
+				"student.php",
+				"asdf\\protected\\models\\Student.php"
+			],
+			[
+				"stu",
+				"asdf\\protected\\controllers\\StudentController.php"
+			],
+			[
+				"sitecon",
+				"asdf\\protected\\controllers\\SiteController.php"
+			],
+			[
+				"yiicomponet",
+				"yii\\base\\CComponent.php"
+			],
+			[
+				"yiicactivefinder",
+				"yii\\db\\ar\\CActiveFinder.php"
+			],
+			[
+				"student.ph",
+				"asdf\\protected\\models\\Student.php"
+			],
+			[
+				"yiicrequired",
+				"yii\\validators\\CRequiredValidator.php"
+			],
+			[
+				"asdfstudentcon",
+				"asdf\\protected\\controllers\\StudentController.php"
+			],
+			[
+				"yiicmodel.ph",
+				"yii\\base\\CModel.php"
+			],
 			[
 				"asdfsitcont",
 				"asdf\\protected\\controllers\\SiteController.php"
@@ -2049,10 +3009,6 @@
 				"asdf\\protected\\views\\site\\index.php"
 			],
 			[
-				"asdfmainphp",
-				"asdf\\protected\\config\\main.php"
-			],
-			[
 				"cwebuser.php",
 				"yii\\web\\auth\\CWebUser.php"
 			],
@@ -2063,10 +3019,6 @@
 			[
 				"itemp.php",
 				"yii\\i18n\\data\\en_mp.php"
-			],
-			[
-				"room.php",
-				"asdf\\protected\\models\\Room.php"
 			],
 			[
 				"studentcontrller.",
@@ -2130,10 +3082,6 @@
 			],
 			[
 				"asdfindex-test",
-				"asdf\\index-test.php"
-			],
-			[
-				"asdfindex",
 				"asdf\\index-test.php"
 			],
 			[
@@ -2207,10 +3155,6 @@
 			[
 				"studentcontroll",
 				"class\\protected\\controllers\\StudentController.php"
-			],
-			[
-				"student.php",
-				"class\\protected\\models\\Student.php"
 			],
 			[
 				"jdriv",
@@ -2383,70 +3327,6 @@
 			[
 				"ordercon",
 				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
-			],
-			[
-				"jjrpc/views/_notpricequote",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_notPriceQuote.php"
-			],
-			[
-				"jjrpc/views/_reopenprice",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_reopenPrice.php"
-			],
-			[
-				"jjrpcordercontro",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
-			],
-			[
-				"ordercont",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
-			],
-			[
-				"jjrpc/ordercontroller",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
-			],
-			[
-				"order-tr",
-				"fykc\\static\\jjrpc\\js\\controller\\order-transport.js"
-			],
-			[
-				"jjrpcordercontroller.php",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
-			],
-			[
-				"jjrpcorderco",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
-			],
-			[
-				"jjrpcorder_cance",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_cancelDetail.php"
-			],
-			[
-				"jjrpcviewscancel",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\cancel.php"
-			],
-			[
-				"jjrpcordercontroller",
-				"fykc\\protected\\modules\\jjrpc\\controllers\\OrderController.php"
-			],
-			[
-				"_canceldetail",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_cancelDetail.php"
-			],
-			[
-				"static/jjrpc/js/order-trans",
-				"fykc\\static\\jjrpc\\js\\controller\\order-transport.js"
-			],
-			[
-				"jjrpcviewslayoutmain.",
-				"fykc\\protected\\modules\\jjrpc\\views\\layouts\\main.php"
-			],
-			[
-				"configmain.php",
-				"fykc\\protected\\config\\main.php"
-			],
-			[
-				"modulesjjrpcviewstransportend",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\transportEnd.php"
 			]
 		],
 		"width": 0.0
@@ -2482,7 +3362,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 194.0,
+	"side_bar_width": 50.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -33,7 +33,7 @@
 
 function p($data,$status=NULL){
     echo '<pre/>';
-    if(($data==NULL) || $status)
+    if (($data==NULL) || $status)
         var_dump($data);
     else
         print_r($data);
