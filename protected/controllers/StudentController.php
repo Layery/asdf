@@ -85,7 +85,6 @@ class StudentController extends Controller
             exit;
         }
         if ($_POST) {
-            print_r($_POST);
             $student->scenario = 'update';  // 设置场景为update
             $student->attributes = $_POST['Student'];
             if (!$student->validate()) {

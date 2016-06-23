@@ -4,8 +4,80 @@
 		"selected_items":
 		[
 			[
+				"getA",
+				"getAttributes	(StudentController.php)"
+			],
+			[
+				"getActi",
+				"getActiveRelation	(CActiveRecord.php)"
+			],
+			[
+				"defa",
+				"defaultScope	(CActiveRecord.php)"
+			],
+			[
+				"getDb",
+				"getDbCriteria"
+			],
+			[
+				"get_class",
+				"get_class_methods"
+			],
+			[
+				"find",
+				"findByPk	(StudentController.php)"
+			],
+			[
+				"get",
+				"getError〔function〕"
+			],
+			[
+				"ex",
+				"exist	(CActiveRecord.php)"
+			],
+			[
+				"getatt",
+				"getAttributeLabel〔function〕"
+			],
+			[
+				"e",
+				"email"
+			],
+			[
+				"stu",
+				"student"
+			],
+			[
+				"che",
+				"check"
+			],
+			[
+				"remo",
+				"removeAttr	.removeAttr()"
+			],
+			[
+				"ch",
+				"check"
+			],
+			[
+				"re",
+				"remove	.remove()"
+			],
+			[
+				"roo",
+				"roomname"
+			],
+			[
+				"stud",
+				"studentname	(index.php)"
+			],
+			[
 				"for",
-				"form	Tag"
+				"foreach	foreach …"
+			],
+			[
+				"con",
+				"conditions"
 			],
 			[
 				"wid",
@@ -32,10 +104,6 @@
 				"findAll"
 			],
 			[
-				"get",
-				"getErrors"
-			],
-			[
 				"cre",
 				"createCommand"
 			],
@@ -46,10 +114,6 @@
 			[
 				"请",
 				"请选择班级	(_form.php)"
-			],
-			[
-				"e",
-				"empty"
 			],
 			[
 				"after",
@@ -102,10 +166,6 @@
 			[
 				"before",
 				"beforeDelete	(yiilite.php)"
-			],
-			[
-				"defa",
-				"default	(CWebUser.php)"
 			],
 			[
 				"getError",
@@ -174,10 +234,6 @@
 			[
 				"班级",
 				"班级ID	(index.php)"
-			],
-			[
-				"find",
-				"findByPk	(JDriver.php)"
 			],
 			[
 				"activeT",
@@ -263,7 +319,23 @@
 			"file": "protected/controllers/StudentController.php",
 			"settings":
 			{
-				"buffer_size": 3261,
+				"buffer_size": 3512,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "protected/controllers/SiteController.php",
+			"settings":
+			{
+				"buffer_size": 4834,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "protected/models/Room.php",
+			"settings":
+			{
+				"buffer_size": 862,
 				"line_ending": "Windows"
 			}
 		},
@@ -276,10 +348,26 @@
 			}
 		},
 		{
+			"file": "/D/www/yii/yiilite.php",
+			"settings":
+			{
+				"buffer_size": 304904,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "protected/views/student/create.php",
+			"settings":
+			{
+				"buffer_size": 78,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "protected/views/student/index.php",
 			"settings":
 			{
-				"buffer_size": 1596,
+				"buffer_size": 1518,
 				"line_ending": "Windows"
 			}
 		},
@@ -295,55 +383,23 @@
 			"file": "protected/models/Student.php",
 			"settings":
 			{
-				"buffer_size": 2330,
+				"buffer_size": 2236,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "protected/config/main.php",
+			"file": "/D/www/yii/db/schema/CDbCriteria.php",
 			"settings":
 			{
-				"buffer_size": 2260,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "protected/views/site/index.php",
-			"settings":
-			{
-				"buffer_size": 1043,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "protected/views/student/_view.php",
-			"settings":
-			{
-				"buffer_size": 114,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "protected/controllers/SiteController.php",
-			"settings":
-			{
-				"buffer_size": 4121,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "protected/models/Room.php",
-			"settings":
-			{
-				"buffer_size": 854,
-				"line_ending": "Windows"
+				"buffer_size": 23124,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "protected/views/student/_form.php",
 			"settings":
 			{
-				"buffer_size": 1426,
+				"buffer_size": 1989,
 				"line_ending": "Windows"
 			}
 		}
@@ -654,10 +710,30 @@
 	},
 	"file_history":
 	[
+		"/D/www/asdf/asdf.sublime-project",
+		"/D/www/pc/micro/autoregion.css",
 		"/D/www/yii/web/CActiveDataProvider.php",
 		"/D/www/yii/yiic",
 		"/D/www/yii/yiilite.php",
+		"/D/www/yii/utils/CVarDumper.php",
+		"/D/www/yii/web/auth/CDbAuthManager.php",
+		"/D/www/yii/caching/CDbCache.php",
+		"/D/www/yii/db/CDbTransaction.php",
+		"/D/www/yii/i18n/CDateFormatter.php",
+		"/D/www/yii/caching/CZendDataCache.php",
+		"/D/www/yii/validators/CValidator.php",
+		"/D/www/pc/viewtreaty_2.html",
+		"/D/www/yii/i18n/CDbMessageSource.php",
+		"/D/www/yii/db/ar/CActiveRecordBehavior.php",
 		"/D/www/yii/db/ar/CActiveRecord.php",
+		"/D/www/asdf/assets/79bb530f/jquery.yiiactiveform.js",
+		"/D/www/yii/i18n/data/ar_ae.php",
+		"/D/www/yii/web/CWebApplication.php",
+		"/D/www/yii/zii/widgets/jui/CJuiAutoComplete.php",
+		"/D/www/asdf/protected/views/student/item.php",
+		"/D/www/asdf/protected/views/student/_view.php",
+		"/D/www/asdf/protected/views/site/index.php",
+		"/D/www/asdf/protected/config/main.php",
 		"/D/www/yii/cli/views/shell/form/action.php",
 		"/D/www/yii/caching/CCache.php",
 		"/D/www/yii/console/CConsoleApplication.php",
@@ -669,12 +745,8 @@
 		"/D/www/pc/bower_components/jquery-validation/src/localization/messages_ar.js",
 		"/D/www/pc/manifest.json",
 		"/D/www/asdf/index-test.php",
-		"/D/www/pc/micro/autoregion.css",
 		"/D/www/asdf/assets/79bb530f/jquery.min.js",
 		"/D/www/pc/bower_components/jquery-validation/src/additional/skip_or_fill_minimum.js",
-		"/D/www/asdf/asdf.sublime-project",
-		"/D/www/asdf/protected/config/main.php",
-		"/D/www/asdf/protected/views/student/item.php",
 		"/D/www/asdf/protected/views/student/fenpage.php",
 		"/D/www/yii/base/CModel.php",
 		"/D/www/asdf/protected/components/MyValidator.php",
@@ -692,17 +764,13 @@
 		"/D/www/yii/i18n/data/ar_lb.php",
 		"/D/www/asdf/protected/views/site/_form.php",
 		"/D/www/asdf/protected/views/site/create.php",
-		"/D/www/asdf/protected/views/site/index.php",
 		"/D/www/asdf/protected/views/student/create.php",
-		"/D/www/asdf/protected/views/student/_view.php",
 		"/D/www/asdf/protected/models/Room.php",
 		"/D/www/asdf/protected/controllers/SiteController.php",
 		"/D/www/asdf/protected/views/site/item.php",
 		"/D/www/asdf/index.php",
 		"/D/www/asdf/protected/yiic",
 		"/D/www/yii/web/CWebModule.php",
-		"/D/www/yii/i18n/CDbMessageSource.php",
-		"/D/www/yii/validators/CValidator.php",
 		"/D/www/yii/cli/views/webapp/index-test.php",
 		"/D/www/pc/js/views/view.contact.js",
 		"/D/www/pc/viewtreaty.html",
@@ -721,14 +789,12 @@
 		"/D/www/yii/web/CController.php",
 		"/D/www/yii/collections/CConfiguration.php",
 		"/D/www/yii/db/CDbCommand.php",
-		"/D/www/yii/caching/CDbCache.php",
 		"/D/www/yii/web/auth/CWebUser.php",
 		"/D/www/yii/YiiBase.php",
 		"/D/www/asdf/protected/models/Student.php",
 		"/D/www/pc/register.html",
 		"/D/www/yii/base/CApplication.php",
 		"/D/www/yii/base/CHttpException.php",
-		"/D/www/yii/web/CWebApplication.php",
 		"/D/www/pc/bottom.html",
 		"/D/www/pc/bower_components/bootstrap-table/dist/bootstrap-table-all.js",
 		"/D/www/pc/bower_components/bootstrap-table/dist/locale/bootstrap-table-ar-SA.js",
@@ -771,21 +837,11 @@
 		"/D/www/yii/gii/generators/controller/views/index.php",
 		"/D/www/yii/collections/CMapIterator.php",
 		"/D/www/yii/web/form/CFormInputElement.php",
-		"/D/www/yii/web/actions/CViewAction.php",
-		"/D/www/fykc/protected/modules/jjr/models/JDriver.php",
-		"/D/www/yii/zii/widgets/CDetailView.php",
-		"/D/www/yii/zii/widgets/CBaseListView.php",
-		"/D/www/class/protected/views/room/index.php",
-		"/D/www/class/protected/models/Room.php",
-		"/D/www/asdf/css/screen.css",
-		"/D/www/yii/i18n/data/ar_sd.php",
-		"/D/www/yii/i18n/data/ar_sa.php",
-		"/D/www/asdf/protected/data/schema.mysql.sql",
-		"/D/www/asdf/assets/ae504417/autocomplete/jquery.autocomplete.css"
+		"/D/www/yii/web/actions/CViewAction.php"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -801,6 +857,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scope",
+			"addcondition",
+			"nbsp",
+			"p;",
+			"redirect",
+			"CDbCriteria",
+			"rs",
+			"roomname",
+			"studentname",
+			" $",
+			"studentname",
 			"findall",
 			"提交 ",
 			"function delete",
@@ -917,18 +984,7 @@
 			"beforesave",
 			"scenario",
 			"function scenario",
-			"model()->",
-			"function relations",
-			"model()",
-			"actioninde",
-			"__CLASS__",
-			"function model",
-			"function find",
-			"findAll",
-			"function getdata",
-			"getdata",
-			"filters",
-			"create"
+			"model()->"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -950,7 +1006,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -959,28 +1015,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3261,
+						"buffer_size": 3512,
 						"regions":
 						{
-							"TagLint":
-							{
-								"flags": 2356,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										551,
-										554
-									]
-								],
-								"scope": "variable.parameter"
-							}
 						},
 						"selection":
 						[
 							[
-								676,
-								676
+								3488,
+								3488
 							]
 						],
 						"settings":
@@ -1037,14 +1080,167 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1932.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "protected/controllers/SiteController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1061,
+								1061
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 690.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "protected/models/Room.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								263,
+								263
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "/D/www/yii/db/ar/CActiveRecord.php",
 					"semi_transient": false,
 					"settings":
@@ -1056,8 +1252,96 @@
 						"selection":
 						[
 							[
-								51150,
-								51150
+								14324,
+								14324
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9729.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/www/yii/yiilite.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 304904,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 2356,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										187378,
+										187388
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								205756,
+								205756
 							]
 						],
 						"settings":
@@ -1107,32 +1391,107 @@
 								"bh_tag_close"
 							],
 							"is_xml": false,
-							"origin_encoding": "UTF-8",
+							"origin_encoding": "ASCII",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 34402.0,
+						"translation.y": 160112.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "protected/views/student/index.php",
+					"buffer": 5,
+					"file": "protected/views/student/create.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1596,
+						"buffer_size": 78,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								584,
-								584
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "protected/views/student/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1040,
+								1040
 							]
 						],
 						"settings":
@@ -1192,11 +1551,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 7,
 					"file": "index-test.php",
 					"semi_transient": false,
 					"settings":
@@ -1272,20 +1631,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 8,
 					"file": "protected/models/Student.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2330,
+						"buffer_size": 2236,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2327,
-								2327
+								1915,
+								1915
 							]
 						],
 						"settings":
@@ -1342,337 +1701,32 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1080.0,
+						"translation.y": 1035.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "protected/config/main.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2260,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2063,
-								2063
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"is_xml": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1368.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "protected/views/site/index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1043,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								131,
-								131
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"is_xml": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "protected/views/student/_view.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 114,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								113,
-								1
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"is_xml": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "protected/controllers/SiteController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4121,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								891,
-								891
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"is_xml": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 610.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 9,
-					"file": "protected/models/Room.php",
+					"file": "/D/www/yii/db/schema/CDbCriteria.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 854,
+						"buffer_size": 23124,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								845,
-								845
+								7573,
+								7585
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"auto_complete": false,
 							"bh_regions":
 							[
 								"bh_angle",
@@ -1717,16 +1771,15 @@
 								"bh_tag_close"
 							],
 							"is_xml": false,
-							"origin_encoding": "UTF-8",
+							"origin_encoding": "ASCII",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 4688.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1735,15 +1788,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1426,
+						"buffer_size": 1989,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								521,
-								521
+								1331,
+								1331
 							]
 						],
 						"settings":
@@ -1800,10 +1853,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 207.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1811,7 +1864,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -1875,7 +1928,7 @@
 	"project": "asdf.sublime-project",
 	"replace":
 	{
-		"height": 60.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1884,11 +1937,27 @@
 		"selected_items":
 		[
 			[
-				"yiicactivere",
+				"asdfsitcont",
+				"asdf\\protected\\controllers\\SiteController.php"
+			],
+			[
+				"yiicactivre",
 				"yii\\db\\ar\\CActiveRecord.php"
 			],
 			[
 				"",
+				"yii\\db\\ar\\CActiveRecord.php"
+			],
+			[
+				"yiicdbcriteria.php",
+				"yii\\db\\schema\\CDbCriteria.php"
+			],
+			[
+				"yiicactiverecord.php",
+				"yii\\db\\ar\\CActiveRecord.php"
+			],
+			[
+				"yiicactivere",
 				"yii\\db\\ar\\CActiveRecord.php"
 			],
 			[
@@ -2378,22 +2447,6 @@
 			[
 				"modulesjjrpcviewstransportend",
 				"fykc\\protected\\modules\\jjrpc\\views\\order\\transportEnd.php"
-			],
-			[
-				"views/_canceldetail",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\_cancelDetail.php"
-			],
-			[
-				"jjrpc/views/laouts/min",
-				"fykc\\protected\\modules\\jjrpc\\views\\layouts\\main.php"
-			],
-			[
-				"views/cancel.php",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\cancel.php"
-			],
-			[
-				"modules/jjrpc/views/cancel",
-				"fykc\\protected\\modules\\jjrpc\\views\\order\\cancel.php"
 			]
 		],
 		"width": 0.0
@@ -2428,8 +2481,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 212.0,
+	"side_bar_visible": true,
+	"side_bar_width": 194.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

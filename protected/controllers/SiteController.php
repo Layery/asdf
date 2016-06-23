@@ -26,6 +26,92 @@ class SiteController extends Controller
      */
 	public function actionList()
 	{
+		// $student = Student::model();
+		// $room = Room::model();
+		// $getRelated = $room->getRelated('students');
+		// $getDbCriteria = $room->getDbCriteria();
+		// $defaultScope = $room->defaultScope('Room');  
+		// $attributeNames = $room->getMetaData();  // 返回数据库表字段, 
+
+		// $getActiveRelation = $room->getActiveRelation('students'); 
+		// $getActiveRelation = $student->getActiveRelation('room');  // 返回当前对象关联的relation信息.
+
+		// $hasAttribute = $room->hasAttribute('HAHA'); // 判断当前对象是否具有某个属性.
+		
+
+		// $getAttribute = $room->getAttribute('uuu'); // 获取当前对象的某个属性的值,没有返回null;
+
+	 	
+	 // 	$getTableSchema = $room->getTableSchema(); // 获取数据库表信息.
+
+	 // 	$getCommandBuilder = $room->getCommandBuilder();
+        
+	 // 	// $insert = $room->insert(); // insert方法不会走验证器 , 
+
+	 // 	// $saveAttributes = $room->saveAttributes(array('name'=>9));
+	 // 	// $room->save();
+
+	 // 	// $rs = $room->setAttribute('name',array('order'=>3,'area'=>30,'detail'=>'asdf'));
+
+
+	 // 	$refresh = $room->refresh();
+	 	
+	 	
+	 // 	p($refresh);
+
+
+
+	 // 	p($room->getAttributes());
+	 // 	p($saveAttributes);
+
+	 // 	p($insert);
+
+
+
+
+	 // 	p($getTableSchema);
+
+        
+
+
+		// p($getAttribute);
+
+
+		// p($hasAttribute);
+
+
+		// p($getActiveRelation);
+
+
+		// p($attributeNames);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		$sql = 'select * from {{room}}';
 		$conn = Yii::app()->db->createCommand($sql);
 		$classList = $conn->queryAll($sql);
