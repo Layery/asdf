@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"cre",
+				"createCommand($sql"
+			],
+			[
 				"CD",
 				"CDbConnection〔class〕"
 			],
@@ -126,10 +130,6 @@
 			[
 				"fin",
 				"findAll"
-			],
-			[
-				"cre",
-				"createCommand"
 			],
 			[
 				"query",
@@ -351,7 +351,7 @@
 			"file": "protected/controllers/SiteController.php",
 			"settings":
 			{
-				"buffer_size": 5994,
+				"buffer_size": 5999,
 				"line_ending": "Windows"
 			}
 		},
@@ -484,10 +484,7 @@
 			}
 		},
 		{
-			"contents": "<?php\n\n// uncomment the following to define a path alias\n// Yii::setPathOfAlias('local','path/to/local-folder');\n\n// This is the main Web application configuration. Any writable\n// CWebApplication properties can be configured here.\nreturn array(\n	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',\n	'name'=>'asdf_test_app',\n	'defaultController'=>'Site',\n	// preloading 'log' component\n	'preload'=>array('log'),\n\n	// autoloading model and component classes\n	'import'=>array(\n		'application.models.*',\n		'application.components.*',\n	),\n\n	'modules'=>array(\n		// uncomment the following to enable the Gii tool\n		\n		'gii'=>array(\n			'class'=>'system.gii.GiiModule',\n			'password'=>'asdf',\n			// If removed, Gii defaults to localhost only. Edit carefully to taste.\n			'ipFilters'=>array('127.0.0.1','::1'),\n		),\n		\n	),\n\n	// application components\n	'components'=>array(\n		'user'=>array(\n			// enable cookie-based authentication\n			'allowAutoLogin'=>true,\n		),\n		\n		// uncomment the following to enable URLs in path-format\n		/*\n		'urlManager'=>array(\n			'urlFormat'=>'path',\n			'rules'=>array(\n				'<controller:\\w+>/<id:\\d+>'=>'<controller>/view',\n				'<controller:\\w+>/<action:\\w+>/<id:\\d+>'=>'<controller>/<action>',\n				'<controller:\\w+>/<action:\\w+>'=>'<controller>/<action>',\n			),\n		),\n		*/\n		// 'db'=>array(\n		// 	'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',\n		// ),\n		// uncomment the following to use a MySQL database\n		\n		'db'=>array(\n			'connectionString' => 'mysql:host=localhost;dbname=school',\n			'emulatePrepare' => true,\n			'username' => 'root',\n			'password' => 'root',\n			'charset' => 'utf8',\n			'tablePrefix' => 'c_',\n		),\n		\n		'errorHandler'=>array(\n			// use 'site/error' action to display errors\n			'errorAction'=>'site/error',\n		),\n		'log'=>array(\n			'class'=>'CLogRouter',\n			'routes'=>array(\n				array(\n					'class'=>'CFileLogRoute',\n					'levels'=>'error',\n				),\n				// uncomment the following to show log messages on web pages\n				\n				// array(\n				// 	'class'=>'CWebLogRoute',\n				// ),\n				\n			),\n		),\n	),\n\n	// application-level parameters that can be accessed\n	// using Yii::app()->params['paramName']\n	'params'=>array(\n		// this is used in contact page\n		'adminEmail'=>'webmaster@example.com',\n	),\n);",
 			"file": "protected/config/main.php",
-			"file_size": 2351,
-			"file_write_time": 131110606250466281,
 			"settings":
 			{
 				"buffer_size": 2260,
@@ -517,6 +514,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"gitcu",
 				"Git: Custom Command"
@@ -674,10 +675,6 @@
 				"Package Control: List Packages"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"inspack",
 				"Package Control: Install Package"
 			],
@@ -821,6 +818,7 @@
 	},
 	"file_history":
 	[
+		"/D/www/fykc/JDriver.php",
 		"/D/www/asdf/asdf.sublime-project",
 		"/D/www/yii/views/ar/profile-summary-firebug.php",
 		"/D/www/asdf/protected/tests/functional/SiteTest.php",
@@ -947,8 +945,7 @@
 		"/D/www/asdf/README.md",
 		"/D/www/class_bak/protected/views/student/view.php",
 		"/D/www/class_bak/protected/views/student/update.php",
-		"/D/www/asdf/assets/4815785c/gridview/styles.css",
-		"/D/www/yii/cli/views/webapp/protected/tests/WebTestCase.php"
+		"/D/www/asdf/assets/4815785c/gridview/styles.css"
 	],
 	"find":
 	{
@@ -1118,7 +1115,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 18,
 			"sheets":
 			[
 				{
@@ -1204,15 +1201,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5994,
+						"buffer_size": 5999,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2292,
-								2292
+								2323,
+								2323
 							]
 						],
 						"settings":
@@ -1221,6 +1218,38 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1228,39 +1257,7 @@
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
-								"bh_square_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close"
+								"bh_square_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "UTF-8",
@@ -1268,10 +1265,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2268.0,
+						"translation.y": 681.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1902,8 +1899,8 @@
 						"selection":
 						[
 							[
-								17872,
-								17872
+								17561,
+								17561
 							]
 						],
 						"settings":
@@ -1912,6 +1909,38 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1919,39 +1948,7 @@
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
-								"bh_square_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close"
+								"bh_square_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "ASCII",
@@ -1959,10 +1956,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 12223.0,
+						"translation.y": 15115.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -2432,7 +2429,7 @@
 						"translation.y": 690.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -2508,7 +2505,7 @@
 						"translation.y": 28634.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -2524,8 +2521,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								1215,
+								1215
 							]
 						],
 						"settings":
@@ -2534,6 +2531,38 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -2541,39 +2570,7 @@
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
-								"bh_square_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close"
+								"bh_square_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "ASCII",
@@ -2581,10 +2578,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 828.0,
+						"translation.y": 759.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -2661,7 +2658,7 @@
 						"translation.y": 414.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -2736,7 +2733,7 @@
 						"translation.y": 4688.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -3362,7 +3359,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 50.0,
+	"side_bar_width": 187.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
