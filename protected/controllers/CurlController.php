@@ -11,7 +11,11 @@ class CurlController extends Controller
     public function actionIndex()
     {
         $curl = new MyCurl();
-        p(get_class_methods($curl));
+        $url = 'http://www.taobao.com';
+        $curl->init();
+        $rs = $curl->put($url,'哈哈哈',array('k'=>'value'));
+        p($rs);
+
     }
 
 }

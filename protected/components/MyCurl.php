@@ -1,8 +1,5 @@
 <?php
-/**
- * Curl wrapper for Yii
- * 
- */
+
 class MyCurl extends CComponent
 {
     private $_ch;
@@ -19,7 +16,7 @@ class MyCurl extends CComponent
         CURLOPT_VERBOSE        => true,
         CURLOPT_AUTOREFERER    => true,
         CURLOPT_CONNECTTIMEOUT => 30,
-        CURLOPT_TIMEOUT        => 30,
+        CURLOPT_TIMEOUT        => 30000000,
         CURLOPT_SSL_VERIFYPEER => false,
         CURLOPT_USERAGENT => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
     );
@@ -69,7 +66,7 @@ class MyCurl extends CComponent
     public function post($url, $data = array())
     {
         $this->setOption(CURLOPT_POST, true);
-        $this->setOption(CURLOPT_POSTFIELDS, $data);
+        $rs = $this->setOption(CURLOPT_POSTFIELDS, $data);
 
         return $this->exec($url);
     }
