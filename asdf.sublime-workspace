@@ -319,7 +319,7 @@
 			"file": "protected/controllers/StudentController.php",
 			"settings":
 			{
-				"buffer_size": 3512,
+				"buffer_size": 3476,
 				"line_ending": "Windows"
 			}
 		},
@@ -327,7 +327,7 @@
 			"file": "protected/controllers/SiteController.php",
 			"settings":
 			{
-				"buffer_size": 4834,
+				"buffer_size": 5407,
 				"line_ending": "Windows"
 			}
 		},
@@ -343,7 +343,7 @@
 			"file": "/D/www/yii/db/ar/CActiveRecord.php",
 			"settings":
 			{
-				"buffer_size": 86713,
+				"buffer_size": 86714,
 				"line_ending": "Unix"
 			}
 		},
@@ -351,7 +351,7 @@
 			"file": "/D/www/yii/yiilite.php",
 			"settings":
 			{
-				"buffer_size": 304904,
+				"buffer_size": 304907,
 				"line_ending": "Unix"
 			}
 		},
@@ -1015,15 +1015,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3512,
+						"buffer_size": 3476,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3488,
-								3488
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1092,15 +1092,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4834,
+						"buffer_size": 5407,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1061,
-								1061
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1245,15 +1245,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 86713,
+						"buffer_size": 86714,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14324,
-								14324
+								19404,
+								19405
 							]
 						],
 						"settings":
@@ -1261,18 +1261,26 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -1281,26 +1289,18 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
 							"is_xml": false,
 							"origin_encoding": "UTF-8",
@@ -1320,7 +1320,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 304904,
+						"buffer_size": 304907,
 						"regions":
 						{
 							"TagLint":
@@ -1330,8 +1330,8 @@
 								"regions":
 								[
 									[
-										187378,
-										187388
+										187381,
+										187391
 									]
 								],
 								"scope": "variable.parameter"
@@ -1340,8 +1340,8 @@
 						"selection":
 						[
 							[
-								205756,
-								205756
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1904,6 +1904,10 @@
 	"output.GoSublime-output":
 	{
 		"height": 628.0
+	},
+	"output.exec":
+	{
+		"height": 100.0
 	},
 	"output.find_results":
 	{
