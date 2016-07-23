@@ -8,7 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'asdf_test_app',
-	'defaultController'=>'Site',
+	'defaultController'=>'Curl',
 	// preloading 'log' component
 	'preload'=>array('log'),
 

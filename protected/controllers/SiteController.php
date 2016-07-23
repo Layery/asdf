@@ -18,6 +18,7 @@ class SiteController extends Controller
 		$students = new CActiveDataProvider('Room',array(
 			'criteria'=>$criteria, 
 		));
+		p($students);
 	    $this->render('view',array('students'=>$students));
 	}
 
@@ -112,42 +113,23 @@ class SiteController extends Controller
 
 
 
-		$room = Yii::app()->db->createCommand();
-		$room->select('id,name')
-			 ->from('{{student}}')
-			 ->order('id desc')
-			 ->queryAll();
+		// $room = Yii::app()->db->createCommand();
+		// $room->select('id,name')
+		// 	 ->from('{{student}}')
+		// 	 ->order('id desc')
+		// 	 ->queryAll();
 
 
-		p($room);
-
-
-
+		// p($room);
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		// $sql = 'select * from {{room}}';
-		// $conn = Yii::app()->db->createCommand($sql);
-		// $classList = $conn->queryAll($sql);
-	 //    $this->render('index',array('classList'=>$classList));
+		$sql = 'select * from {{room}}';
+		$conn = Yii::app()->db->createCommand($sql);
+		$classList = $conn->queryAll($sql);
+	    $this->render('index',array('classList'=>$classList));
 	}
 
 	/**
@@ -294,6 +276,9 @@ class SiteController extends Controller
 			),
 		);
 	}
+
+
+
 
 	/**
 	 * Logs out the current user and redirect to homepage.
