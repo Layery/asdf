@@ -59,6 +59,7 @@ class StudentController extends Controller
                 echo "<script>history.go(-1);</script>";
                 exit;
             }
+            
             $model->attributes = $_POST['Student'];
             if($model->validate()) {
                $model->save();
